@@ -7,6 +7,7 @@ import org.testng.annotations.*;
 
 import static TestMethods.BaseMethods.*;
 import static TestMethods.ConfigureMethods.browserPicker;
+import static TestMethods.ConfigureMethods.sleep;
 
 public class BaseClass extends Base{
 
@@ -26,23 +27,25 @@ public class BaseClass extends Base{
     }
 
 
-@BeforeMethod
+    @BeforeMethod
     void setUp(){
-    driver.get("http://18.196.86.213:3005/");
+        driver.get("http://18.196.86.213:3005/");
 }
 
-@Test
+    @Test
     void Test1 () {
-homePage.GoToSignUp();
-registerPage.firstViewRegister(generatePhoneNumber());
+        homePage.GoToSignUp();
+        registerPage.firstViewRegister(generatePhoneNumber());
+
 }
 
 
 
 
-@AfterClass
+    @AfterClass
     void turnDown () {
-driver.close();
+        sleep(5000);
+        driver.close();
     }
 
 

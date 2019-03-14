@@ -10,6 +10,8 @@ public class RegisterPage extends RegisterWebElements{
 
     public void firstViewRegister(String phone) {
         phoneInput.sendKeys(phone);
+        submitFirstView.click();
+
     }
 
 }

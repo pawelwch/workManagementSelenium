@@ -1,6 +1,5 @@
 package Pages.HomePageFactory;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +9,7 @@ public class HomeWebElements {
 
     protected WebDriver driver;
 
-    @FindBy(xpath = "(//*[@type='button'])[0]") WebElement signUpButton;
+    @FindBy(xpath = "//*[.='Sign up']") WebElement signUpButton;
 
 //    WebElement signUp = driver.findElement(By.xpath(""));
 
