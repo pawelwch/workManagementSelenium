@@ -1,0 +1,77 @@
+package TestMethods;
+
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import java.util.Random;
+
+public class BaseMethods {
+
+
+    static ConfigureMethods configureMethods;
+    static private Random random = new Random();
+    static private StringBuilder stringBuilder = new StringBuilder();
+    private final static char [] chars = "abcdefghijklmnoprstuwxyz".toCharArray();
+    private final static char [] numbers = "1234567890".toCharArray();
+    static ExtentTest test;
+
+
+    /** Metoda generuje losowe Stringi
+     * @param length podajemy dlugosc danego lancucha
+     * @return zwraca losowy ciag znaków. Przydatne podczas uzupelniania takich danych jak Imie czy Nazwisko */
+    public static String generateRandomString (int length) {
+        for (int i=0; i<length; i++) {
+            stringBuilder.append(chars[random.nextInt(length)]);
+        }
+        return stringBuilder.toString();
+    }
+
+    /**Generuje losowy ciąg liczb.
+     * @param length Wpisujemy liczbe ciągu liczb. np wpisując "2", wypluje jakaś dwucyfrową liczbe
+     * @return zwraca liczbe jako String */
+    public static String generateRandomNumber (int length) {
+        for (int i=0; i<length; i++) {
+            stringBuilder.append(numbers[random.nextInt(length)]);
+        }
+        return stringBuilder.toString();
+    }
+
+    /**Metoda, ktora generuje 9cyfrowy numer telefonu, zaczynajacy sie na "1". Ze względów bezpieczeństwa
+     * @return zwraca numer telefonu */
+    public static String generatePhoneNumber () {
+        for (int i=0; i<9; i++) {
+            stringBuilder.append(numbers[random.nextInt(9)]);
+        }
+        return "8"+stringBuilder.toString();
+    }
+
+    /** Metoda generuje losowy adress email.
+     * @return  zwraca adress email. */
+    public static String generateRandomEmail() {
+        for (int i=0; i<random.nextInt(7)+5; i++) {
+            stringBuilder.append(chars[random.nextInt(25)]);
+        }
+        stringBuilder.append("@email.com");
+        return stringBuilder.toString();
+    }
+
+    /**Metoda porownująca komunikat, tekst zawarty w pliku json, do rzeczywistego tekstu/komunikatu na stronie
+     * @param webElement nalezy podac webElement, kory zawiera tekst/ tlumaczenie
+     * @param text nalezy podac klucz tekstu, ktory chcemy sprawdzic */
+    public static void checkNotify (WebElement webElement, String text) {
+        String webText = configureMethods.waitForIt(webElement).getText().toString();
+        Assert.assertEquals(webText, text);
+        if (webText!=text) {
+            test.log(Status.FAIL,"Test failed");
+        }
+
+    }
+
+    /**Metoda klika na przycisk akceptacji (sumbit), na każdej stronie, która taki przycisk posiada.
+     * @param element id przycisku submit.*/
+    public void submitButton (WebElement element) {
+        configureMethods.waitForIt(element).submit();
+    }
+
+}
