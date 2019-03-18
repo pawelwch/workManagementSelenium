@@ -1,10 +1,11 @@
 package Pages.LoginFactory;
 
+import Pages.RegisterFactory.RegisterPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import sun.jvm.hotspot.debugger.Page;
+
 
 //  LoginWebElements - Definiujemy publiczną klasę która przechowuje elementy widoku LoginPage
 public class LoginWebElements {

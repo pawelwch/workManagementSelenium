@@ -1,6 +1,9 @@
 package Pages.RegisterFactory;
 
+import TestMethods.ConfigureMethods;
 import org.openqa.selenium.WebDriver;
+
+import static TestMethods.ConfigureMethods.waitForIt;
 
 
 /*
@@ -22,8 +25,8 @@ public class RegisterPage extends RegisterWebElements{
         Wykonanie metody z parametrem spowoduje przekazanie parametru do elementu strony registerPhoneInput oraz kliknięcie submitFirstView;
      */
     public void firstViewRegister(String phone) {
-        registerPhoneInput.sendKeys(phone);
-        submitFirstView.click();
+      waitForIt(registerPhoneInput).sendKeys(phone);
+        waitForIt(submitFirstView).click();
 
     }
 

@@ -14,4 +14,5 @@ public class Base {
     LoginPage loginPage;
     BaseMethods baseMethods;
     ConfigureMethods configureMethods;
+
 }

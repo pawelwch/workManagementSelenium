@@ -27,7 +27,7 @@ public class ConfigureMethods {
 
     /** Jest to konfiguracja dla Chrome, ktora pozwala wyciagnąć logi z konsoli przeglądarkowej. Nalezy umiescić w
      * @see #browserPicker(String) () : new ChromeDriver(logCapabilitiesForChrome()) zamiast new ChromeDriver()*/
-    public static DesiredCapabilities logCapabilitiesForChrome () {
+   public static DesiredCapabilities logCapabilitiesForChrome () {
         DesiredCapabilities caps = DesiredCapabilities.chrome();
         LoggingPreferences logPrefs = new LoggingPreferences();
         logPrefs.enable(LogType.BROWSER, Level.ALL);
@@ -35,7 +35,7 @@ public class ConfigureMethods {
         return caps;
     }
 
-    /** Metoda która wybiera przeglądarke. Plik konfiguracyjny jest w BagsOff/ConfigFile.json Działa na razie na FF i Chrome.
+    /** Metoda która wybiera przeglądarke. Plik konfiguracyjny jest w ???.json Działa na razie na FF i Chrome.
      * Drivery mozna parametryzować o np metode
      * @see #logCapabilitiesForChrome() , ktora wykazuje logi.
      * @return Zwraca podaną przeglądarke */
@@ -47,7 +47,7 @@ public class ConfigureMethods {
             System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver");
             driver = new ChromeDriver();
         }
-        driver.manage().window().maximize(); //ZOBACZYC CZYM JEST fullscreen()
+        driver.manage().window().maximize();
         return driver;
     }
 
