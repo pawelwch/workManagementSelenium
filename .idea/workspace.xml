@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de9afa49-59d3-4fb6-9de8-6c4203636582" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ConfigurationFile.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JsonData/JsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/drivers/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/drivers/linux/chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/drivers/geckodriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/drivers/linux/geckodriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseClass.java" afterDir="false" />
-    </list>
+    <list default="true" id="de9afa49-59d3-4fb6-9de8-6c4203636582" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +11,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
@@ -64,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+            <state relative-caret-position="422">
+              <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -265,7 +256,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552999517240" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552999639817" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -371,12 +362,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BaseClass_Test1_(1) - 2019.03.19 at 12h 56m 47s.xml">
-      <configuration name="BaseClass.Test1 (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_Test1_(1) - 2019.03.19 at 12h 57m 31s.xml">
-      <configuration name="BaseClass.Test1 (1)" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="BaseClass_Test1_(1) - 2019.03.19 at 12h 57m 50s.xml">
       <configuration name="BaseClass.Test1 (1)" configurationId="TestNG" />
     </history-entry>
@@ -399,6 +384,12 @@
       <configuration name="BaseClass" configurationId="TestNG" />
     </history-entry>
     <history-entry file="BaseClass - 2019.03.19 at 13h 39m 31s.xml">
+      <configuration name="BaseClass" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BaseClass - 2019.03.19 at 13h 43m 55s.xml">
+      <configuration name="BaseClass" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BaseClass - 2019.03.19 at 13h 45m 37s.xml">
       <configuration name="BaseClass" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -425,14 +416,14 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31070197" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31070197" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32854578" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="SonarLint" order="8" />
-      <window_info anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" weight="0.29802513" />
+      <window_info active="true" anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" visible="true" weight="0.29689297" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.34470376" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -685,8 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+        <state relative-caret-position="422">
+          <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
