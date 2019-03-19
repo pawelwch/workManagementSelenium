@@ -3,7 +3,6 @@ import Pages.LoginFactory.LoginPage;
 import Pages.RegisterFactory.RegisterPage;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
 
