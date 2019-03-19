@@ -37,14 +37,13 @@ public class ConfigureMethods {
         return caps;
     }
 
-    /** Metoda która wybiera przeglądarke. Plik konfiguracyjny jest w ???.json Działa na razie na FF i Chrome.
+    /** Metoda która wybiera przeglądarke oraz system operacyjny. Plik konfiguracyjny jest w ConfigurationFile.json Działa na razie na FF i Chrome.
      * Drivery mozna parametryzować o np metode
      * @see #logCapabilitiesForChrome() , ktora wykazuje logi.
-     * @return Zwraca podaną przeglądarke */
+     * @return Zwraca podaną przeglądarke*/
 
 
     public static WebDriver browserPicker () {
-
         if (JsonParser.os.contains("windows")) {
             switch (JsonParser.browser){
                 case "firefox":
