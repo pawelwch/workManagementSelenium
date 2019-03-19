@@ -1,3 +1,4 @@
+import JsonData.JsonParser;
 import Pages.HomePageFactory.HomePage;
 import Pages.LoginFactory.LoginPage;
 import Pages.RegisterFactory.RegisterPage;
@@ -24,13 +25,16 @@ public class BaseClass extends Base {
     */
     @BeforeClass (alwaysRun = true)
     private void setUpBrowser() {
+        JsonParser.parseJson();
+        jsonParser = new JsonParser();
         baseMethods = new BaseMethods();
         configureMethods = new ConfigureMethods(driver);
-        driver = browserPicker("chrome");
+        driver = browserPicker();
         driver.manage().window().maximize();
         homePage = new HomePage(driver);
         registerPage = new RegisterPage(driver);
         loginPage = new LoginPage(driver);
+
     }
 
      /**Adnotacja @BeforeMethod ustawia rózne konfiguracje które będą wykokane przed wykonaniem każdej metody;

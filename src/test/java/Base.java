@@ -1,3 +1,4 @@
+import JsonData.JsonParser;
 import Pages.HomePageFactory.HomePage;
 import Pages.LoginFactory.LoginPage;
 import Pages.RegisterFactory.RegisterPage;
@@ -14,5 +15,6 @@ public class Base {
     LoginPage loginPage;
     BaseMethods baseMethods;
     ConfigureMethods configureMethods;
+    JsonParser jsonParser;
 
 }

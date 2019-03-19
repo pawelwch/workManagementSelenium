@@ -1,5 +1,6 @@
 package TestMethods;
 
+import JsonData.JsonParser;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.ui.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.apache.commons.io.FileUtils;
+
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -26,7 +28,7 @@ public class ConfigureMethods {
     }
 
     /** Jest to konfiguracja dla Chrome, ktora pozwala wyciagnąć logi z konsoli przeglądarkowej. Nalezy umiescić w
-     * @see #browserPicker(String) () : new ChromeDriver(logCapabilitiesForChrome()) zamiast new ChromeDriver()*/
+     * @see #browserPicker() () : new ChromeDriver(logCapabilitiesForChrome()) zamiast new ChromeDriver()*/
    public static DesiredCapabilities logCapabilitiesForChrome () {
         DesiredCapabilities caps = DesiredCapabilities.chrome();
         LoggingPreferences logPrefs = new LoggingPreferences();
@@ -39,14 +41,33 @@ public class ConfigureMethods {
      * Drivery mozna parametryzować o np metode
      * @see #logCapabilitiesForChrome() , ktora wykazuje logi.
      * @return Zwraca podaną przeglądarke */
-    public static WebDriver browserPicker (String browser) {
-        if (browser.contains("firefox")) {
-            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/geckodriver");
-            driver = new FirefoxDriver();
-        } else {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver");
-            driver = new ChromeDriver();
-        }
+
+
+    public static WebDriver browserPicker () {
+
+        if (JsonParser.os.contains("windows")) {
+            switch (JsonParser.browser){
+                case "firefox":
+                    System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/windows/geckodriver.exe");
+                    driver = new FirefoxDriver();
+                    break;
+                case "chrome":
+                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/windows/chromedriver.exe");
+                    driver = new ChromeDriver();
+                    break;
+            }
+        } else if (JsonParser.os.contains("linux"))
+            switch (JsonParser.browser){
+                case "firefox":
+                    System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/linux/geckodriver");
+                    driver = new FirefoxDriver();
+                    break;
+                case "chrome":
+                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/linux/chromedriver");
+                    driver = new ChromeDriver();
+                    break;
+            }
+
         driver.manage().window().maximize();
         return driver;
     }
