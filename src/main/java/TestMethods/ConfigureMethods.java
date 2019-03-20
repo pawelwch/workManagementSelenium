@@ -3,7 +3,10 @@ package TestMethods;
 import JsonData.JsonParser;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.logging.*;
 import org.openqa.selenium.remote.*;
 import org.openqa.selenium.support.ui.*;
@@ -53,6 +56,26 @@ public class ConfigureMethods {
                 case "chrome":
                     System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/windows/chromedriver.exe");
                     driver = new ChromeDriver();
+                    break;
+                case "coccoc":
+                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/windows/chromedriver.exe");
+                    ChromeOptions options = new ChromeOptions();
+                    options.setBinary("C:/Users/pawel_000/AppData/Local/CocCoc/Browser/Application/browser.exe");
+                    driver = new ChromeDriver(options);
+                    break;
+                case "ucbrowser":
+                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/windows/chromedriver.exe");
+                    ChromeOptions options1 = new ChromeOptions();
+                    options1.setBinary("C:/Program Files (x86)/UCBrowser/Application/UCBrowser.exe");
+                    driver = new ChromeDriver(options1);
+                    break;
+                case "ie":
+                    System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/windows/IEDriverServer.exe");
+                    driver = new InternetExplorerDriver();
+                    break;
+                case "edge":
+                    System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/windows/MicrosoftWebDriver.exe");
+                    driver = new EdgeDriver();
                     break;
             }
         } else if (JsonParser.os.contains("linux"))
