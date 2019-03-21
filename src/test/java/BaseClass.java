@@ -52,7 +52,8 @@ public class BaseClass extends Base {
     void Test1 () {
         String pinCode = generateRandomNumber(6);
         homePage.GoToSignUp();
-        registerPage.registerCompletePhone("8456581413");
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhoneNumber());
         registerPage.confirmSms("");
         registerPage.setPinView(pinCode, pinCode);
             }
