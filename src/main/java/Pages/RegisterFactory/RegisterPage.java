@@ -3,6 +3,7 @@ package Pages.RegisterFactory;
 import TestMethods.ConfigureMethods;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import static TestMethods.ConfigureMethods.sleep;
 import static TestMethods.ConfigureMethods.waitForIt;
@@ -27,7 +28,7 @@ public class RegisterPage extends RegisterWebElements{
         Wykonanie metody z parametrem spowoduje przekazanie parametru do elementu strony registerPhoneInput oraz kliknięcie submitFirstView;
      */
     public void selectCountry() {
-        sleep(2000);
+        sleep(1000);
         waitForIt(countrySelector).click();
         waitForIt(polishPrefix).click();
     }
@@ -48,7 +49,12 @@ public class RegisterPage extends RegisterWebElements{
         sleep(1000);
         waitForIt(firstPinInput).sendKeys(pin1);
         waitForIt(secondPinInput).sendKeys(pin2);
+        sleep(3000);
         waitForIt(pinConfirmButton).click();
+    }
+
+    public void accountTypeSelector(WebElement accountType) {
+        waitForIt(accountType).click();
     }
 
 }

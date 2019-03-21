@@ -7,6 +7,7 @@ import TestMethods.ConfigureMethods;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
 
+import static Pages.RegisterFactory.RegisterWebElements.*;
 import static TestMethods.BaseMethods.*;
 import static TestMethods.ConfigureMethods.browserPicker;
 import static TestMethods.ConfigureMethods.sleep;
@@ -56,6 +57,7 @@ public class BaseClass extends Base {
         registerPage.registerCompletePhone(generatePhoneNumber());
         registerPage.confirmSms("");
         registerPage.setPinView(pinCode, pinCode);
+        registerPage.accountTypeSelector(labourer);
             }
 
      /**Adnotacja @AfterClass ustawia różne konfiguracje, które będą wykonane po wykonaniu każdego testu;
