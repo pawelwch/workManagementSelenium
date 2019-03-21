@@ -7,6 +7,7 @@ import org.json.simple.parser.ParseException;
 import java.io.FileReader;
 import java.io.IOException;
 
+
 public class JsonParser {
 
     public static String browser;
