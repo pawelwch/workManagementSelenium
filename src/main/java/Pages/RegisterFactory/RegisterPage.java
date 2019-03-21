@@ -24,10 +24,21 @@ public class RegisterPage extends RegisterWebElements{
         Definiujemy metodę przekazująca w parametrze wartość typu String.
         Wykonanie metody z parametrem spowoduje przekazanie parametru do elementu strony registerPhoneInput oraz kliknięcie submitFirstView;
      */
-    public void firstViewRegister(String phone) {
+    public void registerCompletePhone(String phone) {
       waitForIt(registerPhoneInput).sendKeys(phone);
         waitForIt(submitFirstView).click();
 
+    }
+
+    public void confirmSms(String sms) {
+//        waitForIt(smsInput).sendKeys(sms);
+        waitForIt(confirmSmsCodeButton).click();
+    }
+
+    public void setPinView(String pin1, String pin2) {
+        waitForIt(firstPinInput).sendKeys(pin1);
+        waitForIt(secondPinInput).sendKeys(pin2);
+        waitForIt(pinConfirmButton).click();
     }
 
 }

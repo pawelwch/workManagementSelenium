@@ -50,9 +50,12 @@ public class BaseClass extends Base {
     */
     @Test
     void Test1 () {
+        String pinCode = generateRandomNumber(6);
         homePage.GoToSignUp();
-        registerPage.firstViewRegister(generatePhoneNumber());
-    }
+        registerPage.registerCompletePhone("8456581413");
+        registerPage.confirmSms("");
+        registerPage.setPinView(pinCode, pinCode);
+            }
 
      /**Adnotacja @AfterClass ustawia różne konfiguracje, które będą wykonane po wykonaniu każdego testu;
      W tym przypadku adnotacja odnosi się do metody turnDown(), która powoduje zamknięcie Drivera;
