@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
 
 import static Pages.RegisterFactory.RegisterWebElements.*;
-import static TestMethods.BaseMethods.*;
 import static TestMethods.ConfigureMethods.browserPicker;
 import static TestMethods.ConfigureMethods.sleep;
 
@@ -21,10 +20,7 @@ public class BaseClass extends Base {
         PageFactory.initElements(driver, this);
     }
 
-    /**Adnotacja @BeforeClass ustawia różne konfigurację które będą wykonane przez wykonaniem każdego testu;
-    Adnotacja odnosi się do metody setUpBrowser(), która setupuje Driver w odpowiedni sposób;
-    */
-    @BeforeClass (alwaysRun = true)
+    @BeforeClass(alwaysRun = true)
     private void setUpBrowser() {
         JsonParser.parseJson();
         jsonParser = new JsonParser();
@@ -38,34 +34,28 @@ public class BaseClass extends Base {
 
     }
 
-     /**Adnotacja @BeforeMethod ustawia rózne konfiguracje które będą wykokane przed wykonaniem każdej metody;
+    /**Adnotacja @BeforeMethod ustawia rózne konfiguracje które będą wykokane przed wykonaniem każdej metody;
      Adnotacja odnosi się do metody setUp(), która setpuje Driver w odpowiedni sposób;
      */
-    @BeforeMethod (alwaysRun =  true)
+    @BeforeMethod(alwaysRun =  true)
     void setUp(){
         driver.get("http://18.196.86.213:3005/");
     }
 
     /**Adnotacja @Test jest to konkretny TestCase;
-    Adnotacja odnosi się do wykonania konkretnej metody odpowiadjącej konkretnemu TestCase;
-    */
+     Adnotacja odnosi się do wykonania konkretnej metody odpowiadjącej konkretnemu TestCase;
+     */
     @Test
-    void Test1 () {
-        String pinCode = generateRandomNumber(6);
-        homePage.GoToSignUp();
-        registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
-        registerPage.confirmSms("");
-        registerPage.setPinView(pinCode, pinCode);
-        registerPage.accountTypeSelector(labourer);
-            }
+    void RegisterAsLabourer() {
+        registerAsLabourer(labourer);
+    }
 
-     /**Adnotacja @AfterClass ustawia różne konfiguracje, które będą wykonane po wykonaniu każdego testu;
+    /**Adnotacja @AfterClass ustawia różne konfiguracje, które będą wykonane po wykonaniu każdego testu;
      W tym przypadku adnotacja odnosi się do metody turnDown(), która powoduje zamknięcie Drivera;
      */
-    @AfterTest
+    @AfterTest (alwaysRun = true)
     void turnDown () {
-        sleep(5000);
+        sleep(1000);
         driver.close();
     }
 

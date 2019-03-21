@@ -29,6 +29,8 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@name = 'pinRepeatInput']") WebElement secondPinInput;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/button") WebElement pinConfirmButton;
     @FindBy(xpath = "//*[.='Labourer']") public static WebElement labourer;
+    @FindBy(xpath = "//*[.='Contractor']") public static WebElement contractor;
+    @FindBy(xpath = "//*[.='Employer']") public static WebElement employer;
 
 
 

@@ -53,6 +53,7 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(pinConfirmButton).click();
     }
 
+    //
     public void accountTypeSelector(WebElement accountType) {
         waitForIt(accountType).click();
     }
