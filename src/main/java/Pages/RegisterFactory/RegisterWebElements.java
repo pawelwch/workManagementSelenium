@@ -31,6 +31,17 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[.='Labourer']") public static WebElement labourer;
     @FindBy(xpath = "//*[.='Contractor']") public static WebElement contractor;
     @FindBy(xpath = "//*[.='Employer']") public static WebElement employer;
+    @FindBy(id = "fullName")  WebElement fullName;
+    @FindBy(id = "email")  WebElement email;
+    @FindBy(id = "dropdown-year")  WebElement yearInput;
+    @FindBy(className = "month-input")  WebElement monthInput;
+    @FindBy(className = "day-input")  WebElement dayInput;
+    @FindBy(className = "css-vj8t7z") WebElement countrySelect;
+    @FindBy(className = "css-1hwfws3")  WebElement citySelector;
+    @FindBy(id = "address")  WebElement address;
+    @FindBy(id = "policies")  WebElement policies;
+    @FindBy(xpath = "messages")  WebElement messages;
+    @FindBy(xpath = "//*[.='Continue']") WebElement confirmSetupAccount;
 
 
 

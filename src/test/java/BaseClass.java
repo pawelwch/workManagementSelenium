@@ -47,7 +47,7 @@ public class BaseClass extends Base {
      */
     @Test
     void RegisterAsLabourer() {
-        registerAsLabourer(labourer);
+        registerLabourer(labourer);
     }
 
     /**Adnotacja @AfterClass ustawia różne konfiguracje, które będą wykonane po wykonaniu każdego testu;

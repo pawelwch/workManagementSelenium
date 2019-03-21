@@ -6,16 +6,9 @@ import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
-import static Pages.RegisterFactory.RegisterWebElements.labourer;
 import static TestMethods.BaseMethods.generatePhoneNumber;
 import static TestMethods.BaseMethods.generateRandomNumber;
-import static TestMethods.ConfigureMethods.browserPicker;
-import static TestMethods.ConfigureMethods.sleep;
+
 
 //  Klasa bazowa która przechowuje obiekty poszczególnych klas?/Pages?
 public class Base {
@@ -33,8 +26,7 @@ public class Base {
      */
 
 
-
-    void registerAsLabourer(WebElement accountType) {
+    void registerLabourer(WebElement accountType) {
         String pinCode = generateRandomNumber(6);
         homePage.GoToSignUp();
         registerPage.selectCountry();
@@ -42,6 +34,7 @@ public class Base {
         registerPage.confirmSms("");
         registerPage.setPinView(pinCode, pinCode);
         registerPage.accountTypeSelector(accountType);
+
     }
 
 
