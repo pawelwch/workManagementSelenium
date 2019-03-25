@@ -58,4 +58,12 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(accountType).click();
     }
 
+    public void setUpAccount(String fullName, String email, String country, String city) {
+        waitForIt(this.fullName).sendKeys(fullName);
+        waitForIt(this.email).sendKeys(email);
+        waitForIt(countrySelector).click();
+        waitForIt(afganistan).click();
+        waitForIt(citySelector).click();
+    }
+
 }

@@ -1,11 +1,16 @@
 
-lsquid:S00100Q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ééˆ08ëó£á—-
-Asquid:S3010"#Remove this assignment of "driver".(ÁÜÑ¥8ëó£á—-
-jsquid:S00112["FDefine and throw a dedicated exception instead of using a generic one.(şñò°şÿÿÿÿ8ëó£á—-
-Fsquid:S1148K"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëó£á—-
 ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬Ï±à8ëó£á—-
-}squid:S1488@"_Immediately return this expression instead of assigning it to the temporary variable "element".(šŒ–ç8ëó£á—-
-lsquid:S1192,"IDefine a constant instead of duplicating this literal "user.dir" 3 times.(ÈÃçßÿÿÿÿÿ8ëó£á—-
-Ssquid:S2209"5Change this instance-reference to a static reference.(ÁÜÑ¥8ëó£á—-
-dsquid:S2142I"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ëó£á—-
-isquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(îƒÓì8ëó£á—-
+vsquid:S11929"XDefine a constant instead of duplicating this literal "webdriver.chrome.driver" 4 times.(Üšøª8ÌÖ¾š-
+Asquid:S3010"#Remove this assignment of "driver".(ÁÜÑ¥8ÌÖ¾š-
+\"squid:SwitchLastCaseIsDefaultCheckR""Add a default case to this switch.(¡šùÕıÿÿÿÿ8êøè¯™-
+nsquid:S1301R"KReplace this "switch" statement by "if" statements to increase readability.(¡šùÕıÿÿÿÿ8êøè¯™-
+“squid:S11929"uDefine a constant instead of duplicating this literal "/src/main/resources/drivers/windows/chromedriver.exe" 3 times.(Üšøª8ÌÖ¾š-
+Ssquid:S2209"5Change this instance-reference to a static reference.(ÁÜÑ¥8ÌÖ¾š-
+ksquid:S00112†"FDefine and throw a dedicated exception instead of using a generic one.(şñò°şÿÿÿÿ8à²ã¯™-
+dsquid:S2142t"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8à²ã¯™-
+Fsquid:S1148v"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8à²ã¯™-
+}squid:S1488k"_Immediately return this expression instead of assigning it to the temporary variable "element".(šŒ–ç8à²ã¯™-
+lsquid:S00100|"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ééˆ08à²ã¯™-
+lsquid:S11925"IDefine a constant instead of duplicating this literal "user.dir" 9 times.(ëõÃ´ıÿÿÿÿ8ÌÖ¾š-
+\"squid:SwitchLastCaseIsDefaultCheck3""Add a default case to this switch.(¡šùÕıÿÿÿÿ8ÌÖ¾š-
+isquid:CommentedOutCodeLine}"<This block of commented-out lines of code should be removed.(îƒÓì8à²ã¯™-

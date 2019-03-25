@@ -21,3 +21,7 @@ _
 /src/main/java/TestMethods/ConfigureMethods.java,3/f/3f1f6c6c52f78b3ae04277c9f87cc97e2400e409
 G
 src/test/java/Base.java,e/9/e9b4b9c8d7ec32cf2dec4c0b1813d29bb60989a2
+V
+&src/main/java/JsonData/JsonParser.java,6/9/6989660744db2c32070cd8ad1fc353e063721052
+F
+ConfigurationFile.json,9/5/95801d37aa2a93c5c13d4fb2744453861ccba633

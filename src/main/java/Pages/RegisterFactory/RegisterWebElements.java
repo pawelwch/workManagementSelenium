@@ -37,6 +37,7 @@ public class RegisterWebElements {
     @FindBy(className = "month-input")  WebElement monthInput;
     @FindBy(className = "day-input")  WebElement dayInput;
     @FindBy(className = "css-vj8t7z") WebElement countrySelect;
+    @FindBy(className = "css-wqgs6e")WebElement afganistan; //Lub  @FindBy(id = "react-select-2-option-0")WebElement afganistan;
     @FindBy(className = "css-1hwfws3")  WebElement citySelector;
     @FindBy(id = "address")  WebElement address;
     @FindBy(id = "policies")  WebElement policies;
