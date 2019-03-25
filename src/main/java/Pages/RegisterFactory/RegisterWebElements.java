@@ -44,10 +44,4 @@ public class RegisterWebElements {
     @FindBy(xpath = "messages")  WebElement messages;
     @FindBy(xpath = "//*[.='Continue']") WebElement confirmSetupAccount;
 
-
-
-
-
-
-
 }
