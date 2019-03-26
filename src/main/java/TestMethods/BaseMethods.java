@@ -2,6 +2,7 @@ package TestMethods;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import java.util.Random;
@@ -40,10 +41,8 @@ public class BaseMethods {
     /**Metoda, ktora generuje 9cyfrowy numer telefonu, zaczynajacy sie na "1". Ze względów bezpieczeństwa
      * @return zwraca numer telefonu */
     public static String generatePhoneNumber () {
-        for (int i=0; i<9; i++) {
-            stringBuilder.append(numbers[random.nextInt(9)]);
-        }
-        return "8"+stringBuilder.toString();
+        String number = (RandomStringUtils.randomNumeric(7));
+        return "83"+number;
     }
 
     /** Metoda generuje losowy adress email.

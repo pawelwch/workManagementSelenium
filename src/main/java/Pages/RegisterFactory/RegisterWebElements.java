@@ -19,9 +19,29 @@ public class RegisterWebElements {
 
     // Lokalizujemy wszystkie elementy widoku RegisterPage za pomocą adnotacji @Findby;
     @FindBy(xpath = "//*[@type='tel']") WebElement registerPhoneInput;
-    @FindBy(xpath = "//*[.='Send sms code']") WebElement submitFirstView;
+    @FindBy(className = "selected-flag")WebElement countrySelector;
+    @FindBy(xpath = "//*[@data-country-code='pl']") WebElement polishPrefix;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[2]/div/button") WebElement submitFirstView;
     @FindBy(xpath = "//*[@href='/log-in']") WebElement logInButton;
-
-
+    @FindBy(id = "smsCodeInput") WebElement smsInput;
+    @FindBy(xpath = "//*[.='Continue']") WebElement confirmSmsCodeButton;
+    @FindBy(xpath = "//*[@name = 'pinInput']") WebElement firstPinInput;
+    @FindBy(xpath = "//*[@name = 'pinRepeatInput']") WebElement secondPinInput;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/button") WebElement pinConfirmButton;
+    @FindBy(xpath = "//*[.='Labourer']") public static WebElement labourer;
+    @FindBy(xpath = "//*[.='Contractor']") public static WebElement contractor;
+    @FindBy(xpath = "//*[.='Employer']") public static WebElement employer;
+    @FindBy(id = "fullName")  WebElement fullName;
+    @FindBy(id = "email")  WebElement email;
+    @FindBy(id = "dropdown-year")  WebElement yearInput;
+    @FindBy(className = "month-input")  WebElement monthInput;
+    @FindBy(className = "day-input")  WebElement dayInput;
+    @FindBy(className = "css-vj8t7z") WebElement countrySelect;
+    @FindBy(className = "css-wqgs6e")WebElement afganistan; //Lub  @FindBy(id = "react-select-2-option-0")WebElement afganistan;
+    @FindBy(className = "css-1hwfws3")  WebElement citySelector;
+    @FindBy(id = "address")  WebElement address;
+    @FindBy(id = "policies")  WebElement policies;
+    @FindBy(xpath = "messages")  WebElement messages;
+    @FindBy(xpath = "//*[.='Continue']") WebElement confirmSetupAccount;
 
 }

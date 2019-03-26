@@ -1,5 +1,8 @@
 
+isquid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(ü²‰ñ8¬Äžš-
 isquid:UselessImportCheck"9Remove this unused import 'TestMethods.ConfigureMethods'.(§úÿµþÿÿÿÿ8íÆó‰™-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(í³¯Ùÿÿÿÿÿ8õÇ„ˆ™-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Çâá³8õÇ„ˆ™-
 wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¾…Àùÿÿÿÿ
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Çâá³8õÇ„ˆ™-
+nsquid:UselessImportCheck"CRemove this unused import 'org.openqa.selenium.JavascriptExecutor'.(Ë‚«»8òîÛš-
+Hsquid:S1172*"*Remove this unused method parameter "sms".(¬Ÿ­ý8ª½£‚š-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(í³¯Ùÿÿÿÿÿ8õÇ„ˆ™-
