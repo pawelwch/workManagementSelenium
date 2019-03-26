@@ -4,8 +4,10 @@ import Pages.LoginFactory.LoginPage;
 import Pages.RegisterFactory.RegisterPage;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
+import io.restassured.RestAssured;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import static TestMethods.BaseMethods.*;
 import static Pages.RegisterFactory.RegisterWebElements.*;
@@ -47,6 +49,39 @@ public class Base {
 
     }
 
+    void noPhoneNumber(){
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone("");
+    }
+
+    void tooManyPhoneDigits() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generateRandomNumber(10));
+    }
+
+    void tooLittleDigits() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generateRandomNumber(8));
+    }
+
+    void lettersInPhoneInput() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generateRandomString(9));
+    }
+
+    void repeatedPhoneNumber() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        String num = generatePhoneNumber();
+        registerPage.registerCompletePhone(num);
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(num);
+    }
 
 
 }

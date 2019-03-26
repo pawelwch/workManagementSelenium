@@ -32,6 +32,7 @@ public class RegisterPage extends RegisterWebElements{
     public void selectCountry() {
         sleep(1000);
         waitForIt(countrySelector).click();
+        sleep(1000);
         waitForIt(polishPrefix).click();
     }
 

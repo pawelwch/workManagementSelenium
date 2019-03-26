@@ -5,6 +5,7 @@ import Pages.RegisterFactory.RegisterPage;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import static Pages.RegisterFactory.RegisterWebElements.*;
@@ -53,6 +54,30 @@ public class BaseClass extends Base {
         registerLabourer(labourer);
     }
 
+    @Test
+    void NoPhoneNumber() {
+        noPhoneNumber();
+    }
+
+    @Test
+    void TooManyPhoneDigits() {
+        tooManyPhoneDigits();
+    }
+
+    @Test
+    void TooLittlePhoneDigits() {
+        tooLittleDigits();
+    }
+
+    @Test
+    void LettersInPhoneInput() {
+        lettersInPhoneInput();
+    }
+
+    @Test
+    void RepeatedPhoneNumber() {
+        repeatedPhoneNumber();
+    }
 
     /**Adnotacja @AfterClass ustawia różne konfiguracje, które będą wykonane po wykonaniu każdego testu;
      W tym przypadku adnotacja odnosi się do metody turnDown(), która powoduje zamknięcie Drivera;
