@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a30ac9f4-ffde-40f5-ba1a-1d000630a59b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +15,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Base.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+            <state relative-caret-position="248">
+              <caret line="103" column="50" lean-forward="true" selection-start-line="103" selection-start-column="50" selection-end-line="103" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -25,26 +39,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+            <state relative-caret-position="520">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#797#798#0" expanded="true" />
-                <element signature="e#1516#1517#0" expanded="true" />
-                <element signature="e#1572#1573#0" expanded="true" />
-                <element signature="e#1767#1768#0" expanded="true" />
                 <element signature="e#1809#1810#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Base.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="266">
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="106" selection-start-line="106" selection-end-line="106" />
             </state>
           </provider>
         </entry>
@@ -55,7 +76,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="register" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -63,65 +84,72 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/JsonData/JsonParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java" />
         <option value="$PROJECT_DIR$/ConfigurationFile.json" />
-        <option value="$PROJECT_DIR$/src/test/java/Base.java" />
         <option value="$PROJECT_DIR$/src/test/java/BaseClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Base.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="y" value="-2" />
+    <option name="width" value="1366" />
+    <option name="height" value="713" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="lm_automaticTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lm_automaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="lm-webAutomaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm-webAutomaticTests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lm_automaticTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lm_automaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="lm-webAutomaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm-webAutomaticTests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lm_automaticTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lm_automaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="lm-webAutomaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm-webAutomaticTests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lm_automaticTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lm_automaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="lm-webAutomaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm-webAutomaticTests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lm_automaticTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lm_automaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="lm-webAutomaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm-webAutomaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="JsonData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lm-webAutomaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm-webAutomaticTests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lm_automaticTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lm_automaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="lm-webAutomaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm-webAutomaticTests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -129,14 +157,29 @@
               <item name="RegisterFactory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lm_automaticTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lm_automaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="lm-webAutomaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm-webAutomaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="TestMethods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lm-webAutomaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm-webAutomaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lm-webAutomaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm-webAutomaticTests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lm_automaticTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lm_automaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="lm-webAutomaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm-webAutomaticTests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -145,12 +188,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553518580519" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553597868659" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -164,12 +205,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BaseClass.RegisterAsLabourer">
+  <component name="RunManager" selected="TestNG.BaseClass.RegisterAsLabourer (1)">
     <configuration name="BaseClass" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lm-webAutomaticTests" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BaseClass" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseClass.RegisterAsLabourer (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lm-webAutomaticTests" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BaseClass" />
+      <option name="METHOD_NAME" value="RegisterAsLabourer" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="0" />
       <properties />
       <listeners />
       <method v="2">
@@ -213,27 +267,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/home/l4a-eczerski/.IdeaIC2018.3/system/temp-testng-customsuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lm-webAutomaticTests" />
-      <option name="SUITE_NAME" value="$USER_HOME$/.IdeaIC2018.3/system/temp-testng-customsuite.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BaseClass" />
-      <option name="METHOD_NAME" value="Test1" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="0" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BaseClass.Test1 (1)" />
-        <item itemvalue="TestNG.BaseClass.Test1" />
+        <item itemvalue="TestNG.BaseClass.RegisterAsLabourer (1)" />
         <item itemvalue="TestNG.BaseClass.RegisterAsLabourer" />
         <item itemvalue="TestNG.BaseClass" />
-        <item itemvalue="TestNG./home/l4a-eczerski/.IdeaIC2018.3/system/temp-testng-customsuite.xml" />
+        <item itemvalue="TestNG.BaseClass.Test1 (1)" />
+        <item itemvalue="TestNG.BaseClass.Test1" />
       </list>
     </recent_temporary>
   </component>
@@ -251,41 +291,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BaseClass_Test1_(1) - 2019.03.21 at 13h 41m 26s.xml">
-      <configuration name="BaseClass.Test1 (1)" configurationId="TestNG" />
+    <history-entry file="BaseClass_RegisterAsLabourer_(1) - 2019.03.26 at 10h 22m 42s.xml">
+      <configuration name="BaseClass.RegisterAsLabourer (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 45m 09s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
+    <history-entry file="BaseClass_RegisterAsLabourer_(1) - 2019.03.26 at 10h 24m 03s.xml">
+      <configuration name="BaseClass.RegisterAsLabourer (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 45m 46s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
+    <history-entry file="BaseClass_RegisterAsLabourer_(1) - 2019.03.26 at 10h 24m 37s.xml">
+      <configuration name="BaseClass.RegisterAsLabourer (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 46m 15s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 46m 38s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 48m 31s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 48m 43s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 49m 05s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 50m 01s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_RegisterAsLabourer - 2019.03.21 at 13h 55m 06s.xml">
+    <history-entry file="BaseClass_RegisterAsLabourer - 2019.03.26 at 11h 06m 12s.xml">
       <configuration name="BaseClass.RegisterAsLabourer" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BaseClass_RegisterAsLabourer_(1) - 2019.03.26 at 11h 06m 42s.xml">
+      <configuration name="BaseClass.RegisterAsLabourer (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BaseClass_RegisterAsLabourer_(1) - 2019.03.26 at 11h 07m 27s.xml">
+      <configuration name="BaseClass.RegisterAsLabourer (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BaseClass_RegisterAsLabourer_(1) - 2019.03.26 at 11h 08m 15s.xml">
+      <configuration name="BaseClass.RegisterAsLabourer (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BaseClass_RegisterAsLabourer_(1) - 2019.03.26 at 11h 10m 17s.xml">
+      <configuration name="BaseClass.RegisterAsLabourer (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BaseClass_RegisterAsLabourer_(1) - 2019.03.26 at 11h 11m 26s.xml">
+      <configuration name="BaseClass.RegisterAsLabourer (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BaseClass_RegisterAsLabourer_(1) - 2019.03.26 at 11h 17m 59s.xml">
+      <configuration name="BaseClass.RegisterAsLabourer (1)" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="25" width="1366" height="686" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27987897" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34924242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -302,9 +343,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32854578" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="SonarLint" order="8" />
-      <window_info active="true" anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" visible="true" weight="0.4017094" />
+      <window_info anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" visible="true" weight="0.053859964" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.34411764" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.34375" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -315,7 +356,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.152349" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24599786" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -325,16 +366,16 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6897059" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36160713" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32854578" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="SonarLint" order="8" />
-      <window_info anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" weight="0.4014706" />
+      <window_info anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" weight="0.13727678" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.34470376" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.34375" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -413,23 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JsonData/JsonParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -457,45 +481,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="65" column="40" selection-start-line="60" selection-start-column="3" selection-end-line="65" selection-end-column="40" />
+        <state relative-caret-position="188">
+          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1931#1932#0" expanded="true" />
-            <element signature="e#1977#1978#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+        <state relative-caret-position="520">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1767#1768#0" expanded="true" />
             <element signature="e#1809#1810#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Base.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+        <state relative-caret-position="203">
+          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Base.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="266">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="103" column="50" lean-forward="true" selection-start-line="103" selection-start-column="50" selection-end-line="103" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
