@@ -34,8 +34,15 @@ public class Base {
         registerPage.confirmSms("");
         registerPage.setPinView(pinCode, pinCode);
         registerPage.accountTypeSelector(accountType);
-        registerPage.setUpAccount(generateRandomString(5),generateRandomEmail(),null,null,null,generateRandomString(20),true,true);
-        registerPage.moreAboutYourselfView(male,generateRandomNumber(3),generateRandomNumber(2),zero_minus);
+        registerPage.setUpAccount_name_email_address(generateRandomString(5),generateRandomEmail(),generateRandomString(20));
+        registerPage.setUpAccount_Birth_date(year2000,month1,day20);
+        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_policiesAndMessages(true, true);
+        registerPage.moreAboutYou_basicData(male,generateRandomNumber(3),generateRandomNumber(2),zero_minus);
+        registerPage.moreAboutYou_skillSet(false, skillExcell, null, null);
+        registerPage.moreAboutYou_licensesAndCertificates(false,null,licenseTwo, null);
+        registerPage.moreAboutYou_education(educationVol1);
+        registerPage.moreAboutYou_languages(languageHindi, languageEnglish, null,languageGerman, null);
         registerPage.photoUpload("skip");
 
     }

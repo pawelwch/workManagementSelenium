@@ -37,9 +37,9 @@ public class RegisterWebElements {
     @FindBy(id = "fullName")  WebElement fullName;
     @FindBy(id = "email")  WebElement email;
     @FindBy(id = "dropdown-year")  WebElement yearInput;
-    @FindBy (xpath = "//*[@value='2000']") WebElement year2000;
-    @FindBy(xpath = "//*[.='January']")  WebElement month1;
-    @FindBy(xpath = "//*[@value='20']")  WebElement day20;
+    @FindBy (xpath = "//*[@value='2000']")public static WebElement year2000;
+    @FindBy(xpath = "//*[.='January']")public static  WebElement month1;
+    @FindBy(xpath = "//*[@value='20']")public static  WebElement day20;
 
     @FindBy(className = "css-1hwfws3") WebElement countrySelect;
     @FindBy(className = "css-11unzgr") WebElement firstCountryInSelector;
@@ -66,10 +66,12 @@ public class RegisterWebElements {
     @FindBy(id = "0+" )public static WebElement zero_plus;
     @FindBy(id = "0-" )public static WebElement zero_minus;
     @FindBy(className = "css-1hwfws3" ) WebElement skillsets;
+    @FindBy(xpath = "//*[@id=\"react-select-2-input\"]") WebElement skillInputTyping; //zmienic na id
     @FindBy(id = "react-select-2-option-0")public static WebElement skillExcell;
     @FindBy(id = "react-select-2-option-1")public static WebElement skillMsOffice;
     @FindBy(id = "react-select-2-option-2")public static WebElement skillProgramming;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[6]/div/div/div[1]" ) WebElement licensesAndCertificates;
+    @FindBy(id = "react-select-3-input" ) WebElement licensesInputTyping;
     @FindBy(id = "react-select-3-option-0" )public static WebElement licenseOne;
     @FindBy(id = "react-select-3-option-1" )public static WebElement licenseTwo;
     @FindBy(id = "react-select-3-option-2" )public static WebElement licenseThree;
