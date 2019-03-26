@@ -54,7 +54,6 @@ public class BaseClass extends Base {
     }
 
 
-
     /**Adnotacja @AfterClass ustawia różne konfiguracje, które będą wykonane po wykonaniu każdego testu;
      W tym przypadku adnotacja odnosi się do metody turnDown(), która powoduje zamknięcie Drivera;
      */

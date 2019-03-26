@@ -32,10 +32,8 @@ public class BaseMethods {
      * @param length Wpisujemy liczbe ciągu liczb. np wpisując "2", wypluje jakaś dwucyfrową liczbe
      * @return zwraca liczbe jako String */
     public static String generateRandomNumber (int length) {
-        for (int i=0; i<length; i++) {
-            stringBuilder.append(numbers[random.nextInt(length)]);
-        }
-        return stringBuilder.toString();
+        String number = (RandomStringUtils.randomNumeric(length));
+        return number;
     }
 
     /**Metoda, ktora generuje 9cyfrowy numer telefonu, zaczynajacy sie na "1". Ze względów bezpieczeństwa
@@ -48,11 +46,8 @@ public class BaseMethods {
     /** Metoda generuje losowy adress email.
      * @return  zwraca adress email. */
     public static String generateRandomEmail() {
-        for (int i=0; i<random.nextInt(7)+5; i++) {
-            stringBuilder.append(chars[random.nextInt(25)]);
-        }
-        stringBuilder.append("@email.com");
-        return stringBuilder.toString();
+        String email = (RandomStringUtils.randomAlphabetic(7));
+        return email+"@test.com";
     }
 
     /**Metoda porownująca komunikat, tekst zawarty w pliku json, do rzeczywistego tekstu/komunikatu na stronie
@@ -64,7 +59,6 @@ public class BaseMethods {
         if (webText!=text) {
             test.log(Status.FAIL,"Test failed");
         }
-
     }
 
     /**Metoda klika na przycisk akceptacji (sumbit), na każdej stronie, która taki przycisk posiada.

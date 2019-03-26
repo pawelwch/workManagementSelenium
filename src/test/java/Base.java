@@ -6,9 +6,9 @@ import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import static TestMethods.BaseMethods.generatePhoneNumber;
-import static TestMethods.BaseMethods.generateRandomNumber;
 
+import static TestMethods.BaseMethods.*;
+import static Pages.RegisterFactory.RegisterWebElements.*;
 
 //  Klasa bazowa która przechowuje obiekty poszczególnych klas?/Pages?
 public class Base {
@@ -34,6 +34,9 @@ public class Base {
         registerPage.confirmSms("");
         registerPage.setPinView(pinCode, pinCode);
         registerPage.accountTypeSelector(accountType);
+        registerPage.setUpAccount(generateRandomString(5),generateRandomEmail(),null,null,null,generateRandomString(20),true,true);
+        registerPage.moreAboutYourselfView(male,generateRandomNumber(3),generateRandomNumber(2),zero_minus);
+        registerPage.photoUpload("skip");
 
     }
 

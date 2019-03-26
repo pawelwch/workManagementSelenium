@@ -1,9 +1,11 @@
 
+_squid:S18589"A"getText" returns a string, there's no need to call "toString()".(ºÖµ°8¥ÅÕš-
 vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÁªÕ¨ùÿÿÿÿ8€©á—-
-vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(±ÚÇÆùÿÿÿÿ8€©á—-
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(œŠ×Õ8€©á—-
-_squid:S1858>"A"getText" returns a string, there's no need to call "toString()".(ºÖµ°8¥ÅÕš-
-Ssquid:S2209>"5Change this instance-reference to a static reference.(ºÖµ°8¥ÅÕš-
-Xsquid:S2209I"5Change this instance-reference to a static reference.(¡óµøÿÿÿÿ8“Ìéâ—-
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ñ¥…Ã8€©á—-
+Nsquid:S1068"+Remove this unused "numbers" private field.(ÁªÕ¨ùÿÿÿÿ8†“´ª›-
 ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬Ï±à8€©á—-
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ñ¥…Ã8€©á—-
+Xsquid:S2209C"5Change this instance-reference to a static reference.(¡óµøÿÿÿÿ8“Ìéâ—-
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(œŠ×Õ8€©á—-
+Ssquid:S22099"5Change this instance-reference to a static reference.(ºÖµ°8¥ÅÕš-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(±ÚÇÆùÿÿÿÿ8€©á—-
+squid:S1488#"^Immediately return this expression instead of assigning it to the temporary variable "number".(á°ç•ıÿÿÿÿ8 Ü´ª›-

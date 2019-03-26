@@ -1,6 +1,6 @@
 
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Í‡§»ÿÿÿÿÿ
 rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Š°Ì™
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Í‡§»ÿÿÿÿÿ
 bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ø©Æò
 osquid:UselessImportCheck"?Remove this unused import 'Pages.RegisterFactory.RegisterPage'.(è»ê—ûÿÿÿÿ8®éƒˆ™-
 gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(½çÇ­þÿÿÿÿ
