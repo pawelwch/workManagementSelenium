@@ -23,10 +23,6 @@ public class Base {
     ConfigureMethods configureMethods;
     JsonParser jsonParser;
 
-    /**Adnotacja @BeforeClass ustawia różne konfigurację które będą wykonane przez wykonaniem każdego testu;
-     Adnotacja odnosi się do metody setUpBrowser(), która setupuje Driver w odpowiedni sposób;
-     */
-
 
     void registerLabourer(WebElement accountType) {
         String pinCode = generateRandomNumber(6);
@@ -58,13 +54,14 @@ public class Base {
     void tooManyPhoneDigits() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generateRandomNumber(10));
+        registerPage.registerCompletePhone(generatePhoneNumber()+1);
     }
 
     void tooLittleDigits() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generateRandomNumber(8));
+        registerPage.registerCompletePhone(generatePhoneNumber());
+        // do poprawy
     }
 
     void lettersInPhoneInput() {
