@@ -5,19 +5,18 @@ import Pages.RegisterFactory.RegisterPage;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 import org.testng.annotations.*;
 
 import static Pages.RegisterFactory.RegisterWebElements.*;
 import static TestMethods.ConfigureMethods.browserPicker;
 import static TestMethods.ConfigureMethods.sleep;
 
-/**Klasa BaseClass przechowuje TestCasy wraz z adnotacjami dotyczącymi wykonywania testów;*/
-public class BaseClass extends Base {
+/**Klasa TestCases przechowuje TestCasy wraz z adnotacjami dotyczącymi wykonywania testów;*/
+public class TestCases extends Register {
 
 
-    /**Konstruktor klasy BaseClass, który przechowuje w parametrze zmienną driver, która jest obiektu typu WebDriver;*/
-    public BaseClass () {
+    /**Konstruktor klasy TestCases, który przechowuje w parametrze zmienną driver, która jest obiektu typu WebDriver;*/
+    public TestCases() {
         PageFactory.initElements(driver, this);
     }
 
@@ -103,6 +102,38 @@ public class BaseClass extends Base {
     void EmptyPinFields() {
         emptyPinFields();
     }
+
+    @Test
+    void SetupAccountWithoutFullNameField() {
+        setupAccountWithoutFullName();
+    }
+
+    @Test
+    void SetupAccountWithoutDateOfBirth() {
+        setupAccountWithoutDateOfBirth();
+    }
+
+    @Test
+    void SetupAccountWithoutCity() {
+        setupAccountWithoutCity();
+    }
+
+    @Test
+    void SetupAccountWithoutAddress() {
+        setupAccountWithoutAddress();
+    }
+
+    @Test
+    void SetupAccountWithoutPolicies() {
+        setupAccountWithoutPolicies();
+    }
+
+
+
+
+
+
+
 
     /**Adnotacja @AfterClass ustawia różne konfiguracje, które będą wykonane po wykonaniu każdego testu;
      W tym przypadku adnotacja odnosi się do metody turnDown(), która powoduje zamknięcie Drivera;

@@ -11,7 +11,7 @@ import static TestMethods.BaseMethods.*;
 import static Pages.RegisterFactory.RegisterWebElements.*;
 
 //  Klasa bazowa która przechowuje obiekty poszczególnych klas?/Pages?
-public class Base {
+public class Register {
 
     WebDriver driver;
     HomePage homePage ;
@@ -124,5 +124,80 @@ public class Base {
         registerPage.setPinView("","");
     }
 
+    void setupAccountWithoutFullName() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        registerPage.accountTypeSelector(labourer);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address("",email,address);
+        registerPage.setUpAccount_Birth_date(year2000,month1,day20);
+        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+    }
+
+    void setupAccountWithoutDateOfBirth() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        registerPage.accountTypeSelector(labourer);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name,email,address);
+        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+    }
+
+    void setupAccountWithoutCity() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        registerPage.accountTypeSelector(labourer);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name,email,address);
+        registerPage.setUpAccount_Birth_date(year2000,month1,day20);
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+    }
+    void setupAccountWithoutAddress() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        registerPage.accountTypeSelector(labourer);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name,email,"");
+        registerPage.setUpAccount_Birth_date(year2000,month1,day20);
+        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+    }
+
+    void setupAccountWithoutPolicies() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        registerPage.accountTypeSelector(labourer);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name,email,address);
+        registerPage.setUpAccount_Birth_date(year2000,month1,day20);
+        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_policiesAndMessages(false,true);
+    }
 
 }

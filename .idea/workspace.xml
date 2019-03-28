@@ -4,18 +4,16 @@
     <list default="true" id="5368bf9a-ff35-4458-9b6e-b015f0da4aa4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/RegisterFactory/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RegisterFactory/RegisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/RegisterFactory/RegisterWebElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RegisterFactory/RegisterWebElements.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/TestMethods/BaseMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestMethods/BaseMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestMethods/ConfigureMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestMethods/ConfigureMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Base.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseClass.class" beforeDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,40 +22,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Base.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Register.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1365">
-              <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+            <state relative-caret-position="439">
+              <caret line="200" column="5" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-781">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestCases.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/BaseClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+            <state relative-caret-position="219">
+              <caret line="128" column="5" lean-forward="true" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
               <folding>
                 <element signature="e#769#770#0" expanded="true" />
                 <element signature="e#823#824#0" expanded="true" />
@@ -75,16 +61,38 @@
                 <element signature="e#2353#2354#0" expanded="true" />
                 <element signature="e#2397#2398#0" expanded="true" />
                 <element signature="e#2434#2435#0" expanded="true" />
-                <element signature="e#2477#2478#0" expanded="true" />
-                <element signature="e#2509#2510#0" expanded="true" />
-                <element signature="e#2548#2549#0" expanded="true" />
-                <element signature="e#2580#2581#0" expanded="true" />
+                <element signature="e#2473#2474#0" expanded="true" />
+                <element signature="e#2505#2506#0" expanded="true" />
+                <element signature="e#2545#2546#0" expanded="true" />
+                <element signature="e#2578#2579#0" expanded="true" />
                 <element signature="e#2624#2625#0" expanded="true" />
                 <element signature="e#2663#2664#0" expanded="true" />
-                <element signature="e#2713#2714#0" expanded="true" />
-                <element signature="e#2752#2753#0" expanded="true" />
-                <element signature="e#2793#2794#0" expanded="true" />
-                <element signature="e#2825#2826#0" expanded="true" />
+                <element signature="e#2710#2711#0" expanded="true" />
+                <element signature="e#2750#2751#0" expanded="true" />
+                <element signature="e#2789#2790#0" expanded="true" />
+                <element signature="e#2821#2822#0" expanded="true" />
+                <element signature="e#2848#2849#0" expanded="true" />
+                <element signature="e#2886#2887#0" expanded="true" />
+                <element signature="e#2959#2960#0" expanded="true" />
+                <element signature="e#3004#3005#0" expanded="true" />
+                <element signature="e#3051#3052#0" expanded="true" />
+                <element signature="e#3092#3093#0" expanded="true" />
+                <element signature="e#3148#3149#0" expanded="true" />
+                <element signature="e#3189#3190#0" expanded="true" />
+                <element signature="e#3236#3237#0" expanded="true" />
+                <element signature="e#3255#3256#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ConfigurationFile.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
+            <state relative-caret-position="20">
               <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
             </state>
           </provider>
@@ -102,24 +110,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+            <state relative-caret-position="-193">
+              <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#983#984#0" expanded="true" />
-                <element signature="e#1012#1013#0" expanded="true" />
-                <element signature="e#1990#1991#0" expanded="true" />
-                <element signature="e#2036#2037#0" expanded="true" />
+                <element signature="e#2051#2052#0" expanded="true" />
+                <element signature="e#2097#2098#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="32" column="63" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -143,7 +140,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="register" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -152,10 +149,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java" />
         <option value="$PROJECT_DIR$/ConfigurationFile.json" />
         <option value="$PROJECT_DIR$/src/test/java/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/Base.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestCases.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Register.java" />
       </list>
     </option>
   </component>
@@ -166,8 +166,8 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-9" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1911" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1048" />
@@ -178,6 +178,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,13 +247,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553726501627" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553782251398" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -265,11 +265,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BaseClass.OnlySecondPinFilledOut">
-    <configuration name="BaseClass.OnlyFirstPinFilledOut" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestCases.SetupAccountWithoutPolicies">
+    <configuration name="TestCases.OnlyFirstPinFilledOut" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lm" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BaseClass" />
+      <option name="MAIN_CLASS_NAME" value="TestCases" />
       <option name="METHOD_NAME" value="OnlyFirstPinFilledOut" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -278,10 +278,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseClass.OnlySecondPinFilledOut" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCases.OnlySecondPinFilledOut" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lm" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BaseClass" />
+      <option name="MAIN_CLASS_NAME" value="TestCases" />
       <option name="METHOD_NAME" value="OnlySecondPinFilledOut" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -290,11 +290,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseClass.TooLongPinCode" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCases.SetupAccountWithoutFullNameField" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lm" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BaseClass" />
-      <option name="METHOD_NAME" value="TooLongPinCode" />
+      <option name="MAIN_CLASS_NAME" value="TestCases" />
+      <option name="METHOD_NAME" value="SetupAccountWithoutFullNameField" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -302,11 +302,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseClass.TooManyPhoneDigits" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCases.SetupAccountWithoutPolicies" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lm" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BaseClass" />
-      <option name="METHOD_NAME" value="TooManyPhoneDigits" />
+      <option name="MAIN_CLASS_NAME" value="TestCases" />
+      <option name="METHOD_NAME" value="SetupAccountWithoutPolicies" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -314,10 +314,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseClass.TooShortPinCode" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCases.TooShortPinCode" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lm" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BaseClass" />
+      <option name="MAIN_CLASS_NAME" value="TestCases" />
       <option name="METHOD_NAME" value="TooShortPinCode" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -328,11 +328,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BaseClass.OnlySecondPinFilledOut" />
-        <item itemvalue="TestNG.BaseClass.OnlyFirstPinFilledOut" />
-        <item itemvalue="TestNG.BaseClass.TooShortPinCode" />
-        <item itemvalue="TestNG.BaseClass.TooLongPinCode" />
-        <item itemvalue="TestNG.BaseClass.TooManyPhoneDigits" />
+        <item itemvalue="TestNG.TestCases.SetupAccountWithoutPolicies" />
+        <item itemvalue="TestNG.TestCases.SetupAccountWithoutFullNameField" />
+        <item itemvalue="TestNG.TestCases.OnlySecondPinFilledOut" />
+        <item itemvalue="TestNG.TestCases.OnlyFirstPinFilledOut" />
+        <item itemvalue="TestNG.TestCases.TooShortPinCode" />
       </list>
     </recent_temporary>
   </component>
@@ -341,7 +341,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a30ac9f4-ffde-40f5-ba1a-1d000630a59b" name="Default Changelist" comment="" />
+      <changelist id="5368bf9a-ff35-4458-9b6e-b015f0da4aa4" name="Default Changelist" comment="" />
       <created>1552485952449</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -350,24 +350,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BaseClass_TooLongPinCode - 2019.03.27 at 14h 36m 20s.xml">
-      <configuration name="BaseClass.TooLongPinCode" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_TooLongPinCode - 2019.03.27 at 14h 47m 35s.xml">
-      <configuration name="BaseClass.TooLongPinCode" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_TooLongPinCode - 2019.03.27 at 14h 49m 12s.xml">
-      <configuration name="BaseClass.TooLongPinCode" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_TooShortPinCode - 2019.03.27 at 14h 58m 56s.xml">
-      <configuration name="BaseClass.TooShortPinCode" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_OnlyFirstPinFilledOut - 2019.03.27 at 15h 06m 52s.xml">
-      <configuration name="BaseClass.OnlyFirstPinFilledOut" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_OnlyFirstPinFilledOut - 2019.03.27 at 15h 07m 20s.xml">
-      <configuration name="BaseClass.OnlyFirstPinFilledOut" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="BaseClass_OnlyFirstPinFilledOut - 2019.03.27 at 15h 13m 16s.xml">
       <configuration name="BaseClass.OnlyFirstPinFilledOut" configurationId="TestNG" />
     </history-entry>
@@ -380,12 +362,30 @@
     <history-entry file="BaseClass_OnlySecondPinFilledOut - 2019.03.27 at 15h 39m 53s.xml">
       <configuration name="BaseClass.OnlySecondPinFilledOut" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="TestCases_SetupAccountWithoutFullNameField - 2019.03.28 at 14h 35m 16s.xml">
+      <configuration name="TestCases.SetupAccountWithoutFullNameField" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_SetupAccountWithoutFullNameField - 2019.03.28 at 14h 36m 53s.xml">
+      <configuration name="TestCases.SetupAccountWithoutFullNameField" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_SetupAccountWithoutFullNameField - 2019.03.28 at 14h 37m 57s.xml">
+      <configuration name="TestCases.SetupAccountWithoutFullNameField" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_SetupAccountWithoutPolicies - 2019.03.28 at 15h 09m 42s.xml">
+      <configuration name="TestCases.SetupAccountWithoutPolicies" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_SetupAccountWithoutPolicies - 2019.03.28 at 15h 10m 36s.xml">
+      <configuration name="TestCases.SetupAccountWithoutPolicies" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_SetupAccountWithoutPolicies - 2019.03.28 at 15h 11m 10s.xml">
+      <configuration name="TestCases.SetupAccountWithoutPolicies" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="1913" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17919463" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18456376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -394,7 +394,7 @@
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.87941176" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -402,7 +402,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32854578" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="SonarLint" order="8" />
-      <window_info anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" weight="0.4014706" />
+      <window_info anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" weight="0.56911767" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.34411764" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -415,7 +415,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.152349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18456376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -424,17 +424,17 @@
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6897059" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.87941176" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32854578" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="SonarLint" order="8" />
-      <window_info anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" weight="0.4014706" />
+      <window_info anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" weight="0.56911767" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.34470376" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.34411764" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -486,17 +486,53 @@
     </option>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="98" selection-start-line="98" selection-end-line="99" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ConfigurationFile.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
+        <state relative-caret-position="20">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BaseClass.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+        <state relative-caret-position="248">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-193">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+            <element signature="e#2097#2098#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-781">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestCases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="128" column="5" lean-forward="true" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
           <folding>
             <element signature="e#769#770#0" expanded="true" />
             <element signature="e#823#824#0" expanded="true" />
@@ -514,62 +550,34 @@
             <element signature="e#2353#2354#0" expanded="true" />
             <element signature="e#2397#2398#0" expanded="true" />
             <element signature="e#2434#2435#0" expanded="true" />
-            <element signature="e#2477#2478#0" expanded="true" />
-            <element signature="e#2509#2510#0" expanded="true" />
-            <element signature="e#2548#2549#0" expanded="true" />
-            <element signature="e#2580#2581#0" expanded="true" />
+            <element signature="e#2473#2474#0" expanded="true" />
+            <element signature="e#2505#2506#0" expanded="true" />
+            <element signature="e#2545#2546#0" expanded="true" />
+            <element signature="e#2578#2579#0" expanded="true" />
             <element signature="e#2624#2625#0" expanded="true" />
             <element signature="e#2663#2664#0" expanded="true" />
-            <element signature="e#2713#2714#0" expanded="true" />
-            <element signature="e#2752#2753#0" expanded="true" />
-            <element signature="e#2793#2794#0" expanded="true" />
-            <element signature="e#2825#2826#0" expanded="true" />
+            <element signature="e#2710#2711#0" expanded="true" />
+            <element signature="e#2750#2751#0" expanded="true" />
+            <element signature="e#2789#2790#0" expanded="true" />
+            <element signature="e#2821#2822#0" expanded="true" />
+            <element signature="e#2848#2849#0" expanded="true" />
+            <element signature="e#2886#2887#0" expanded="true" />
+            <element signature="e#2959#2960#0" expanded="true" />
+            <element signature="e#3004#3005#0" expanded="true" />
+            <element signature="e#3051#3052#0" expanded="true" />
+            <element signature="e#3092#3093#0" expanded="true" />
+            <element signature="e#3148#3149#0" expanded="true" />
+            <element signature="e#3189#3190#0" expanded="true" />
+            <element signature="e#3236#3237#0" expanded="true" />
+            <element signature="e#3255#3256#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="63" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2036#2037#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Base.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1365">
-          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        <state relative-caret-position="439">
+          <caret line="200" column="5" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
         </state>
       </provider>
     </entry>

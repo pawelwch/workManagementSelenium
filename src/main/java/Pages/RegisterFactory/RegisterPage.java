@@ -46,7 +46,7 @@ public class RegisterPage extends RegisterWebElements{
     public void confirmSms(String sms) {
         sleep(1000);
         waitForIt(confirmSmsCodeButton).click();
-        sleep(5000);
+        sleep(2000);
     }
 
     public void setPinView(String pin1, String pin2) {
@@ -72,6 +72,7 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(month).click();
         waitForIt(day).click();
     }
+
 
     public void setUpAccount_citySelector() {
         waitForIt(citySelector).click();

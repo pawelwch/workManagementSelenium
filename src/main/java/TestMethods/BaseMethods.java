@@ -50,6 +50,7 @@ public class BaseMethods {
         return email+"@test.com";
     }
 
+
     /**Metoda porownująca komunikat, tekst zawarty w pliku json, do rzeczywistego tekstu/komunikatu na stronie
      * @param webElement nalezy podac webElement, kory zawiera tekst/ tlumaczenie
      * @param text nalezy podac klucz tekstu, ktory chcemy sprawdzic */
