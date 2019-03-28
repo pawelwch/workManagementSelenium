@@ -21,13 +21,13 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@type='tel']") WebElement registerPhoneInput;
 
     @FindBy(className = "selected-flag")WebElement countrySelector;
-    @FindBy(xpath = "//*[@data-country-code='pl']") WebElement polishPrefix;
+    @FindBy(xpath = "//*[@data-country-code='pl']") public static WebElement polishPrefix;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[2]/div/button") WebElement submitFirstView;
     @FindBy(xpath = "//*[@href='/log-in']") WebElement logInButton;
     @FindBy(id = "smsCodeInput") WebElement smsInput;
     @FindBy(xpath = "//*[.='Continue']") WebElement confirmSmsCodeButton;
     @FindBy(xpath = "//*[@name = 'pinInput']") WebElement firstPinInput;
-    @FindBy(xpath = "//*[@name = 'pinRepea tInput']") WebElement secondPinInput;
+    @FindBy(xpath = "//*[@name = 'pinRepeatInput']") WebElement secondPinInput;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/button") WebElement pinConfirmButton;
     @FindBy(xpath = "//*[.='Labourer']") public static WebElement labourer;
     @FindBy(xpath = "//*[.='Contractor']") public static WebElement contractor;

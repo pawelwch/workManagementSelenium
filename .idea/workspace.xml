@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="5368bf9a-ff35-4458-9b6e-b015f0da4aa4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigurationFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigurationFile.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/RegisterFactory/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RegisterFactory/RegisterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/RegisterFactory/RegisterWebElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/RegisterFactory/RegisterWebElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestMethods/BaseMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestMethods/BaseMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestMethods/ConfigureMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestMethods/ConfigureMethods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Base.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseClass.class" afterDir="false" />
     </list>
@@ -19,8 +26,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Base.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+            <state relative-caret-position="-1365">
+              <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -28,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+            <state relative-caret-position="412">
+              <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
               <folding>
                 <element signature="e#769#770#0" expanded="true" />
                 <element signature="e#823#824#0" expanded="true" />
@@ -47,6 +75,16 @@
                 <element signature="e#2353#2354#0" expanded="true" />
                 <element signature="e#2397#2398#0" expanded="true" />
                 <element signature="e#2434#2435#0" expanded="true" />
+                <element signature="e#2477#2478#0" expanded="true" />
+                <element signature="e#2509#2510#0" expanded="true" />
+                <element signature="e#2548#2549#0" expanded="true" />
+                <element signature="e#2580#2581#0" expanded="true" />
+                <element signature="e#2624#2625#0" expanded="true" />
+                <element signature="e#2663#2664#0" expanded="true" />
+                <element signature="e#2713#2714#0" expanded="true" />
+                <element signature="e#2752#2753#0" expanded="true" />
+                <element signature="e#2793#2794#0" expanded="true" />
+                <element signature="e#2825#2826#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +93,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ConfigurationFile.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="23">
+              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
+                <element signature="e#1990#1991#0" expanded="true" />
+                <element signature="e#2036#2037#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+            <state relative-caret-position="357">
+              <caret line="32" column="63" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -79,6 +133,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pin</find>
+      <find>/div[2]/div/div[2]/div[3]</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -90,6 +150,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java" />
         <option value="$PROJECT_DIR$/ConfigurationFile.json" />
         <option value="$PROJECT_DIR$/src/test/java/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/Base.java" />
@@ -103,8 +166,8 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1911" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1048" />
@@ -152,6 +215,23 @@
               <item name="lm_automaticTests" type="b2602c69:ProjectViewProjectNode" />
               <item name="lm_automaticTests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Pages" type="462c0819:PsiDirectoryNode" />
+              <item name="RegisterFactory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lm_automaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm_automaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="TestMethods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lm_automaticTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lm_automaticTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -170,7 +250,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553689815989" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553726501627" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -184,48 +265,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BaseClass.TooManyPhoneDigits">
-    <configuration name="BaseClass" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lm-webAutomaticTests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BaseClass" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BaseClass.RegisterAsLabourer" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lm-webAutomaticTests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BaseClass" />
-      <option name="METHOD_NAME" value="RegisterAsLabourer" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BaseClass.Test1 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lm-webAutomaticTests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BaseClass" />
-      <option name="METHOD_NAME" value="Test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="0" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BaseClass.Test1" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.BaseClass.OnlySecondPinFilledOut">
+    <configuration name="BaseClass.OnlyFirstPinFilledOut" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lm" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BaseClass" />
-      <option name="METHOD_NAME" value="Test1" />
+      <option name="METHOD_NAME" value="OnlyFirstPinFilledOut" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseClass.OnlySecondPinFilledOut" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lm" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BaseClass" />
+      <option name="METHOD_NAME" value="OnlySecondPinFilledOut" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseClass.TooLongPinCode" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lm" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BaseClass" />
+      <option name="METHOD_NAME" value="TooLongPinCode" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -245,13 +314,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BaseClass.TooShortPinCode" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lm" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BaseClass" />
+      <option name="METHOD_NAME" value="TooShortPinCode" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BaseClass.OnlySecondPinFilledOut" />
+        <item itemvalue="TestNG.BaseClass.OnlyFirstPinFilledOut" />
+        <item itemvalue="TestNG.BaseClass.TooShortPinCode" />
+        <item itemvalue="TestNG.BaseClass.TooLongPinCode" />
         <item itemvalue="TestNG.BaseClass.TooManyPhoneDigits" />
-        <item itemvalue="TestNG.BaseClass" />
-        <item itemvalue="TestNG.BaseClass.RegisterAsLabourer" />
-        <item itemvalue="TestNG.BaseClass.Test1 (1)" />
-        <item itemvalue="TestNG.BaseClass.Test1" />
       </list>
     </recent_temporary>
   </component>
@@ -269,39 +350,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 46m 15s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
+    <history-entry file="BaseClass_TooLongPinCode - 2019.03.27 at 14h 36m 20s.xml">
+      <configuration name="BaseClass.TooLongPinCode" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 46m 38s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
+    <history-entry file="BaseClass_TooLongPinCode - 2019.03.27 at 14h 47m 35s.xml">
+      <configuration name="BaseClass.TooLongPinCode" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 48m 31s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
+    <history-entry file="BaseClass_TooLongPinCode - 2019.03.27 at 14h 49m 12s.xml">
+      <configuration name="BaseClass.TooLongPinCode" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 48m 43s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
+    <history-entry file="BaseClass_TooShortPinCode - 2019.03.27 at 14h 58m 56s.xml">
+      <configuration name="BaseClass.TooShortPinCode" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 49m 05s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
+    <history-entry file="BaseClass_OnlyFirstPinFilledOut - 2019.03.27 at 15h 06m 52s.xml">
+      <configuration name="BaseClass.OnlyFirstPinFilledOut" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BaseClass_Test1 - 2019.03.21 at 13h 50m 01s.xml">
-      <configuration name="BaseClass.Test1" configurationId="TestNG" />
+    <history-entry file="BaseClass_OnlyFirstPinFilledOut - 2019.03.27 at 15h 07m 20s.xml">
+      <configuration name="BaseClass.OnlyFirstPinFilledOut" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BaseClass_RegisterAsLabourer - 2019.03.21 at 13h 55m 06s.xml">
-      <configuration name="BaseClass.RegisterAsLabourer" configurationId="TestNG" />
+    <history-entry file="BaseClass_OnlyFirstPinFilledOut - 2019.03.27 at 15h 13m 16s.xml">
+      <configuration name="BaseClass.OnlyFirstPinFilledOut" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BaseClass - 2019.03.27 at 00h 02m 52s.xml">
-      <configuration name="BaseClass" configurationId="TestNG" />
+    <history-entry file="BaseClass_OnlyFirstPinFilledOut - 2019.03.27 at 15h 20m 32s.xml">
+      <configuration name="BaseClass.OnlyFirstPinFilledOut" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BaseClass_TooManyPhoneDigits - 2019.03.27 at 00h 04m 35s.xml">
-      <configuration name="BaseClass.TooManyPhoneDigits" configurationId="TestNG" />
+    <history-entry file="BaseClass_OnlySecondPinFilledOut - 2019.03.27 at 15h 33m 14s.xml">
+      <configuration name="BaseClass.OnlySecondPinFilledOut" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BaseClass_TooManyPhoneDigits - 2019.03.27 at 00h 06m 03s.xml">
-      <configuration name="BaseClass.TooManyPhoneDigits" configurationId="TestNG" />
+    <history-entry file="BaseClass_OnlySecondPinFilledOut - 2019.03.27 at 15h 39m 53s.xml">
+      <configuration name="BaseClass.OnlySecondPinFilledOut" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1913" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17919463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -313,14 +395,14 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3602941" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.87941176" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32854578" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="SonarLint" order="8" />
-      <window_info active="true" anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" visible="true" weight="0.4014706" />
+      <window_info anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" weight="0.4014706" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.34411764" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -404,48 +486,17 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1426">
-          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2036#2037#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ConfigurationFile.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="23">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        <state relative-caret-position="412">
+          <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
           <folding>
             <element signature="e#769#770#0" expanded="true" />
             <element signature="e#823#824#0" expanded="true" />
@@ -463,14 +514,62 @@
             <element signature="e#2353#2354#0" expanded="true" />
             <element signature="e#2397#2398#0" expanded="true" />
             <element signature="e#2434#2435#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2509#2510#0" expanded="true" />
+            <element signature="e#2548#2549#0" expanded="true" />
+            <element signature="e#2580#2581#0" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2663#2664#0" expanded="true" />
+            <element signature="e#2713#2714#0" expanded="true" />
+            <element signature="e#2752#2753#0" expanded="true" />
+            <element signature="e#2793#2794#0" expanded="true" />
+            <element signature="e#2825#2826#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="32" column="63" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1990#1991#0" expanded="true" />
+            <element signature="e#2036#2037#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Base.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        <state relative-caret-position="-1365">
+          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
         </state>
       </provider>
     </entry>

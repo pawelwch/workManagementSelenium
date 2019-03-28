@@ -10,7 +10,7 @@ import java.util.Random;
 public class BaseMethods {
 
 
-    static ConfigureMethods configureMethods;
+    public static ConfigureMethods configureMethods;
     static private Random random = new Random();
     static private StringBuilder stringBuilder = new StringBuilder();
     private final static char [] chars = "abcdefghijklmnoprstuwxyz".toCharArray();

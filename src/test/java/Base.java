@@ -4,10 +4,8 @@ import Pages.LoginFactory.LoginPage;
 import Pages.RegisterFactory.RegisterPage;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
-import io.restassured.RestAssured;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
 import static TestMethods.BaseMethods.*;
 import static Pages.RegisterFactory.RegisterWebElements.*;
@@ -78,6 +76,52 @@ public class Base {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(num);
+    }
+
+    void tooLongPinCode() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.confirmSms("");
+        String firstPin = generateRandomNumber(11);
+        // max znaków w setPinView to 10 na jeden input
+        registerPage.setPinView(firstPin,firstPin);
+    }
+
+    void tooShortPinCode() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.confirmSms("");
+        String firstPin = generateRandomNumber(5);
+        // min znaków w setPinView to 6 na jeden input
+        registerPage.setPinView(firstPin,firstPin);
+    }
+
+    void onlyFirstPinFilledOut() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.confirmSms("");
+        String firstPin = generateRandomNumber(6);
+        registerPage.setPinView(firstPin,"");
+    }
+
+    void onlySecondPinFilledOut() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.confirmSms("");
+        String firstPin = generateRandomNumber(6);
+        registerPage.setPinView("",firstPin);
+    }
+
+    void emptyPinFields() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.confirmSms("");
+        registerPage.setPinView("","");
     }
 
 

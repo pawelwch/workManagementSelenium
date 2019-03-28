@@ -99,7 +99,7 @@ public class ConfigureMethods {
 
     /** Scrolluje strone do podanego elementu
      * @param element Podajemy webElement do ktorego chcemy scrollowac widok */
-    public void ScroolToTheSomePoint(WebElement element) {
+    public static void scroolToTheSomePoint(WebElement element) {
 //        JavascriptExecutor jse = (JavascriptExecutor) driver;
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
     }

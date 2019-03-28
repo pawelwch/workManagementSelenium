@@ -32,6 +32,7 @@ public class RegisterPage extends RegisterWebElements{
     public void selectCountry() {
         sleep(1000);
         waitForIt(countrySelector).click();
+        configureMethods.scroolToTheSomePoint(polishPrefix);
         sleep(1000);
         waitForIt(polishPrefix).click();
     }
@@ -45,7 +46,7 @@ public class RegisterPage extends RegisterWebElements{
     public void confirmSms(String sms) {
         sleep(1000);
         waitForIt(confirmSmsCodeButton).click();
-        sleep(2000);
+        sleep(5000);
     }
 
     public void setPinView(String pin1, String pin2) {
