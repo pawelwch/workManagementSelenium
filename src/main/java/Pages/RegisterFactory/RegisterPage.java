@@ -95,7 +95,9 @@ public class RegisterPage extends RegisterWebElements{
     }
 
     public void moreAboutYou_basicData(WebElement gender, String height, String weight, WebElement bloodType) {
-        waitForIt(gender).click();
+        if (gender != null) {
+            waitForIt(gender).click();
+        }
         waitForIt(this.height).sendKeys(height);
         waitForIt(this.weight).sendKeys(weight);
         waitForIt(bloodType).click();
@@ -153,14 +155,19 @@ public class RegisterPage extends RegisterWebElements{
     public void moreAboutYou_languages (WebElement...args) {
         waitForIt(languages).click();
         try {
+            sleep(2000);
             waitForIt(args[0]).click();
             waitForIt(languages).click();
+            sleep(2000);
             waitForIt(args[1]).click();
             waitForIt(languages).click();
+            sleep(2000);
             waitForIt(args[2]).click();
             waitForIt(languages).click();
+            sleep(2000);
             waitForIt(args[3]).click();
             waitForIt(languages).click();
+            sleep(2000);
             waitForIt(args[4]).click();
         }catch (NullPointerException e) {
             waitForIt(height).click();

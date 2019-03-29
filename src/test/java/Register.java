@@ -215,7 +215,10 @@ public class Register {
         registerPage.setUpAccount_citySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
         registerPage.moreAboutYou_basicData(null,"180","80", a_minus);
-
+        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
+        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
+        registerPage.moreAboutYou_education(educationVol1);
+        registerPage.moreAboutYou_languages(languageEnglish,languagePolish,languageGerman,languageHindi,languageSpanish);
     }
 
 
