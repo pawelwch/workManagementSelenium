@@ -128,6 +128,11 @@ public class TestCases extends Register {
         setupAccountWithoutPolicies();
     }
 
+    @Test
+    void AboutYourselfWithoutGender() {
+        aboutYourselfWithoutGender();
+    }
+
 
 
 

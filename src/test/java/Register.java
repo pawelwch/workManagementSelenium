@@ -200,4 +200,23 @@ public class Register {
         registerPage.setUpAccount_policiesAndMessages(false,true);
     }
 
+    void aboutYourselfWithoutGender() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        registerPage.accountTypeSelector(labourer);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name,email,address);
+        registerPage.setUpAccount_Birth_date(year2000,month1,day20);
+        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+        registerPage.moreAboutYou_basicData(null,"180","80", a_minus);
+
+    }
+
+
 }
