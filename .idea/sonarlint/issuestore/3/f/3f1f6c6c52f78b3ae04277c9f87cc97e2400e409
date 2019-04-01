@@ -1,16 +1,15 @@
 
-lsquid:S11925"IDefine a constant instead of duplicating this literal "user.dir" 9 times.(ëõÃ´ıÿÿÿÿ8ÌÖ¾š-
-lsquid:S00100|"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ééˆ08à²ã¯™-
-Ssquid:S2209"5Change this instance-reference to a static reference.(ÁÜÑ¥8ÌÖ¾š-
-}squid:S1488k"_Immediately return this expression instead of assigning it to the temporary variable "element".(šŒ–ç8à²ã¯™-
-dsquid:S2142t"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8à²ã¯™-
-ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬Ï±à8ëó£á—-
-vsquid:S11929"XDefine a constant instead of duplicating this literal "webdriver.chrome.driver" 4 times.(Üšøª8ÌÖ¾š-
-nsquid:S1301R"KReplace this "switch" statement by "if" statements to increase readability.(¡šùÕıÿÿÿÿ8êøè¯™-
-\"squid:SwitchLastCaseIsDefaultCheck3""Add a default case to this switch.(¡šùÕıÿÿÿÿ8ÌÖ¾š-
-ksquid:S00112†"FDefine and throw a dedicated exception instead of using a generic one.(şñò°şÿÿÿÿ8à²ã¯™-
-“squid:S11929"uDefine a constant instead of duplicating this literal "/src/main/resources/drivers/windows/chromedriver.exe" 3 times.(Üšøª8ÌÖ¾š-
-Fsquid:S1148v"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8à²ã¯™-
-isquid:CommentedOutCodeLine}"<This block of commented-out lines of code should be removed.(îƒÓì8à²ã¯™-
-\"squid:SwitchLastCaseIsDefaultCheckR""Add a default case to this switch.(¡šùÕıÿÿÿÿ8êøè¯™-
-Asquid:S3010"#Remove this assignment of "driver".(ÁÜÑ¥8ÌÖ¾š-
+nsquid:S1301<"KReplace this "switch" statement by "if" statements to increase readability.(¡šùÕıÿÿÿÿ8ê÷¦›œ-
+}squid:S1488U"_Immediately return this expression instead of assigning it to the temporary variable "element".(šŒ–ç8ê÷¦›œ-
+Asquid:S3010"#Remove this assignment of "driver".(ÁÜÑ¥8ê÷¦›œ-
+ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬Ï±à8ê÷¦›œ-
+lsquid:S11923"IDefine a constant instead of duplicating this literal "user.dir" 5 times.(ëõÃ´ıÿÿÿÿ8ê÷¦›œ-
+isquid:CommentedOutCodeLineg"<This block of commented-out lines of code should be removed.(îƒÓì8ê÷¦›œ-
+Fsquid:S1148`"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê÷¦›œ-
+Ssquid:S2209"5Change this instance-reference to a static reference.(ÁÜÑ¥8ê÷¦›œ-
+\"squid:SwitchLastCaseIsDefaultCheck<""Add a default case to this switch.(¡šùÕıÿÿÿÿ8ê÷¦›œ-
+@squid:S1118"Hide this public constructor.(ìâÜ©úÿÿÿÿ8ê÷¦›œ-
+\"squid:SwitchLastCaseIsDefaultCheck1""Add a default case to this switch.(¡šùÕıÿÿÿÿ8ê÷¦›œ-
+nsquid:S13011"KReplace this "switch" statement by "if" statements to increase readability.(¡šùÕıÿÿÿÿ8ê÷¦›œ-
+dsquid:S2142^"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ê÷¦›œ-
+jsquid:S00112p"FDefine and throw a dedicated exception instead of using a generic one.(şñò°şÿÿÿÿ8ê÷¦›œ-

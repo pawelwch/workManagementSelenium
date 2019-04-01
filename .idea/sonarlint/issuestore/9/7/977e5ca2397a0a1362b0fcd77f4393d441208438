@@ -1,13 +1,46 @@
 
-tsquid:S001163"VRename this field "WarsawCity4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À…Œ*8ÚñÛ©›-
-Ssquid:S1444!"0Make this "public static contractor" field final(÷Â²Öûÿÿÿÿ8ñ„¸‚š-
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ø©Æò8×¥Óÿ™-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(èªá‹ûÿÿÿÿ8×¥Óÿ™-
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¾…Àùÿÿÿÿ
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‡´·•8×¥Óÿ™-
-usquid:S001161"VRename this field "WarsawCity2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãåµÁ8’±Ù©›-
-Qsquid:S1444"".Make this "public static employer" field final(ÿ¯Àûÿÿÿÿ8ñ„¸‚š-
-Lsquid:S1444 ".Make this "public static labourer" field final(²…‚8½« ‚š-
-isquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(Â¯´Ó8¥Œ±§›-
-usquid:S001162"VRename this field "WarsawCity3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰‡ù8¢àÚ©›-
-ysquid:S001160"URename this field "WarsawCity" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï—ã·øÿÿÿÿ8“ÛØ©›-
+wsquid:S3008B"TRename this field "zero_plus" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”õ€Îøÿÿÿÿ8Ïû¦›œ-
+Osquid:S14448",Make this "public static female" field final(‹ùÎÏÿÿÿÿÿ8Ïû¦›œ-
+Vsquid:S1444P"3Make this "public static educationVol2" field final(Ü±Éÿÿÿÿÿ8Ïû¦›œ-
+Osquid:S1444F"1Make this "public static skillExcell" field final(¶İÊ‡8Ïû¦›œ-
+psquid:S3008@"RRename this field "ab_plus" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯Ù¨8Ïû¦›œ-
+usquid:S3008="RRename this field "a_minus" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÃÁ˜ùÿÿÿÿ8Ïû¦›œ-
+Jsquid:S1444?"-Make this "public static b_minus" field final(û¯˜w8Ïû¦›œ-
+Ksquid:S1444@"-Make this "public static ab_plus" field final(¯Ù¨8Ïû¦›œ-
+Vsquid:S1444O"3Make this "public static educationVol1" field final(ÎãÓ¢øÿÿÿÿ8Ïû¦›œ-
+qsquid:S3008A"SRename this field "ab_minus" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”º¾ä8Ïû¦›œ-
+Qsquid:S1444Q"3Make this "public static educationVol3" field final(•Ù—8Ïû¦›œ-
+Msquid:S14447"*Make this "public static male" field final(Ë§‚­şÿÿÿÿ8Ïû¦›œ-
+Vsquid:S1444V"3Make this "public static languageHindi" field final(“¼Ôšùÿÿÿÿ8Ïû¦›œ-
+Nsquid:S1444*"+Make this "public static day20" field final(ÑÄâÛúÿÿÿÿ8Ïû¦›œ-
+Ssquid:S1444C"0Make this "public static zero_minus" field final(¿“•»üÿÿÿÿ8Ïû¦›œ-
+Jsquid:S1444<",Make this "public static a_plus" field final(ä´Ó8Ïû¦›œ-
+Xsquid:S1444T"5Make this "public static languageEnglish" field final(şÂëÈüÿÿÿÿ8Ïû¦›œ-
+osquid:S3008<"QRename this field "a_plus" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä´Ó8Ïû¦›œ-
+Rsquid:S1444S"4Make this "public static languagePolish" field final(ñØ¶ı8Ïû¦›œ-
+ssquid:S001161"URename this field "WarsawCity" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»¼÷'8Ïû¦›œ-
+Isquid:S14449"+Make this "public static other" field final( –”²8Ïû¦›œ-
+~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¾…Àùÿÿÿÿ8Ïû¦›œ-
+Wsquid:S1444U"4Make this "public static languageGerman" field final(˜¤Š¡øÿÿÿÿ8Ïû¦›œ-
+Lsquid:S1444A".Make this "public static ab_minus" field final(”º¾ä8Ïû¦›œ-
+Nsquid:S1444L"0Make this "public static licenseTwo" field final(ùè²ß8Ïû¦›œ-
+Xsquid:S1444W"5Make this "public static languageSpanish" field final(—§úÿÿÿÿ8Ïû¦›œ-
+Jsquid:S1444)",Make this "public static month1" field final(²¼Ó†8Ïû¦›œ-
+xsquid:S3008C"URename this field "zero_minus" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿“•»üÿÿÿÿ8Ïû¦›œ-
+tsquid:S3008>"QRename this field "b_plus" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó¹ş³üÿÿÿÿ8Ïû¦›œ-
+Rsquid:S1444B"/Make this "public static zero_plus" field final(”õ€Îøÿÿÿÿ8Ïû¦›œ-
+Ssquid:S1444K"0Make this "public static licenseOne" field final(ùğ„ùÿÿÿÿ8Ïû¦›œ-
+Tsquid:S1444H"6Make this "public static skillProgramming" field final(Áè8Ïû¦›œ-
+Qsquid:S1444G"3Make this "public static skillMsOffice" field final(¢¤ô¨8Ïû¦›œ-
+Usquid:S1444M"2Make this "public static licenseThree" field final(ú¤ß•şÿÿÿÿ8Ïû¦›œ-
+Osquid:S1444>",Make this "public static b_plus" field final(ó¹ş³üÿÿÿÿ8Ïû¦›œ-
+osquid:S3008?"RRename this field "b_minus" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¯˜w8Ïû¦›œ-
+Psquid:S1444="-Make this "public static a_minus" field final(ÃÃÁ˜ùÿÿÿÿ8Ïû¦›œ-
+Osquid:S1444"2Make this "public static polishPrefix" field final(Û¯8ÄÏ¡-
+Lsquid:S1444 ".Make this "public static labourer" field final(²…‚8ÄÏ¡-
+Ssquid:S1444!"0Make this "public static contractor" field final(÷Â²Öûÿÿÿÿ8ÄÏ¡-
+Qsquid:S1444"".Make this "public static employer" field final(ÿ¯Àûÿÿÿÿ8ÄÏ¡-
+Qsquid:S1444(".Make this "public static year2000" field final(Ú‚Ëªıÿÿÿÿ8ÄÏ¡-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(èªá‹ûÿÿÿÿ8ÄÏ¡-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ø©Æò8ÄÏ¡-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‡´·•8ÄÏ¡-

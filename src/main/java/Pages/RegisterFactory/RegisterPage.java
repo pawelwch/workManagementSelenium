@@ -1,14 +1,8 @@
 package Pages.RegisterFactory;
 
-import TestMethods.BaseMethods;
-import TestMethods.ConfigureMethods;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-
-import java.security.Key;
 
 import static TestMethods.BaseMethods.*;
 import static TestMethods.ConfigureMethods.*;
@@ -46,7 +40,7 @@ public class RegisterPage extends RegisterWebElements{
     public void confirmSms(String sms) {
         sleep(1000);
         waitForIt(confirmSmsCodeButton).click();
-        sleep(2000);
+        sleep(1500);
     }
 
     public void setPinView(String pin1, String pin2) {
@@ -175,14 +169,16 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(continueButtonMoreAboutU).click();
     }
 
-    public void photoUpload (String action) {
-        sleep(2000);
+    public void photoUpload (String action, String photoPath) {
+        sleep(1000);
         switch (action) {
             case "skip":
                 waitForIt(skipButton).click();
                 break;
             case "browser":
-                waitForIt(browserGallery).click();
+                uploadPhoto.sendKeys(photoPath);
+                sleep(2000);
+                waitForIt(savePhoto).click();
                 break;
             case "takePhoto":
                 waitForIt(takeAPhoto).click();
@@ -190,14 +186,28 @@ public class RegisterPage extends RegisterWebElements{
         }
     }
 
-    public void documentsUploadView (String uploadIdCard, String uploadCertificates, String idCard) {
-        waitForIt(this.uploadIdCard).click();
-        waitForIt(this.uploadCertificates).click();
-        waitForIt(this.uploadIdCard).sendKeys(idCard);
+    public void uploadIdCard (String idCardPath, String nextFile) {
+        sleep(1000);
+        uploadIdCard.sendKeys(idCardPath);
+        addNextFile.sendKeys(nextFile);
+        waitForIt(submitCardId).click();
     }
 
+    public void uploadCertificates (String CertificatesPath, String nextFile) {
+        sleep(1000);
+        uploadCertificates.sendKeys(CertificatesPath);
+        addNextFile.sendKeys(nextFile);
+        waitForIt(submitCardId).click();
+    }
 
+    public void idNumber (String idNumber) {
+        sleep(1000);
+        waitForIt(this.idNumber).sendKeys(idNumber);
+    }
 
-
+    public void continueDocumetsUploadButton () {
+        sleep(2000);
+        waitForIt(continueDocumentsUpload).click();
+    }
 
 }
