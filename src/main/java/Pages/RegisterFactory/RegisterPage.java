@@ -40,7 +40,7 @@ public class RegisterPage extends RegisterWebElements{
     public void confirmSms(String sms) {
         sleep(1000);
         waitForIt(confirmSmsCodeButton).click();
-        sleep(2000);
+        sleep(1500);
     }
 
     public void setPinView(String pin1, String pin2) {
@@ -163,7 +163,7 @@ public class RegisterPage extends RegisterWebElements{
     }
 
     public void photoUpload (String action, String photoPath) {
-        sleep(2000);
+        sleep(1000);
         switch (action) {
             case "skip":
                 waitForIt(skipButton).click();
@@ -180,14 +180,14 @@ public class RegisterPage extends RegisterWebElements{
     }
 
     public void uploadIdCard (String idCardPath, String nextFile) {
-        sleep(2000);
+        sleep(1000);
         uploadIdCard.sendKeys(idCardPath);
         addNextFile.sendKeys(nextFile);
         waitForIt(submitCardId).click();
     }
 
     public void uploadCertificates (String CertificatesPath, String nextFile) {
-        sleep(2000);
+        sleep(1000);
         uploadCertificates.sendKeys(CertificatesPath);
         addNextFile.sendKeys(nextFile);
         waitForIt(submitCardId).click();
@@ -199,9 +199,8 @@ public class RegisterPage extends RegisterWebElements{
     }
 
     public void continueDocumetsUploadButton () {
-        sleep(5000);
+        sleep(2000);
         waitForIt(continueDocumentsUpload).click();
-        sleep(5000);
     }
 
 }
