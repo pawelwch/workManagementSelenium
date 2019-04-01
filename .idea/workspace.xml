@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5368bf9a-ff35-4458-9b6e-b015f0da4aa4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigurationFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigurationFile.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Register.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCases.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestCases.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+            <state relative-caret-position="7">
+              <caret line="134" selection-start-line="134" selection-end-line="134" />
               <folding>
                 <element signature="e#1981#1982#0" expanded="true" />
                 <element signature="e#2023#2024#0" expanded="true" />
@@ -62,20 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Register.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="219" lean-forward="true" selection-start-line="219" selection-end-line="219" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-80">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="419">
+              <caret line="221" column="5" lean-forward="true" selection-start-line="221" selection-start-column="5" selection-end-line="221" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -83,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+            <state relative-caret-position="20">
+              <caret line="150" selection-start-line="150" selection-end-line="150" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#983#984#0" expanded="true" />
@@ -92,6 +81,33 @@
                 <element signature="e#2051#2052#0" expanded="true" />
                 <element signature="e#2097#2098#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1">
+              <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ConfigurationFile.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -124,13 +140,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java" />
-        <option value="$PROJECT_DIR$/ConfigurationFile.json" />
         <option value="$PROJECT_DIR$/src/test/java/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/Base.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestMethods/BaseMethods.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Register.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestCases.java" />
+        <option value="$PROJECT_DIR$/ConfigurationFile.json" />
       </list>
     </option>
   </component>
@@ -142,10 +158,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -153,7 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -214,10 +229,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553849780356" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554100759821" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RunDashboard">
@@ -317,18 +333,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BaseClass_OnlyFirstPinFilledOut - 2019.03.27 at 15h 20m 32s.xml">
-      <configuration name="BaseClass.OnlyFirstPinFilledOut" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_OnlySecondPinFilledOut - 2019.03.27 at 15h 33m 14s.xml">
-      <configuration name="BaseClass.OnlySecondPinFilledOut" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BaseClass_OnlySecondPinFilledOut - 2019.03.27 at 15h 39m 53s.xml">
-      <configuration name="BaseClass.OnlySecondPinFilledOut" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestCases_SetupAccountWithoutFullNameField - 2019.03.28 at 14h 35m 16s.xml">
-      <configuration name="TestCases.SetupAccountWithoutFullNameField" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestCases_SetupAccountWithoutFullNameField - 2019.03.28 at 14h 36m 53s.xml">
       <configuration name="TestCases.SetupAccountWithoutFullNameField" configurationId="TestNG" />
     </history-entry>
@@ -347,11 +351,24 @@
     <history-entry file="TestCases_AboutYourselfWithoutGender - 2019.03.29 at 09h 47m 25s.xml">
       <configuration name="TestCases.AboutYourselfWithoutGender" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="TestCases_AboutYourselfWithoutGender - 2019.04.01 at 08h 35m 17s.xml">
+      <configuration name="TestCases.AboutYourselfWithoutGender" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_AboutYourselfWithoutGender - 2019.04.01 at 08h 36m 24s.xml">
+      <configuration name="TestCases.AboutYourselfWithoutGender" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_AboutYourselfWithoutGender - 2019.04.01 at 08h 36m 50s.xml">
+      <configuration name="TestCases.AboutYourselfWithoutGender" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_AboutYourselfWithoutGender - 2019.04.01 at 08h 38m 30s.xml">
+      <configuration name="TestCases.AboutYourselfWithoutGender" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18456376" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18993288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -368,9 +385,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32854578" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="SonarLint" order="8" />
-      <window_info active="true" anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" visible="true" weight="0.44852942" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.34411764" />
+      <window_info anchor="bottom" x="23" y="336" width="1490" height="152" id="Terminal" order="9" sideWeight="0.49932885" weight="0.44852942" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.44852942" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932885" weight="0.34411764" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -452,13 +469,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="98" selection-start-line="98" selection-end-line="99" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Pages/HomePageFactory/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -476,13 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigurationFile.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JsonData/JsonParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -490,17 +493,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestMethods/ConfigureMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="1200">
+          <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+        <state relative-caret-position="20">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#983#984#0" expanded="true" />
@@ -511,10 +514,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="221" column="5" lean-forward="true" selection-start-line="221" selection-start-column="5" selection-end-line="221" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestCases.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="7">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
           <folding>
             <element signature="e#1981#1982#0" expanded="true" />
             <element signature="e#2023#2024#0" expanded="true" />
@@ -554,10 +564,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Register.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/RegisterFactory/RegisterWebElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="219" lean-forward="true" selection-start-line="219" selection-end-line="219" />
+        <state relative-caret-position="1">
+          <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConfigurationFile.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
         </state>
       </provider>
     </entry>
