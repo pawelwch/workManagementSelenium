@@ -1,11 +1,13 @@
 
-_squid:S18589"A"getText" returns a string, there's no need to call "toString()".(ºÖµ°8¥ÅÕš-
-vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÁªÕ¨ùÿÿÿÿ8€©á—-
-Nsquid:S1068"+Remove this unused "numbers" private field.(ÁªÕ¨ùÿÿÿÿ8†“´ª›-
-ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬Ï±à8€©á—-
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ñ¥…Ã8€©á—-
-Xsquid:S2209C"5Change this instance-reference to a static reference.(¡óµøÿÿÿÿ8“Ìéâ—-
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(œŠ×Õ8€©á—-
-Ssquid:S22099"5Change this instance-reference to a static reference.(ºÖµ°8¥ÅÕš-
-vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(±ÚÇÆùÿÿÿÿ8€©á—-
-squid:S1488#"^Immediately return this expression instead of assigning it to the temporary variable "number".(á°ç•ıÿÿÿÿ8 Ü´ª›-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÁªÕ¨ùÿÿÿÿ8Àù¦›œ-
+squid:S1488#"^Immediately return this expression instead of assigning it to the temporary variable "number".(á°ç•ıÿÿÿÿ8Àù¦›œ-
+_squid:S1858:"A"getText" returns a string, there's no need to call "toString()".(ºÖµ°8Àù¦›œ-
+Ssquid:S2209:"5Change this instance-reference to a static reference.(ºÖµ°8Àù¦›œ-
+Xsquid:S2209D"5Change this instance-reference to a static reference.(¡óµøÿÿÿÿ8Àù¦›œ-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(±ÚÇÆùÿÿÿÿ8Àù¦›œ-
+‘"squid:ClassVariableVisibilityCheck"\Make configureMethods a static final constant or non-public and provide accessors if needed.(ıï¼„8Àù¦›œ-
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(œŠ×Õ8Àù¦›œ-
+ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬Ï±à8Àù¦›œ-
+Nsquid:S1068"+Remove this unused "numbers" private field.(ÁªÕ¨ùÿÿÿÿ8Àù¦›œ-
+Tsquid:S1444"6Make this "public static configureMethods" field final(ıï¼„8Àù¦›œ-
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ñ¥…Ã8Àù¦›œ-

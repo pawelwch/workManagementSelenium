@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 
 import static TestMethods.BaseMethods.*;
 import static Pages.RegisterFactory.RegisterWebElements.*;
+import static TestMethods.StaticsData.*;
 
 //  Klasa bazowa która przechowuje obiekty poszczególnych klas?/Pages?
 public class Register {
@@ -24,22 +25,29 @@ public class Register {
 
     void registerLabourer(WebElement accountType) {
         String pinCode = generateRandomNumber(6);
+        System.out.println(pinCode);
+        String phone = generatePhoneNumber();
+        System.out.println(phone);
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(phone);
         registerPage.confirmSms("");
         registerPage.setPinView(pinCode, pinCode);
         registerPage.accountTypeSelector(accountType);
         registerPage.setUpAccount_name_email_address(generateRandomString(5),generateRandomEmail(),generateRandomString(20));
-        registerPage.setUpAccount_Birth_date(year2000,month1,day20);
+        registerPage.setUpAccount_Birth_date(getYearSelector("1999"),getMonthSelector("March"),day20);
         registerPage.setUpAccount_citySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.moreAboutYou_basicData(male,generateRandomNumber(3),generateRandomNumber(2),zero_minus);
         registerPage.moreAboutYou_skillSet(true, skillExcell, null, null);
-        registerPage.moreAboutYou_licensesAndCertificates(false,null,licenseTwo, null);
+        registerPage.moreAboutYou_licensesAndCertificates(false,licenseTwo, null, null);
         registerPage.moreAboutYou_education(educationVol1);
-        registerPage.moreAboutYou_languages(languageHindi, languageEnglish, null,languageGerman, null);
-        registerPage.photoUpload("skip");
+        registerPage.moreAboutYou_languages(languageHindi, languageEnglish, languageGerman,null, null);
+        registerPage.photoUpload("browser",AVATAR);
+        registerPage.uploadIdCard(AVATAR,PDF);
+        registerPage.uploadCertificates(AVATAR, PDF);
+        registerPage.idNumber(generateRandomNumber(5));
+        registerPage.continueDocumetsUploadButton();
 
     }
 
@@ -134,7 +142,7 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address("",email,address);
-        registerPage.setUpAccount_Birth_date(year2000,month1,day20);
+        registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("February"),getDaySelector("10"));
         registerPage.setUpAccount_citySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
     }
@@ -165,7 +173,7 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
-        registerPage.setUpAccount_Birth_date(year2000,month1,day20);
+        registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("January"),day20);
         registerPage.setUpAccount_policiesAndMessages(true,true);
     }
     void setupAccountWithoutAddress() {
@@ -179,7 +187,7 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,"");
-        registerPage.setUpAccount_Birth_date(year2000,month1,day20);
+        registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("March"),day20);
         registerPage.setUpAccount_citySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
     }
@@ -195,7 +203,7 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
-        registerPage.setUpAccount_Birth_date(year2000,month1,day20);
+        registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("January"),day20);
         registerPage.setUpAccount_citySelector();
         registerPage.setUpAccount_policiesAndMessages(false,true);
     }
@@ -211,7 +219,7 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
-        registerPage.setUpAccount_Birth_date(year2000,month1,day20);
+        registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("February"),day20);
         registerPage.setUpAccount_citySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
         registerPage.moreAboutYou_basicData(null,"180","80", a_minus);

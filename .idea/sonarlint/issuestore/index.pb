@@ -1,6 +1,4 @@
 
-L
-src/test/java/BaseClass.java,4/f/4f5dbb5018c6b582ed4bd50a1f94b9f474f386f9
 a
 1src/main/java/Pages/HomePageFactory/HomePage.java,a/3/a3a309c89266203056d67aff05ef52bc977ee1fa
 7
@@ -19,9 +17,11 @@ Z
 *src/main/java/TestMethods/BaseMethods.java,0/d/0dc3c08bd6137cd5761b0b508297124187c62674
 _
 /src/main/java/TestMethods/ConfigureMethods.java,3/f/3f1f6c6c52f78b3ae04277c9f87cc97e2400e409
-G
-src/test/java/Base.java,e/9/e9b4b9c8d7ec32cf2dec4c0b1813d29bb60989a2
 V
 &src/main/java/JsonData/JsonParser.java,6/9/6989660744db2c32070cd8ad1fc353e063721052
 F
 ConfigurationFile.json,9/5/95801d37aa2a93c5c13d4fb2744453861ccba633
+K
+src/test/java/Register.java,7/4/74a4420feb510735e57917332391462935a7cf40
+L
+src/test/java/TestCases.java,f/c/fcf8ad850854a4bdf95813a2fac33ee8835b5b91

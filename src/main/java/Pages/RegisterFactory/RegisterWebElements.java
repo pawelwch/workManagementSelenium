@@ -1,5 +1,6 @@
 package Pages.RegisterFactory;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,7 +16,7 @@ public class RegisterWebElements {
     }
 
     //  Definiujemy zmieną driver która jest obiektem typu WebDriver;
-    protected WebDriver driver;
+    protected static WebDriver driver;
 
     // Lokalizujemy wszystkie elementy widoku RegisterPage za pomocą adnotacji @Findby;
     @FindBy(xpath = "//*[@type='tel']") WebElement registerPhoneInput;
@@ -33,12 +34,26 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[.='Contractor']") public static WebElement contractor;
     @FindBy(xpath = "//*[.='Employer']") public static WebElement employer;
 
-//selektgory z datą do zparametryzowania!!
+    //selektgory z datą do zparametryzowania!!
+
+    public static WebElement getYearSelector(String year) {
+        WebElement yearSelector = driver.findElement(By.xpath("//*[@value='"+year+"']"));
+        return yearSelector;
+    }
+
+    public static WebElement getMonthSelector(String month) {
+        WebElement monthSelector = driver.findElement(By.xpath("//*[.='"+month+"']"));
+        return monthSelector;
+    }
+
+    public static WebElement getDaySelector(String day) {
+        WebElement daySelector = driver.findElement(By.xpath("//*[@value='"+day+"']"));
+        return daySelector;
+    }
+
     @FindBy(id = "fullName")  WebElement fullName;
     @FindBy(id = "email")  WebElement email;
     @FindBy(id = "dropdown-year")  WebElement yearInput;
-    @FindBy (xpath = "//*[@value='2000']")public static WebElement year2000;
-    @FindBy(xpath = "//*[.='January']")public static  WebElement month1;
     @FindBy(xpath = "//*[@value='20']")public static  WebElement day20;
 
     @FindBy(className = "css-1hwfws3") WebElement countrySelect;
@@ -88,11 +103,19 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[9]/button") WebElement continueButtonMoreAboutU;
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[1]/button") WebElement skipButton;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[1]/div/button") WebElement browserGallery;
+    @FindBy (xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[1]/input") WebElement uploadPhoto;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[2]/button") WebElement savePhoto;
     @FindBy (xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[2]/button") WebElement takeAPhoto;
+
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[1]/div[3]/div/input") WebElement uploadIdCard;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/div/input") WebElement uploadCertificates;
+    /**Selektory takie jak addNextFile, cancleButton, deleteButton oraz submit wystarczy podac tylko raz, bo na widoku dodawania certyfikatów,
+     * jak i na widoku dodawania zdjec z cardId te selektory sa takie same*/
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/input[2]") WebElement addNextFile;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[3]/span[2]/button") WebElement cancleButton;
+    @FindBy(xpath = "//*[.=Delete]") WebElement deleteButton;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[2]/button") WebElement submitCardId;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[2]/p[2]/input") WebElement idNumber;
-
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[4]/button") WebElement continueDocumentsUpload;
 }

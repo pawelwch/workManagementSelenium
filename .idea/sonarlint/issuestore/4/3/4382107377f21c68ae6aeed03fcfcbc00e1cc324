@@ -1,14 +1,24 @@
 
-`squid:S00107>"<Method has 8 parameters, which is greater than 7 authorized.(Î¹šáúÿÿÿÿ8ùÿ„ª›-
-Isquid:S1172>"&Remove these unused method parameters.(Î¹šáúÿÿÿÿ8ùÿ„ª›-
-Hsquid:S1172+"*Remove this unused method parameter "sms".(¬Ÿ­ý8ª½£‚š-
-nsquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(ñÈó”ûÿÿÿÿ8”ÀÂª›-
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Çâá³8õÇ„ˆ™-
-isquid:UselessImportCheck"9Remove this unused import 'TestMethods.ConfigureMethods'.(§úÿµþÿÿÿÿ8íÆó‰™-
-Fsquid:S1125N"(Remove the literal "true" boolean value.(Úá±‡8ŒÔè©›-
-isquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(ü²‰ñ8¬Äžš-
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¾…Àùÿÿÿÿ
-nsquid:UselessImportCheck"CRemove this unused import 'org.openqa.selenium.JavascriptExecutor'.(Ë‚«»8òîÛš-
-Ysquid:UselessImportCheck".Remove this unused import 'org.testng.Assert'.(Ø£ÿ§8µŠ¼©›-
-Fsquid:S1125K"(Remove the literal "true" boolean value.(ÿÁÂæ8å—ä©›-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(í³¯Ùÿÿÿÿÿ8õÇ„ˆ™-
+Hsquid:S1172."*Remove this unused method parameter "sms".(¬Ÿ­ý8ý¦›œ-
+nsquid:S00100‘"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øü¯8¶«ðÅœ-
+Ssquid:S2209#"5Change this instance-reference to a static reference.(÷ÕÊÕ8ý¦›œ-
+]"squid:SwitchLastCaseIsDefaultCheck­""Add a default case to this switch.(ë´åÝþÿÿÿÿ8¶«ðÅœ-
+lsquid:UselessImportCheck"CRemove this unused import 'org.openqa.selenium.JavascriptExecutor'.(Ë‚«»8ý¦›œ-
+Fsquid:S1125X"(Remove the literal "true" boolean value.(ÿÁÂæ8Â’ºœ-
+Fsquid:S1125["(Remove the literal "true" boolean value.(Úá±‡8Â’ºœ-
+Fsquid:S1125l"(Remove the literal "true" boolean value.(—Î×š8¶«ðÅœ-
+rsquid:S00100W"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±£²«ýÿÿÿÿ8Â’ºœ-
+rsquid:S00100j"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìˆ“ùÿÿÿÿ8¶«ðÅœ-
+rsquid:S00100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€½æÝþÿÿÿÿ8Â’ºœ-
+rsquid:S00100a"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÆýÃúÿÿÿÿ8Â’ºœ-
+rsquid:S00100~"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢òç•þÿÿÿÿ8¶«ðÅœ-
+Gsquid:S1125€"(Remove the literal "true" boolean value.(—Î×š8¶«ðÅœ-
+]squid:UselessImportCheck"4Remove this unused import 'TestMethods.BaseMethods'.(ÊÓ8ý¦›œ-
+gsquid:UselessImportCheck"9Remove this unused import 'TestMethods.ConfigureMethods'.(§úÿµþÿÿÿÿ8ý¦›œ-
+msquid:S00100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûöà8Â’ºœ-
+~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¾…Àùÿÿÿÿ8ý¦›œ-
+nsquid:S00100™"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÑ¢æ8¶«ðÅœ-
+Wsquid:UselessImportCheck".Remove this unused import 'org.testng.Assert'.(Ø£ÿ§8ý¦›œ-
+\squid:UselessImportCheck".Remove this unused import 'java.security.Key'.(ÞÃ“úÿÿÿÿ8ý¦›œ-
+Jsquid:S1172º"&Remove these unused method parameters.(ãüßÜüÿÿÿÿ8¶«ðÅœ-
+msquid:S00100M"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éäë‘8Â’ºœ-

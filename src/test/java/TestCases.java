@@ -42,7 +42,7 @@ public class TestCases extends Register {
      */
     @BeforeMethod(alwaysRun =  true)
     void setUp(){
-        driver.get("http://18.196.86.213:3005/");
+        driver.get("http://18.196.86.213:3101/");
     }
 
     /**Adnotacja @Test jest to konkretny TestCase;
