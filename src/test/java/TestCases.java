@@ -142,7 +142,20 @@ public class TestCases extends Register {
         aboutYourselfWithoutGender();
     }
 
+    @Test
+    void AboutYourselfOnlyWithGender() {
+        aboutYourselfOnlyWithGender();
+    }
 
+    @Test
+    void WithoutProfilePicture() {
+        withoutProfilePicture();
+    }
+
+    @Test
+    void WithProfilePicture() {
+        withJpgProfilePicture();
+    }
 
 
 

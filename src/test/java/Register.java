@@ -50,6 +50,7 @@ public class Register {
         registerPage.uploadCertificates(AVATAR, PDF);
         registerPage.idNumber(generateRandomNumber(5));
         registerPage.continueDocumetsUploadButton();
+
     }
 
     void noPhoneNumber(){
@@ -138,7 +139,7 @@ public class Register {
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
-        registerPage.setPinView("123456","123456");
+        registerPage.setPinView("123456", "123456");
         registerPage.accountTypeSelector(labourer);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
@@ -153,9 +154,9 @@ public class Register {
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
-        registerPage.setPinView("123456","123456");
+        registerPage.setPinView("123456", "123456");
         registerPage.accountTypeSelector(labourer);
-        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
@@ -168,7 +169,7 @@ public class Register {
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
-        registerPage.setPinView("123456","123456");
+        registerPage.setPinView("123456", "123456");
         registerPage.accountTypeSelector(labourer);
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
@@ -182,9 +183,9 @@ public class Register {
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
-        registerPage.setPinView("123456","123456");
+        registerPage.setPinView("123456", "123456");
         registerPage.accountTypeSelector(labourer);
-        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,"");
@@ -230,5 +231,64 @@ public class Register {
         registerPage.moreAboutYou_languages(languageEnglish,languagePolish,languageGerman,languageHindi,languageSpanish);
     }
 
+    void aboutYourselfOnlyWithGender() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456", "123456");
+        registerPage.accountTypeSelector(labourer);
+        String name = generateRandomString(5) + " " + generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name, email, address);
+        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("February"), day20);
+        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_policiesAndMessages(true, true);
+        registerPage.moreAboutYou_basicData(male, "", "", null);
+        registerPage.moreAboutYou_languages(null);
+    }
 
+    void withoutProfilePicture() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456", "123456");
+        registerPage.accountTypeSelector(labourer);
+        String name = generateRandomString(5) + " " + generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name, email, address);
+        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("January"), day20);
+        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_policiesAndMessages(true, true);
+        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
+        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
+        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
+        registerPage.moreAboutYou_education(educationVol1);
+        registerPage.moreAboutYou_languages(languageEnglish, languagePolish, languageGerman, languageHindi, languageSpanish);
+        registerPage.photoUpload("skip", "");
+    }
+    void withJpgProfilePicture(){
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456", "123456");
+        registerPage.accountTypeSelector(labourer);
+        String name = generateRandomString(5) + " " + generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name, email, address);
+        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("January"), day20);
+        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_policiesAndMessages(true, true);
+        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
+        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
+        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
+        registerPage.moreAboutYou_education(educationVol1);
+        registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
+        registerPage.photoUpload("browser",  ("user.dir") + "src/main/resources/Images_And_Documents/Avatar1.jpg");
+    }
 }

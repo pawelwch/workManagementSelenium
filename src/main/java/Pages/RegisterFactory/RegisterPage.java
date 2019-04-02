@@ -94,10 +94,15 @@ public class RegisterPage extends RegisterWebElements{
     }
 
     public void moreAboutYou_basicData(WebElement gender, String height, String weight, WebElement bloodType) {
-        waitForIt(gender).click();
         waitForIt(this.height).sendKeys(height);
         waitForIt(this.weight).sendKeys(weight);
-        waitForIt(bloodType).click();
+        try {
+            waitForIt(gender).click();
+            waitForIt(bloodType).click();
+        }
+        catch (NullPointerException e) {
+
+        }
     }
 
     /**@param isManual -jeśli jest true, to wpisuje w input wygenerowany losowy ciag znakow. False- wybiera z listy gotowych skilli.
