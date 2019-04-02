@@ -291,4 +291,26 @@ public class Register {
         registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
         registerPage.photoUpload("browser",  ("user.dir") + "src/main/resources/Images_And_Documents/Avatar1.jpg");
     }
+
+    void withPngProfilePicture() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456", "123456");
+        registerPage.accountTypeSelector(labourer);
+        String name = generateRandomString(5) + " " + generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name, email, address);
+        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("January"), day20);
+        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_policiesAndMessages(true, true);
+        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
+        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
+        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
+        registerPage.moreAboutYou_education(educationVol1);
+        registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
+        registerPage.photoUpload("browser",  ("user.dir") + "src/main/resources/Images_And_Documents/pobrane.png");
+    }
 }
