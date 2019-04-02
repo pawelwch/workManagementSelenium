@@ -28,7 +28,7 @@ public class Register {
     void register(WebElement accountType, WebElement city_accountType) {
         String pinCode = generateRandomNumber(6);
         System.out.println(pinCode);
-        String phone = generatePhoneNumber();
+        String phone = generatePhone();
         System.out.println(phone);
         homePage.GoToSignUp();
         registerPage.selectCountry();
@@ -61,13 +61,13 @@ public class Register {
     void tooManyPhoneDigits() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber()+1);
+        registerPage.registerCompletePhone(generatePhone()+1);
     }
 
     void tooLittleDigits() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         // do poprawy
     }
 
@@ -80,7 +80,7 @@ public class Register {
     void repeatedPhoneNumber() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        String num = generatePhoneNumber();
+        String num = generatePhone();
         registerPage.registerCompletePhone(num);
         homePage.GoToSignUp();
         registerPage.selectCountry();
@@ -90,7 +90,7 @@ public class Register {
     void tooLongPinCode() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(11);
         // max znaków w setPinView to 10 na jeden input
@@ -100,7 +100,7 @@ public class Register {
     void tooShortPinCode() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(5);
         // min znaków w setPinView to 6 na jeden input
@@ -110,7 +110,7 @@ public class Register {
     void onlyFirstPinFilledOut() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(6);
         registerPage.setPinView(firstPin,"");
@@ -119,7 +119,7 @@ public class Register {
     void onlySecondPinFilledOut() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(6);
         registerPage.setPinView("",firstPin);
@@ -128,7 +128,7 @@ public class Register {
     void emptyPinFields() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("","");
     }
@@ -136,7 +136,7 @@ public class Register {
     void setupAccountWithoutFullName() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
         registerPage.accountTypeSelector(labourer);
@@ -151,7 +151,7 @@ public class Register {
     void setupAccountWithoutDateOfBirth() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
         registerPage.accountTypeSelector(labourer);
@@ -166,7 +166,7 @@ public class Register {
     void setupAccountWithoutCity() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
         registerPage.accountTypeSelector(labourer);
@@ -180,7 +180,7 @@ public class Register {
     void setupAccountWithoutAddress() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
         registerPage.accountTypeSelector(labourer);
@@ -196,7 +196,7 @@ public class Register {
     void setupAccountWithoutPolicies() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
         registerPage.accountTypeSelector(labourer);
@@ -212,7 +212,7 @@ public class Register {
     void aboutYourselfWithoutGender() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
         registerPage.accountTypeSelector(labourer);
