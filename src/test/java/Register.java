@@ -23,7 +23,9 @@ public class Register {
     JsonParser jsonParser;
 
 
-    void registerLabourer(WebElement accountType) {
+    /**@param accountType - ustala jakie konto ma byc rejestrowane. Do wyboru: labourer, contractor, employer
+     * @param city_accountType ze względu na sztywny xpath trzeba wybrać czy rejestrujemy się jako labourer. Jesli tak to tak wpisujemy tak, jeśli nie, to contractor lub employer*/
+    void register(WebElement accountType, WebElement city_accountType) {
         String pinCode = generateRandomNumber(6);
         System.out.println(pinCode);
         String phone = generatePhoneNumber();
@@ -36,7 +38,7 @@ public class Register {
         registerPage.accountTypeSelector(accountType);
         registerPage.setUpAccount_name_email_address(generateRandomString(5),generateRandomEmail(),generateRandomString(20));
         registerPage.setUpAccount_Birth_date(getYearSelector("1999"),getMonthSelector("March"),day20);
-        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_citySelector(city_accountType);
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.moreAboutYou_basicData(male,generateRandomNumber(3),generateRandomNumber(2),zero_minus);
         registerPage.moreAboutYou_skillSet(true, skillExcell, null, null);
@@ -48,7 +50,6 @@ public class Register {
         registerPage.uploadCertificates(AVATAR, PDF);
         registerPage.idNumber(generateRandomNumber(5));
         registerPage.continueDocumetsUploadButton();
-
     }
 
     void noPhoneNumber(){
@@ -143,7 +144,7 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address("",email,address);
         registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("February"),getDaySelector("10"));
-        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_citySelector(labourer);
         registerPage.setUpAccount_policiesAndMessages(true,true);
     }
 
@@ -158,7 +159,7 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
-        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_citySelector(labourer);
         registerPage.setUpAccount_policiesAndMessages(true,true);
     }
 
@@ -188,7 +189,7 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,"");
         registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("March"),day20);
-        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_citySelector(labourer);
         registerPage.setUpAccount_policiesAndMessages(true,true);
     }
 
@@ -204,7 +205,7 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
         registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("January"),day20);
-        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_citySelector(labourer);
         registerPage.setUpAccount_policiesAndMessages(false,true);
     }
 
@@ -220,7 +221,7 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
         registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("February"),day20);
-        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_citySelector(labourer);
         registerPage.setUpAccount_policiesAndMessages(true,true);
         registerPage.moreAboutYou_basicData(null,"180","80", a_minus);
 

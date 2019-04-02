@@ -34,8 +34,6 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[.='Contractor']") public static WebElement contractor;
     @FindBy(xpath = "//*[.='Employer']") public static WebElement employer;
 
-    //selektgory z datą do zparametryzowania!!
-
     public static WebElement getYearSelector(String year) {
         WebElement yearSelector = driver.findElement(By.xpath("//*[@value='"+year+"']"));
         return yearSelector;
@@ -59,13 +57,14 @@ public class RegisterWebElements {
     @FindBy(className = "css-1hwfws3") WebElement countrySelect;
     @FindBy(className = "css-11unzgr") WebElement firstCountryInSelector;
     @FindBy(className = "css-1g6gooi") WebElement countryInput;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[5]/div/div[1]/div[2]")  WebElement citySelector;
-    @FindBy(id = "react-select-3-input")  WebElement firstCityInSelektor;
-    @FindBy(id = "react-select-3-option-0") WebElement WarsawCity;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[5]/div/div[1]/div[2]")  WebElement citySelector_LABOURER;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[1]/div[7]/div[1]/div[1]")  WebElement citySelectorc_CONTRACTOR;
+    @FindBy(id = "react-select-3-input")  WebElement cityInput;
+    @FindBy(id = "react-select-3-option-0") WebElement firstCityChoice;
     @FindBy(id = "address")  WebElement address;
     @FindBy(id = "policies")  WebElement policies;
     @FindBy(id = "messages")  WebElement messages;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[9]/button") WebElement confirmSetupAccount;
+    @FindBy(xpath = "//*[contains(text(), 'Continue')]") WebElement confirmSetupAccount;
 
     @FindBy(id = "male" )public static WebElement male;
     @FindBy(id = "female" )public static WebElement female;
@@ -118,4 +117,7 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[2]/button") WebElement submitCardId;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[2]/p[2]/input") WebElement idNumber;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[4]/button") WebElement continueDocumentsUpload;
+
+    /** CONTRACTOR SELECTORS */
+
 }
