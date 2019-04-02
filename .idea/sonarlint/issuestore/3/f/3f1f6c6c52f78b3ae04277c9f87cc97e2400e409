@@ -1,15 +1,15 @@
 
-nsquid:S1301<"KReplace this "switch" statement by "if" statements to increase readability.(¡šùÕıÿÿÿÿ8ê÷¦›œ-
-}squid:S1488U"_Immediately return this expression instead of assigning it to the temporary variable "element".(šŒ–ç8ê÷¦›œ-
-Asquid:S3010"#Remove this assignment of "driver".(ÁÜÑ¥8ê÷¦›œ-
-ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬Ï±à8ê÷¦›œ-
 lsquid:S11923"IDefine a constant instead of duplicating this literal "user.dir" 5 times.(ëõÃ´ıÿÿÿÿ8ê÷¦›œ-
 isquid:CommentedOutCodeLineg"<This block of commented-out lines of code should be removed.(îƒÓì8ê÷¦›œ-
-Fsquid:S1148`"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê÷¦›œ-
+ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬Ï±à8ê÷¦›œ-
 Ssquid:S2209"5Change this instance-reference to a static reference.(ÁÜÑ¥8ê÷¦›œ-
-\"squid:SwitchLastCaseIsDefaultCheck<""Add a default case to this switch.(¡šùÕıÿÿÿÿ8ê÷¦›œ-
-@squid:S1118"Hide this public constructor.(ìâÜ©úÿÿÿÿ8ê÷¦›œ-
 \"squid:SwitchLastCaseIsDefaultCheck1""Add a default case to this switch.(¡šùÕıÿÿÿÿ8ê÷¦›œ-
-nsquid:S13011"KReplace this "switch" statement by "if" statements to increase readability.(¡šùÕıÿÿÿÿ8ê÷¦›œ-
+Asquid:S3010"#Remove this assignment of "driver".(ÁÜÑ¥8ê÷¦›œ-
+nsquid:S1301<"KReplace this "switch" statement by "if" statements to increase readability.(¡šùÕıÿÿÿÿ8ê÷¦›œ-
 dsquid:S2142^"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ê÷¦›œ-
+\"squid:SwitchLastCaseIsDefaultCheck<""Add a default case to this switch.(¡šùÕıÿÿÿÿ8ê÷¦›œ-
+nsquid:S13011"KReplace this "switch" statement by "if" statements to increase readability.(¡šùÕıÿÿÿÿ8ê÷¦›œ-
 jsquid:S00112p"FDefine and throw a dedicated exception instead of using a generic one.(şñò°şÿÿÿÿ8ê÷¦›œ-
+}squid:S1488U"_Immediately return this expression instead of assigning it to the temporary variable "element".(šŒ–ç8ê÷¦›œ-
+@squid:S1118"Hide this public constructor.(ìâÜ©úÿÿÿÿ8ê÷¦›œ-
+Fsquid:S1148`"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê÷¦›œ-

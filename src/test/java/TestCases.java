@@ -50,7 +50,16 @@ public class TestCases extends Register {
      */
     @Test
     void RegisterAsLabourer() {
-        registerLabourer(labourer);
+        register(labourer, labourer); }
+
+    @Test
+    void RegisterAsContractor() {
+        register(contractor, contractor);
+    }
+
+    @Test
+    void RegisterAsEmployer() {
+        register(employer, contractor);
     }
 
     @Test

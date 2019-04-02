@@ -23,10 +23,12 @@ public class Register {
     JsonParser jsonParser;
 
 
-    void registerLabourer(WebElement accountType) {
+    /**@param accountType - ustala jakie konto ma byc rejestrowane. Do wyboru: labourer, contractor, employer
+     * @param city_accountType ze względu na sztywny xpath trzeba wybrać czy rejestrujemy się jako labourer. Jesli tak to tak wpisujemy tak, jeśli nie, to contractor lub employer*/
+    void register(WebElement accountType, WebElement city_accountType) {
         String pinCode = generateRandomNumber(6);
         System.out.println(pinCode);
-        String phone = generatePhoneNumber();
+        String phone = generatePhone();
         System.out.println(phone);
         homePage.GoToSignUp();
         registerPage.selectCountry();
@@ -36,7 +38,7 @@ public class Register {
         registerPage.accountTypeSelector(accountType);
         registerPage.setUpAccount_name_email_address(generateRandomString(5),generateRandomEmail(),generateRandomString(20));
         registerPage.setUpAccount_Birth_date(getYearSelector("1999"),getMonthSelector("March"),day20);
-        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_citySelector(city_accountType);
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.moreAboutYou_basicData(male,generateRandomNumber(3),generateRandomNumber(2),zero_minus);
         registerPage.moreAboutYou_skillSet(true, skillExcell, null, null);
@@ -48,7 +50,6 @@ public class Register {
         registerPage.uploadCertificates(AVATAR, PDF);
         registerPage.idNumber(generateRandomNumber(5));
         registerPage.continueDocumetsUploadButton();
-
     }
 
     void noPhoneNumber(){
@@ -60,13 +61,13 @@ public class Register {
     void tooManyPhoneDigits() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber()+1);
+        registerPage.registerCompletePhone(generatePhone()+1);
     }
 
     void tooLittleDigits() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         // do poprawy
     }
 
@@ -79,7 +80,7 @@ public class Register {
     void repeatedPhoneNumber() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        String num = generatePhoneNumber();
+        String num = generatePhone();
         registerPage.registerCompletePhone(num);
         homePage.GoToSignUp();
         registerPage.selectCountry();
@@ -89,7 +90,7 @@ public class Register {
     void tooLongPinCode() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(11);
         // max znaków w setPinView to 10 na jeden input
@@ -99,7 +100,7 @@ public class Register {
     void tooShortPinCode() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(5);
         // min znaków w setPinView to 6 na jeden input
@@ -109,7 +110,7 @@ public class Register {
     void onlyFirstPinFilledOut() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(6);
         registerPage.setPinView(firstPin,"");
@@ -118,7 +119,7 @@ public class Register {
     void onlySecondPinFilledOut() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(6);
         registerPage.setPinView("",firstPin);
@@ -127,7 +128,7 @@ public class Register {
     void emptyPinFields() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("","");
     }
@@ -135,7 +136,7 @@ public class Register {
     void setupAccountWithoutFullName() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
         registerPage.accountTypeSelector(labourer);
@@ -143,14 +144,14 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address("",email,address);
         registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("February"),getDaySelector("10"));
-        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_citySelector(labourer);
         registerPage.setUpAccount_policiesAndMessages(true,true);
     }
 
     void setupAccountWithoutDateOfBirth() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
         registerPage.accountTypeSelector(labourer);
@@ -158,14 +159,14 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
-        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_citySelector(labourer);
         registerPage.setUpAccount_policiesAndMessages(true,true);
     }
 
     void setupAccountWithoutCity() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
         registerPage.accountTypeSelector(labourer);
@@ -179,7 +180,7 @@ public class Register {
     void setupAccountWithoutAddress() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
         registerPage.accountTypeSelector(labourer);
@@ -188,14 +189,14 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,"");
         registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("March"),day20);
-        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_citySelector(labourer);
         registerPage.setUpAccount_policiesAndMessages(true,true);
     }
 
     void setupAccountWithoutPolicies() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
         registerPage.accountTypeSelector(labourer);
@@ -204,14 +205,14 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
         registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("January"),day20);
-        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_citySelector(labourer);
         registerPage.setUpAccount_policiesAndMessages(false,true);
     }
 
     void aboutYourselfWithoutGender() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhoneNumber());
+        registerPage.registerCompletePhone(generatePhone());
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
         registerPage.accountTypeSelector(labourer);
@@ -220,7 +221,7 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
         registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("February"),day20);
-        registerPage.setUpAccount_citySelector();
+        registerPage.setUpAccount_citySelector(labourer);
         registerPage.setUpAccount_policiesAndMessages(true,true);
         registerPage.moreAboutYou_basicData(null,"180","80", a_minus);
         registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);

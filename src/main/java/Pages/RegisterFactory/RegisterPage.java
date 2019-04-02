@@ -67,12 +67,17 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(day).click();
     }
 
-
-    public void setUpAccount_citySelector() {
-        waitForIt(citySelector).click();
-        waitForIt(firstCityInSelektor).sendKeys("warsz");
+    /**@param element - wpisujemy czy wybor selektora odnosi się do labourera czy contractora
+     */
+    public void setUpAccount_citySelector(WebElement element) {
+        if (element == labourer)
+        waitForIt(citySelector_LABOURER).click();
+        else {
+            waitForIt(citySelectorc_CONTRACTOR).click();
+        }
+        waitForIt(cityInput).sendKeys("warsz");
         sleep(2000);
-        waitForIt(WarsawCity).click();
+        waitForIt(firstCityChoice).click();
     }
 
     /**@param policies jesli ==true, to klika w checkbox z policies, jesli false, to nie.
@@ -89,9 +94,7 @@ public class RegisterPage extends RegisterWebElements{
     }
 
     public void moreAboutYou_basicData(WebElement gender, String height, String weight, WebElement bloodType) {
-        if (gender != null) {
-            waitForIt(gender).click();
-        }
+        waitForIt(gender).click();
         waitForIt(this.height).sendKeys(height);
         waitForIt(this.weight).sendKeys(weight);
         waitForIt(bloodType).click();
@@ -149,19 +152,14 @@ public class RegisterPage extends RegisterWebElements{
     public void moreAboutYou_languages (WebElement...args) {
         waitForIt(languages).click();
         try {
-            sleep(2000);
             waitForIt(args[0]).click();
             waitForIt(languages).click();
-            sleep(2000);
             waitForIt(args[1]).click();
             waitForIt(languages).click();
-            sleep(2000);
             waitForIt(args[2]).click();
             waitForIt(languages).click();
-            sleep(2000);
             waitForIt(args[3]).click();
             waitForIt(languages).click();
-            sleep(2000);
             waitForIt(args[4]).click();
         }catch (NullPointerException e) {
             waitForIt(height).click();
