@@ -33,8 +33,8 @@ public class Register {
 
 
     /**@param accountType - ustala jakie konto ma byc rejestrowane. Do wyboru: labourer, contractor, employer
-     * @param city_accountType ze względu na sztywny xpath trzeba wybrać czy rejestrujemy się jako labourer. Jesli tak to tak wpisujemy tak, jeśli nie, to contractor lub employer*/
-    protected void register(WebElement accountType, WebElement city_accountType) {
+     * @param  accountType względu na sztywny xpath trzeba wybrać czy rejestrujemy się jako labourer. Jesli tak to tak wpisujemy tak, jeśli nie, to contractor lub employer */
+    protected void register(WebElement accountType) {
         String pinCode = generateRandomNumber(6);
         System.out.println(pinCode);
         String phone = generatePhone();
@@ -50,7 +50,7 @@ public class Register {
         registerPage.accountTypeSelector(accountType);
         registerPage.setUpAccount_name_email_address(generateRandomString(5),generateRandomEmail(),generateRandomString(20));
         registerPage.setUpAccount_Birth_date(getYearSelector("1999"),getMonthSelector("March"),day20);
-        registerPage.setUpAccount_citySelector(city_accountType);
+        registerPage.setUpAccount_citySelector(accountType);
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
@@ -354,7 +354,7 @@ public class Register {
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
 
-        protected void withPngProfilePicture() {
+        protected void pngProfilePicture() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());

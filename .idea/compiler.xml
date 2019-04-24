@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="lm" />
         <module name="lm-webAutomaticTests" />
+        <module name="lm_automaticTests" />
       </profile>
     </annotationProcessing>
   </component>

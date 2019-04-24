@@ -56,13 +56,13 @@ public class RegisterTC extends Register {
      Adnotacja odnosi się do wykonania konkretnej metody odpowiadjącej konkretnemu TestCase;
      */
     @Test
-    void RegisterAsLabourer_SUCCESS() { register(labourer, labourer); }
+    void RegisterAsLabourer_SUCCESS() { register(labourer); }
 
     @Test
-    void RegisterAsContractor_SUCCESS() { register(contractor, contractor); }
+    void RegisterAsContractor_SUCCESS() { register(contractor); }
 
     @Test
-    void RegisterAsEmployer_SUCCESS() { register(employer, contractor); }
+    void RegisterAsEmployer_SUCCESS() { register(employer); }
 
     @Test
     void NoPhoneNumber() {
@@ -161,6 +161,11 @@ public class RegisterTC extends Register {
     @Test
     void WithProfilePicture() {
         withJpgProfilePicture();
+    }
+
+    @Test
+    void PNGProfilePicture() {
+        pngProfilePicture();
     }
 
 
