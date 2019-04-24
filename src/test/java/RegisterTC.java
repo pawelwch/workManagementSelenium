@@ -65,6 +65,10 @@ public class RegisterTC extends Register {
     void RegisterAsEmployer_SUCCESS() { register(employer); }
 
     @Test
+    void AddOffer_SUCCESS () {
+    }
+
+    @Test
     void NoPhoneNumber() {
         noPhoneNumber();
     }
@@ -139,13 +143,9 @@ public class RegisterTC extends Register {
         setupAccountWithoutPolicies();
     }
 
-//    @Test
-//    void AboutYourselfWithoutGender() {
-//        aboutYourselfWithoutGender();
-//    }
-
     @Test
-    void AddOffer_SUCCESS () {
+    void AboutYourselfWithoutGender() {
+        aboutYourselfWithoutGender();
     }
 
     @Test
@@ -154,8 +154,8 @@ public class RegisterTC extends Register {
     }
 
     @Test
-    void WithoutProfilePicture() {
-        withoutProfilePicture();
+    void NoProfilePicture() {
+        noProfilePicture();
     }
 
     @Test

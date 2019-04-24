@@ -299,7 +299,7 @@ public class Register {
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
 
-        protected void withoutProfilePicture() {
+        protected void noProfilePicture() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -378,7 +378,7 @@ public class Register {
         registerPage.moreAboutYou_education(educationVol1);
         registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
         registerPage.confirm_moreAboutYou();
-        registerPage.photoUpload("browser",  ("user.dir") + "src/main/resources/Images_And_Documents/pobrane.png");
+        registerPage.photoUpload("browser",  PNG);
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
 }
