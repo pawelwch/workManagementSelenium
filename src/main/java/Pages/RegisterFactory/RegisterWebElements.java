@@ -24,12 +24,15 @@ public class RegisterWebElements {
     @FindBy(className = "selected-flag")WebElement countrySelector;
     @FindBy(xpath = "//*[@data-country-code='pl']") public static WebElement polishPrefix;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[2]/div/button") WebElement submitFirstView;
+    @FindBy(className = "error-message") public static WebElement errorPhoneInput;
+
     @FindBy(xpath = "//*[@href='/log-in']") WebElement logInButton;
     @FindBy(id = "smsCodeInput") WebElement smsInput;
     @FindBy(xpath = "//*[.='Continue']") WebElement confirmSmsCodeButton;
+
     @FindBy(xpath = "//*[@name = 'pinInput']") WebElement firstPinInput;
     @FindBy(xpath = "//*[@name = 'pinRepeatInput']") WebElement secondPinInput;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/button") WebElement pinConfirmButton;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/button") public static WebElement pinConfirmButton;
     @FindBy(xpath = "//*[.='Labourer']") public static WebElement labourer;
     @FindBy(xpath = "//*[.='Contractor']") public static WebElement contractor;
     @FindBy(xpath = "//*[.='Employer']") public static WebElement employer;
@@ -54,10 +57,10 @@ public class RegisterWebElements {
     @FindBy(id = "dropdown-year")  WebElement yearInput;
     @FindBy(xpath = "//*[@value='20']")public static  WebElement day20;
 
-    @FindBy(className = "css-1hwfws3") WebElement countrySelect;
-    @FindBy(className = "css-11unzgr") WebElement firstCountryInSelector;
+    @FindBy(id = "react-select-2-input") WebElement countrySelect;
+    @FindBy(xpath = "//*[@id=\"react-select-2-option-0\"]") WebElement firstCountryInSelector;
     @FindBy(className = "css-1g6gooi") WebElement countryInput;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[5]/div/div[1]/div[2]")  WebElement citySelector_LABOURER;
+    @FindBy(xpath = "//*[@id=\"react-select-3-input\"]")  WebElement citySelector_LABOURER;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[1]/div[7]/div[1]/div[1]")  WebElement citySelectorc_CONTRACTOR;
     @FindBy(id = "react-select-3-input")  WebElement cityInput;
     @FindBy(id = "react-select-3-option-0") WebElement firstCityChoice;

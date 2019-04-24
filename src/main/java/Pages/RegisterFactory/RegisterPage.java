@@ -21,8 +21,14 @@ public class RegisterPage extends RegisterWebElements{
     }
 
     /**Definiujemy metodę przekazująca w parametrze wartość typu String.
-        Wykonanie metody z parametrem spowoduje przekazanie parametru do elementu strony registerPhoneInput oraz kliknięcie submitFirstView;
-     */
+        Wykonanie metody z parametrem spowoduje przekazanie parametru do elementu strony registerPhoneInput oraz kliknięcie submitFirstView;*/
+
+    public void logiIn () {
+        waitForIt(logInButton).click();
+    }
+
+
+
     public void selectCountry() {
         sleep(1000);
         waitForIt(countrySelector).click();
@@ -32,9 +38,12 @@ public class RegisterPage extends RegisterWebElements{
     }
 
     public void registerCompletePhone(String phone) {
-      waitForIt(registerPhoneInput).sendKeys(phone);
-        waitForIt(submitFirstView).click();
+        waitForIt(registerPhoneInput).sendKeys(Keys.chord(Keys.CONTROL, "a",Keys.DELETE));
+        waitForIt(registerPhoneInput).sendKeys(phone);
+    }
 
+    public void submitPhone () {
+        waitForIt(submitFirstView).click();
     }
 
     public void confirmSms(String sms) {
@@ -47,7 +56,16 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(firstPinInput).sendKeys(pin1);
         waitForIt(secondPinInput).sendKeys(pin2);
         sleep(1500);
+    }
+
+    public void confirmPin () {
         waitForIt(pinConfirmButton).click();
+    }
+
+    public String checkDisableButton (WebElement disableButton) {
+        String isDisable = waitForIt(disableButton).getAttribute("disabled");
+        System.out.println(isDisable);
+        return isDisable;
     }
 
     public void accountTypeSelector(WebElement accountType) {
@@ -80,6 +98,12 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(firstCityChoice).click();
     }
 
+    public void setUpAccount_countrySelector() {
+            waitForIt(countrySelect).sendKeys("Polan");
+        sleep(2000);
+        waitForIt(firstCountryInSelector).click();
+    }
+
     /**@param policies jesli ==true, to klika w checkbox z policies, jesli false, to nie.
      * @param messages jesli ==true, to klika w checkbox ze zgodą messeges, jesli false, to nie.
      *                 Metoda dodatkowo kończy się kliknięciem w button Continue */
@@ -90,6 +114,9 @@ public class RegisterPage extends RegisterWebElements{
         if (messages==true) {
             waitForIt(this.messages).click();
         }
+    }
+
+    public void confirm_SetUpAccount () {
         waitForIt(confirmSetupAccount).click();
     }
 
@@ -169,6 +196,9 @@ public class RegisterPage extends RegisterWebElements{
         }catch (NullPointerException e) {
             waitForIt(height).click();
         }
+    }
+
+    public void confirm_moreAboutYou () {
         waitForIt(continueButtonMoreAboutU).click();
     }
 

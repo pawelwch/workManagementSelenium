@@ -1,19 +1,22 @@
 
-rsquid:S00100X"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±£²«ıÿÿÿÿ8³á»Â-
-nsquid:S00100œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÑ¢æ8³á»Â-
-ssquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢òç•şÿÿÿÿ8³á»Â-
-rsquid:S00100G"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿî×•üÿÿÿÿ8³á»Â-
-Fsquid:S1125\"(Remove the literal "true" boolean value.(Úá±‡8ÃÜÁ-
-rsquid:S00100b"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÆıÃúÿÿÿÿ8³á»Â-
-Fsquid:S1125Y"(Remove the literal "true" boolean value.(ÿÁÂæ8ÃÜÁ-
-nsquid:S00100”"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øü¯8³á»Â-
-Hsquid:S1172("*Remove this unused method parameter "sms".(¬Ÿ­ı8³á»Â-
-Fsquid:S1125o"(Remove the literal "true" boolean value.(—Î×š8ÃÜÁ-
-Gsquid:S1125ƒ"(Remove the literal "true" boolean value.(—Î×š8ÃÜÁ-
-rsquid:S00100m"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìˆ“ùÿÿÿÿ8³á»Â-
-]"squid:SwitchLastCaseIsDefaultCheck°""Add a default case to this switch.(ë´åİşÿÿÿÿ8ÃÜÁ-
-msquid:S00100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûöà8³á»Â-
+ssquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢òç•şÿÿÿÿ8³á»Â-
 ~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¾…Àùÿÿÿÿ8ı¦›œ-
-rsquid:S001009"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€½æİşÿÿÿÿ8³á»Â-
-qsquid:S00117Ç"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ«´8ÃÜÁ-
-Ssquid:S2209"5Change this instance-reference to a static reference.(÷ÕÊÕ8³á»Â-
+rsquid:S00100e"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±£²«ıÿÿÿÿ8³÷æ-
+msquid:S00100N"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûöà8³÷æ-
+Fsquid:S1125|"(Remove the literal "true" boolean value.(—Î×š8ÃÜÁ-
+Gsquid:S1125"(Remove the literal "true" boolean value.(—Î×š8ÃÜÁ-
+usquid:S3973X"WUse curly braces or indentation to denote the code conditionally executed by this "if".(â¢ÔÖ8³÷æ-
+rsquid:S00100z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìˆ“ùÿÿÿÿ8³á»Â-
+nsquid:S00100¡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øü¯8³á»Â-
+nsquid:S00100©"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÑ¢æ8³á»Â-
+Hsquid:S11721"*Remove this unused method parameter "sms".(¬Ÿ­ı8³á»Â-
+Fsquid:S1125i"(Remove the literal "true" boolean value.(Úá±‡8³÷æ-
+qsquid:S00117Ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ«´8ÃÜÁ-
+rsquid:S00100o"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÆıÃúÿÿÿÿ8³÷æ-
+]"squid:SwitchLastCaseIsDefaultCheck½""Add a default case to this switch.(ë´åİşÿÿÿÿ8ÃÜÁ-
+Ssquid:S2209#"5Change this instance-reference to a static reference.(÷ÕÊÕ8³á»Â-
+Fsquid:S1125f"(Remove the literal "true" boolean value.(ÿÁÂæ8³÷æ-
+rsquid:S00100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€½æİşÿÿÿÿ8³á»Â-
+[
+squid:S106@"9Replace this use of System.out or System.err by a logger.(Åú‚àùÿÿÿÿ8­Â… -
+rsquid:S00100W"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿî×•üÿÿÿÿ8­Â… -

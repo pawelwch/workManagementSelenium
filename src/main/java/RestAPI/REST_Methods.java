@@ -7,66 +7,55 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static TestMethods.BaseMethods.*;
+import static TestMethods.BaseMethods.generateRandomString;
 import static io.restassured.RestAssured.given;
 
 public class REST_Methods {
 
+    public enum DataEnum { employer, contractor, labourer}
+
     public static Response response;
     public static final String HOST = "http://18.196.86.213:3100";
+    public static String phone = generatePhone();
+    public static String email = generateRandomEmail();
+    public static String pin = "123123";
 
-    protected void checkStatusAndShowBody(int statusCode) {
+    /** Metoda sprawdza status odpowiedzi metody API oraz pokazuje ciało responsu.
+     * @param statusCode -oczekiwany przez nas kod odpowiedzi.*/
+    protected static void checkStatusAndShowBody(int statusCode) {
         response.getBody().prettyPeek();
         Assert.assertEquals(response.statusCode(), statusCode);
     }
 
-
-    public void signUp () {
-        String phone = generatePhone();
-        System.out.println(phone);
+    /**Metoda strzela do API i tworzy usera. W parametrach podajemy jedynie jaki typ konta ma być stworzony. Reszta parametrow tworzona jest ze staticów
+     * @see #phone,#email,#pin
+     * @param userType - wpisujemy typ konta. Można wybrać tylko te, które są w pliku enum
+     * @see TestMethods.DataEnum */
+    public static void setUpUser(DataEnum userType) {
+        System.out.println("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *SETUP_NEW_USER * * * * * * * * * * * * * * ** * * * * * * * * * * * * * * " );
         JSONObject paramBody = new JSONObject();
         paramBody.put("phoneNumber", phone);
+        paramBody.put("userType", userType.toString());
+        paramBody.put("fullName", generateRandomString(7));
+        paramBody.put("pin",pin);
 
+        System.out.println("PHONE: " + phone+"\nEMAIL: " + email + "\nPIN: " + pin );
         response = given()
                 .log()
                 .params()
                 .contentType(ContentType.JSON)
                 .body(paramBody.toJSONString())
                 .request()
-                .post(HOST+"/user/signup");
+                .post(HOST+"/createUser");
         checkStatusAndShowBody(200);
+        System.out.println("KOONIEC");
     }
 
-    public void SetUserProfileData() {
-        JSONObject paramBody = new JSONObject();
-        paramBody.put("fullName", generateRandomString(5));
-        paramBody.put("userType", "employer");
-        paramBody.put("pin", generateRandomNumber(6));
-        paramBody.put("dateOfBirth", "1999-06-06");
-        paramBody.put("email", generateRandomEmail());
-        paramBody.put("gender", "M");
-        paramBody.put("entity", "company");
-        paramBody.put("height", generateRandomNumber(3));
-        paramBody.put("weight", generateRandomNumber(2));
-        paramBody.put("city", "Warszawa, Mazowieckie, Poland");
-        paramBody.put("country", "Poland");
-        paramBody.put("address", generateRandomString(12));
-        paramBody.put("marketingPreference", true);
 
-        response = given()
-                .log()
-                .params()
-                .auth()
-                .oauth2("")
-                .contentType(ContentType.JSON)
-                .body(paramBody.toJSONString())
-                .request()
-                .post(HOST+"/user/signup/profileSetup");
-        checkStatusAndShowBody(200);
-    }
-
+    /**Test, który sprawdza działanie metody setUpUser() */
     @Test
     void test() {
-        signUp();
+        setUpUser(DataEnum.labourer);
     }
 
 }

@@ -1,40 +1,45 @@
 import JsonData.JsonParser;
+import JsonData.JsonParser_Notification;
 import Pages.HomePageFactory.HomePage;
 import Pages.LoginFactory.LoginPage;
 import Pages.RegisterFactory.RegisterPage;
+import RestAPI.REST_Methods;
+import TestCaseBuilders.Register;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
 
 import static Pages.RegisterFactory.RegisterWebElements.*;
+
 import static TestMethods.ConfigureMethods.browserPicker;
 import static TestMethods.ConfigureMethods.sleep;
 
-/**Klasa TestCases przechowuje TestCasy wraz z adnotacjami dotyczącymi wykonywania testów;*/
-public class TestCases extends Register {
+/**Klasa RegisterTC przechowuje TestCasy wraz z adnotacjami dotyczącymi wykonywania testów;*/
+public class RegisterTC extends Register {
 
 
-    /**Konstruktor klasy TestCases, który przechowuje w parametrze zmienną driver, która jest obiektu typu WebDriver;*/
-    public TestCases() {
+    /**Konstruktor klasy RegisterTC, który przechowuje w parametrze zmienną driver, która jest obiektu typu WebDriver;*/
+    public RegisterTC() {
         PageFactory.initElements(driver, this);
     }
 
     /**Adnotacja @BeforeClass ustawia różne konfigurację które będą wykonane przez wykonaniem każdego testu;
     Adnotacja odnosi się do metody setUpBrowser(), która setupuje Driver w odpowiedni sposób;
     */
-    @BeforeClass (alwaysRun = true)
+    @BeforeClass ()
     private void setUpBrowser() {
         JsonParser.parseJson();
+        JsonParser_Notification.parseJson();
         jsonParser = new JsonParser();
+        jsonParser_notification = new JsonParser_Notification();
         baseMethods = new BaseMethods();
         configureMethods = new ConfigureMethods(driver);
         driver = browserPicker();
-        driver.manage().window().maximize();
         homePage = new HomePage(driver);
         registerPage = new RegisterPage(driver);
         loginPage = new LoginPage(driver);
-
+        rest_methods = new REST_Methods();
     }
 
     /**Adnotacja @BeforeMethod ustawia rózne konfiguracje które będą wykokane przed wykonaniem każdej metody;
@@ -42,25 +47,22 @@ public class TestCases extends Register {
      */
     @BeforeMethod(alwaysRun =  true)
     void setUp(){
-        driver.get("http://18.196.86.213:3101/");
+        driver.manage().deleteAllCookies();
+        driver.get("http://18.196.86.213:3101");
+//        setUpUser(REST_Methods.DataEnum.labourer);
     }
 
     /**Adnotacja @Test jest to konkretny TestCase;
      Adnotacja odnosi się do wykonania konkretnej metody odpowiadjącej konkretnemu TestCase;
      */
     @Test
-    void RegisterAsLabourer() {
-        register(labourer, labourer); }
+    void RegisterAsLabourer_SUCCESS() { register(labourer, labourer); }
 
     @Test
-    void RegisterAsContractor() {
-        register(contractor, contractor);
-    }
+    void RegisterAsContractor_SUCCESS() { register(contractor, contractor); }
 
     @Test
-    void RegisterAsEmployer() {
-        register(employer, contractor);
-    }
+    void RegisterAsEmployer_SUCCESS() { register(employer, contractor); }
 
     @Test
     void NoPhoneNumber() {
@@ -137,9 +139,13 @@ public class TestCases extends Register {
         setupAccountWithoutPolicies();
     }
 
+//    @Test
+//    void AboutYourselfWithoutGender() {
+//        aboutYourselfWithoutGender();
+//    }
+
     @Test
-    void AboutYourselfWithoutGender() {
-        aboutYourselfWithoutGender();
+    void AddOffer_SUCCESS () {
     }
 
     @Test
@@ -159,8 +165,10 @@ public class TestCases extends Register {
 
 
 
-
-
+    @AfterMethod (alwaysRun = true)
+    void clearLastTestCase () {
+        driver.manage().deleteAllCookies();
+    }
 
     /**Adnotacja @AfterClass ustawia różne konfiguracje, które będą wykonane po wykonaniu każdego testu;
      W tym przypadku adnotacja odnosi się do metody turnDown(), która powoduje zamknięcie Drivera;
@@ -168,7 +176,9 @@ public class TestCases extends Register {
     @AfterTest (alwaysRun = true)
     void turnDown () {
         sleep(1000);
-        driver.close();
+        driver.manage().deleteAllCookies();
+        driver.quit();
+
     }
 
 }

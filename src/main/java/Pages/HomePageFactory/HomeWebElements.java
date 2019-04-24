@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 /**HomeWebElements - definiujemy publiczną klasę która przechowuje elementy widoku HomePage*/
 public class HomeWebElements {
 
+    protected WebDriver driver;
+
     /** Konstruktor obiektu HomeWebElements który przekazuje zmienną driver, która jest obiektem typu WebDriver;*/
     HomeWebElements (WebDriver driver) {
         this.driver = driver;
@@ -16,13 +18,23 @@ public class HomeWebElements {
     }
 
     /**  driver - utworzenie zmienneja która przechowuje obiekt typu WebDriver;*/
-    protected WebDriver driver;
 
     /**
     @Findby - adnotacja, która określa konkretną lokalizację obiektu. W tym przypadku adnotacja dotyczy przycisku,
     który jest lokalizowany na stronie i przypisywany do zmiennej signUpButton.
     Alternatywa to: WebElement signUp = driver.findElement(By.xpath(""));
     */
-    @FindBy(xpath = "//*[.='Sign up']") WebElement signUpButton;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/button[2]") WebElement signUpButton;
+    @FindBy (xpath = "//*[@type = 'password']") WebElement passwordInput;
+    @FindBy(xpath =  "//*[contains(text(), 'LOG IN')]") WebElement logInButton;
+    @FindBy(xpath =  "//*[contains(text(), 'Add job offer')]") WebElement addJobOfferButton;
 
+//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
+//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
+//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
+//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
+//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
+//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
+//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
+//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
 }

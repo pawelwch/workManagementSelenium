@@ -17,7 +17,6 @@ public class BaseMethods {
     private final static char [] numbers = "1234567890".toCharArray();
     static ExtentTest test;
 
-
     /** Metoda generuje losowe Stringi
      * @param length podajemy dlugosc danego lancucha
      * @return zwraca losowy ciag znaków. Przydatne podczas uzupelniania takich danych jak Imie czy Nazwisko */
@@ -57,9 +56,6 @@ public class BaseMethods {
     public static void checkNotify (WebElement webElement, String text) {
         String webText = configureMethods.waitForIt(webElement).getText().toString();
         Assert.assertEquals(webText, text);
-        if (webText!=text) {
-            test.log(Status.FAIL,"Test failed");
-        }
     }
 
     /**Metoda klika na przycisk akceptacji (sumbit), na każdej stronie, która taki przycisk posiada.
