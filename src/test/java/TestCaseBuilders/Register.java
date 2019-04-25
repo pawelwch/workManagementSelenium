@@ -326,7 +326,7 @@ public class Register {
         registerPage.photoUpload("skip", "");
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
-        protected void withJpgProfilePicture(){
+        protected void jpgProfilePicture(){
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -380,5 +380,65 @@ public class Register {
         registerPage.confirm_moreAboutYou();
         registerPage.photoUpload("browser",  PNG);
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
+    }
+
+    protected void documentsUploadOnlyWithIdCard() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        registerPage.submitPhone ();
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456", "123456");
+        registerPage.confirmPin();
+        registerPage.accountTypeSelector(labourer);
+        String name = generateRandomString(5) + " " + generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name, email, address);
+        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("January"), day20);
+        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_countrySelector();
+        registerPage.setUpAccount_policiesAndMessages(true, true);
+        registerPage.confirm_SetUpAccount();
+        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
+        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
+        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
+        registerPage.moreAboutYou_education(educationVol1);
+        registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
+        registerPage.confirm_moreAboutYou();
+        registerPage.photoUpload("browser",  AVATAR);
+        registerPage.uploadIdCard(IDCARD, IDCARD1);
+        //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
+
+    }
+
+    protected void documentsUploadOnlyWithCertificates() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        registerPage.submitPhone();
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456", "123456");
+        registerPage.confirmPin();
+        registerPage.accountTypeSelector(labourer);
+        String name = generateRandomString(5) + " " + generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name, email, address);
+        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("January"), day20);
+        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_countrySelector();
+        registerPage.setUpAccount_policiesAndMessages(true, true);
+        registerPage.confirm_SetUpAccount();
+        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
+        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
+        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
+        registerPage.moreAboutYou_education(educationVol1);
+        registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
+        registerPage.confirm_moreAboutYou();
+        registerPage.photoUpload("browser", AVATAR);
+        registerPage.uploadCertificates(CERT, CERT1);
+        //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
+
     }
 }

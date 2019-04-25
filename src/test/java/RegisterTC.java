@@ -159,8 +159,8 @@ public class RegisterTC extends Register {
     }
 
     @Test
-    void WithProfilePicture() {
-        withJpgProfilePicture();
+    void JPGProfilePicture() {
+        jpgProfilePicture();
     }
 
     @Test
@@ -168,6 +168,15 @@ public class RegisterTC extends Register {
         pngProfilePicture();
     }
 
+    @Test
+    void DocumentsUploadOnlyWithIdCard() {
+        documentsUploadOnlyWithIdCard();
+    }
+
+    @Test
+    void DocumentsUploadOnlyWithCertificates() {
+        documentsUploadOnlyWithCertificates();
+    }
 
 
     @AfterMethod (alwaysRun = true)
