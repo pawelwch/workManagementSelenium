@@ -43,7 +43,7 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(phone);
-        registerPage.submitPhone ();
+        registerPage.submitPhone();
         registerPage.confirmSms("");
         registerPage.setPinView(pinCode, pinCode);
         registerPage.confirmPin();
