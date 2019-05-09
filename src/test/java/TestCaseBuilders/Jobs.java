@@ -23,7 +23,6 @@ public class Jobs {
 
     protected void AddJob_SUCCESS () {
         homePage.AddOffer();
-
     }
 
 
