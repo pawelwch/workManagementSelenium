@@ -12,8 +12,8 @@ public class JobsPage extends JobsWebElements {
     }
 
     public void basicInformation(String title, String description) {
-        waitForIt(titleOfJob).sendKeys(title);
-        waitForIt(descriptionJob).sendKeys(description);
+        waitForIt(this.title).sendKeys(title);
+        waitForIt(this.description).sendKeys(description);
     }
 
     public void confirm_basicInformation() {
@@ -26,13 +26,25 @@ public class JobsPage extends JobsWebElements {
         waitForIt(firstSelectorElement).click();
     }
 
-    public void jobDetails_datePicker() {
+    /*
+    * public void jobDetails_datePicker(WebElement) {
+
         waitForIt(datePicker).click();
         waitForIt(getDay).click();
-//dokończyć datepickera
+    }
+    *
+    * */
+
+
+    public void jobDetails_employmentType(WebElement employmentType) {
+        waitForIt(employmentType).click();
     }
 
-    public void jobDetails_employmentType() {
+    public void jobDetails_assignmentType(WebElement assignmentType) {
+        waitForIt(assignmentType).click();
+    }
 
+    public void confirm_jobDetails() {
+        waitForIt(confirmJobDetails).click();
     }
 }
