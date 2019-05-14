@@ -72,6 +72,7 @@ public class RegisterWebElements {
     @FindBy(id = "male" )public static WebElement male;
     @FindBy(id = "female" )public static WebElement female;
     @FindBy(id = "other" )public static WebElement other;
+
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div/label/input" ) WebElement height;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div/label/input" ) WebElement weight;
     @FindBy(id = "a+" )public static WebElement a_plus;

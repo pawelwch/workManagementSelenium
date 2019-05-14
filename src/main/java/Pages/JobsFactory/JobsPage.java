@@ -48,6 +48,42 @@ public class JobsPage extends JobsWebElements {
         waitForIt(confirmJobDetails).click();
     }
 
+    public void numberOfLabourers(String min, String max){
+        waitForIt(minLabourers).sendKeys(min);
+        waitForIt(maxLabourers).sendKeys(max);
+    }
+
+    public void labourersDetails(WebElement gender, String minHeight, String minWeight, String minAge, String maxAge) {
+        waitForIt(gender).click();
+        waitForIt(this.minHeight).sendKeys(minHeight);
+        waitForIt(this.minWeight).sendKeys(minWeight);
+        waitForIt(this.minAge).sendKeys(minAge);
+        waitForIt(this.maxAge).sendKeys(maxAge);
+    }
+
+    //DOKONCZYC
+
+    /**@param args -wybiera język z listy dostępnych WebElementów w:
+     * @see JobsWebElements Parametr ten, to varargs, wiec moze przyjmować zmienna liczbe argumentów.
+     * dodatkowo metoda zamyka się poprzez kliknięciem w przycisk continue */
+    public void labourersDetails_languages (WebElement...args) {
+        waitForIt(languages).click();
+        try {
+            waitForIt(args[0]).click();
+            waitForIt(languages).click();
+            waitForIt(args[1]).click();
+            waitForIt(languages).click();
+            waitForIt(args[2]).click();
+            waitForIt(languages).click();
+            waitForIt(args[3]).click();
+            waitForIt(languages).click();
+            waitForIt(args[4]).click();
+        }catch (NullPointerException e) {
+            waitForIt(height).click();
+        }
+    }
+
+
 
 
 

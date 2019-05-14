@@ -33,6 +33,26 @@ public class JobsWebElements {
     @FindBy(id = "both") public static WebElement bothAssignment;
     @FindBy(xpath = "//*[contains(text(), 'Continue')]") WebElement confirmJobDetails;
 
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[1]/div[1]/div/label/input") WebElement minLabourers;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[1]/div[2]/div/label/input") WebElement maxLabourers;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[2]/div/button[1]") WebElement male;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[2]/div/button[2]") WebElement female;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[2]/div/button[3]") WebElement other;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[3]/div/label/input") WebElement minHeight;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[4]/div/label/input") WebElement minWeight;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[5]/div[1]/div/label/input") WebElement minAge;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[5]/div[2]/div/label/input") WebElement maxAge;
+
+
+    /* DOKONCZYC
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[6]/div" ) WebElement languages;
+    @FindBy(id = "" )public static WebElement languagePolish;
+    @FindBy(id = "" )public static WebElement languageEnglish;
+    @FindBy(id = "" )public static WebElement languageGerman;
+    @FindBy(id = "" )public static WebElement languageHindi;
+    @FindBy(id = "" )public static WebElement languageSpanish;
+    **/
+
 
 
 
