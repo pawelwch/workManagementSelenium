@@ -47,4 +47,8 @@ public class JobsPage extends JobsWebElements {
     public void confirm_jobDetails() {
         waitForIt(confirmJobDetails).click();
     }
+
+
+
+
 }
