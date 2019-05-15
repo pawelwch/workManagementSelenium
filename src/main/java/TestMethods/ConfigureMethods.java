@@ -28,7 +28,7 @@ public class ConfigureMethods {
     }
 
     /** Jest to konfiguracja dla Chrome, ktora pozwala wyciagnąć logi z konsoli przeglądarkowej. Nalezy umiescić w
-     * @see #browserPicker() () : new ChromeDriver(logCapabilitiesForChrome()) zamiast new ChromeDriver()*/
+     * @see #browserPicker() () : new ChromeDriver(logCapabilitiesForChrome()) zamiast new ChromeDriver()
    public static DesiredCapabilities logCapabilitiesForChrome () {
         DesiredCapabilities caps = DesiredCapabilities.chrome();
         LoggingPreferences logPrefs = new LoggingPreferences();
@@ -37,11 +37,12 @@ public class ConfigureMethods {
         return caps;
     }
 
+
     /** Metoda która wybiera przeglądarke. Plik konfiguracyjny jest w ???.json Działa na razie na FF i Chrome.
      * Drivery mozna parametryzować o np metode
      * @see #logCapabilitiesForChrome() , ktora wykazuje logi.
-     * @return Zwraca podaną przeglądarke */
-
+     * @return Zwraca podaną przeglądarke
+*/
 
     public static WebDriver browserPicker () {
 

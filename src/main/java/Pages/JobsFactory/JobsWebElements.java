@@ -35,23 +35,21 @@ public class JobsWebElements {
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[1]/div[1]/div/label/input") WebElement minLabourers;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[1]/div[2]/div/label/input") WebElement maxLabourers;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[2]/div/button[1]") WebElement male;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[2]/div/button[2]") WebElement female;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[2]/div/button[3]") WebElement other;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[2]/div/button[1]")public static WebElement male;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[2]/div/button[2]")public static WebElement female;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[2]/div/button[3]")public static WebElement other;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[3]/div/label/input") WebElement minHeight;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[4]/div/label/input") WebElement minWeight;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[5]/div[1]/div/label/input") WebElement minAge;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[5]/div[2]/div/label/input") WebElement maxAge;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[6]/div/div/div[1]" ) WebElement languages;
+    @FindBy(id = "react-select-3-option-0" )public static WebElement languagePolish;
+    @FindBy(id = "react-select-3-option-1" )public static WebElement languageEnglish;
+    @FindBy(id = "react-select-3-option-2" )public static WebElement languageGerman;
+    @FindBy(id = "react-select-3-option-3" )public static WebElement languageHindi;
+    @FindBy(id = "react-select-3-option-4" )public static WebElement languageSpanish;
+    @FindBy(id = "react-select-3-option-5" )public static WebElement languageItalian;
 
-
-    /* DOKONCZYC
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[6]/div" ) WebElement languages;
-    @FindBy(id = "" )public static WebElement languagePolish;
-    @FindBy(id = "" )public static WebElement languageEnglish;
-    @FindBy(id = "" )public static WebElement languageGerman;
-    @FindBy(id = "" )public static WebElement languageHindi;
-    @FindBy(id = "" )public static WebElement languageSpanish;
-    **/
 
 
 

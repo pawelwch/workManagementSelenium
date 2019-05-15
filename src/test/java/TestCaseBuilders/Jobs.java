@@ -4,6 +4,7 @@ import JsonData.JsonParser;
 import Pages.HomePageFactory.HomePage;
 import Pages.JobsFactory.JobsPage;
 import Pages.LoginFactory.LoginPage;
+import Pages.RegisterFactory.RegisterPage;
 import RestAPI.REST_Methods;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
@@ -15,16 +16,17 @@ import static TestMethods.BaseMethods.generateRandomString;
 public class Jobs {
 
 
-    WebDriver driver ;
-    HomePage homePage ;
-    LoginPage loginPage ;
-    JobsPage jobsPage ;
-    BaseMethods baseMethods ;
-    ConfigureMethods configureMethods ;
-    JsonParser jsonParser ;
-    REST_Methods rest_methods ;
+    public WebDriver driver ;
+    protected HomePage homePage ;
+    protected LoginPage loginPage ;
+    protected RegisterPage registerPage;
+    protected JobsPage jobsPage ;
+    protected BaseMethods baseMethods ;
+    protected ConfigureMethods configureMethods ;
+    protected JsonParser jsonParser ;
+    protected REST_Methods rest_methods ;
 
-    protected void AddJob_SUCCESS () {
+    protected void addJob_SUCCESS () {
         homePage.AddOffer();
         jobsPage.basicInformation(generateRandomString(20), generateRandomString(120));
         jobsPage.confirm_basicInformation();
@@ -33,6 +35,9 @@ public class Jobs {
         jobsPage.jobDetails_employmentType(fullTimeEmployment);
         jobsPage.jobDetails_assignmentType(individualAssignment);
         jobsPage.confirm_jobDetails();
+        jobsPage.numberOfLabourers("12", "34");
+        jobsPage.labourersDetails(male, "120","75", "20","60");
+        jobsPage.labourersDetails_languages(languagePolish,languageGerman,languageSpanish);
     }
 
 
