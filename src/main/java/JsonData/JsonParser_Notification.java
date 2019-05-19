@@ -12,6 +12,8 @@ public class JsonParser_Notification {
 
     public static String error_PhoneInput;
     public static String setUpAccount_email_no_email;
+    public static String error_SmsInput;
+    public static String error_PinCode;
 
     /**Metoda, która parsuje json'y*/
     public static void parseJson() {
@@ -20,7 +22,9 @@ public class JsonParser_Notification {
             Object object = parser.parse(new FileReader(System.getProperty("user.dir")+"/src/main/resources/Tlumaczenia.json"));
             JSONObject jsonObject = (JSONObject) object;
             error_PhoneInput = (String) jsonObject.get("error_PhoneInput");
+            error_SmsInput = (String) jsonObject.get("error_SmsInput");
             setUpAccount_email_no_email = (String) jsonObject.get("koala");
+            error_PinCode = (String) jsonObject.get("error_PinCode");
 
         } catch (ParseException | IOException e) {
             e.printStackTrace();

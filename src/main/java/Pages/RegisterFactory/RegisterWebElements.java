@@ -34,6 +34,7 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@name = 'pinInput']") WebElement firstPinInput;
     @FindBy(xpath = "//*[@name = 'pinRepeatInput']") WebElement secondPinInput;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/button") public static WebElement pinConfirmButton;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/p") public static WebElement errorPinCode;
     @FindBy(xpath = "//*[.='Labourer']") public static WebElement labourer;
     @FindBy(xpath = "//*[.='Contractor']") public static WebElement contractor;
     @FindBy(xpath = "//*[.='Employer']") public static WebElement employer;

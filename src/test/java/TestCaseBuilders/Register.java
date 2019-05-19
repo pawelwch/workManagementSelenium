@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import static JsonData.JsonParser_Notification.error_PhoneInput;
+import static JsonData.JsonParser_Notification.error_PinCode;
 import static TestMethods.BaseMethods.*;
 import static Pages.RegisterFactory.RegisterWebElements.*;
 import static TestMethods.ConfigureMethods.waitForIt;
@@ -94,6 +95,7 @@ public class Register {
         checkNotify(errorPhoneInput,error_PhoneInput);
     }
 
+    ///////////////////////////////////////////// DO ANALIZY
     protected void repeatedPhoneNumber() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
@@ -104,6 +106,7 @@ public class Register {
         registerPage.submitPhone();
         checkNotify(errorSmsInput, "");
     }
+///////////////////////////////////////////////////////
 
     protected void tooLongPinCode() {
         homePage.GoToSignUp();
@@ -135,13 +138,15 @@ public class Register {
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(6);
         registerPage.setPinView(firstPin,"");
+        registerPage.setPinView("","");
+        checkNotify(errorPinCode, error_PinCode);
     }
 
     protected void onlySecondPinFilledOut() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        registerPage.submitPhone();
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(6);
         registerPage.setPinView("",firstPin);
