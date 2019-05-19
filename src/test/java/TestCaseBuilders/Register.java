@@ -77,6 +77,7 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone()+1);
+
     }
 
     protected void tooLittleDigits() {
@@ -98,12 +99,10 @@ public class Register {
         registerPage.selectCountry();
         String num = generatePhone();
         registerPage.registerCompletePhone(num);
-        registerPage.submitPhone ();
+        registerPage.submitPhone();
         homePage.GoToSignUp();
-        registerPage.selectCountry();
-        registerPage.registerCompletePhone(num);
-        registerPage.submitPhone ();
-        //Wstawić walidacje, czy input z sms-kodem jest pusty
+        registerPage.submitPhone();
+        checkNotify(errorSmsInput, "");
     }
 
     protected void tooLongPinCode() {

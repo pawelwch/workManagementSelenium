@@ -26,8 +26,9 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[2]/div/button") WebElement submitFirstView;
     @FindBy(className = "error-message") public static WebElement errorPhoneInput;
 
+
     @FindBy(xpath = "//*[@href='/log-in']") WebElement logInButton;
-    @FindBy(id = "smsCodeInput") WebElement smsInput;
+    @FindBy(id = "smsCodeInput") public static WebElement errorSmsInput;
     @FindBy(xpath = "//*[.='Continue']") WebElement confirmSmsCodeButton;
 
     @FindBy(xpath = "//*[@name = 'pinInput']") WebElement firstPinInput;

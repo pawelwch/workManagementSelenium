@@ -1,5 +1,6 @@
 {
 "error_PhoneInput": "Incorrect phone number format",
+  "error_SmsInput": "",
 "koala": "Please provide correct email address or provide date of birth below."
 
 }
