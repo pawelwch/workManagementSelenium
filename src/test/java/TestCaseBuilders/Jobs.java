@@ -38,6 +38,7 @@ public class Jobs {
         jobsPage.numberOfLabourers("12", "34");
         jobsPage.labourersDetails(male, "120","75", "20","60");
         jobsPage.labourersDetails_languages(languagePolish,languageGerman,languageSpanish);
+        jobsPage.highligthsSection();
     }
 
 
