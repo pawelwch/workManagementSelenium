@@ -50,6 +50,18 @@ public class JobsWebElements {
     @FindBy(id = "react-select-3-option-4" )public static WebElement languageSpanish;
     @FindBy(id = "react-select-3-option-5" )public static WebElement languageItalian;
 
+    @FindBy(className = "css-vj8t7z") WebElement highlights;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[1]/div[1]/div/label/input")public static WebElement minWage;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[1]/div[2]/div/label/input") WebElement maxWage;
+    @FindBy(id = "perDay") public static WebElement perDay;
+    @FindBy(id = "perHour") public static WebElement perHour;
+    @FindBy(id = "perMonth") public static WebElement perMonth;
+    @FindBy(id = "total") public static WebElement total;
+
+
+
+
 
 
 

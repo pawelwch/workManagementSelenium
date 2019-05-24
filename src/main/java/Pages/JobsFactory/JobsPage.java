@@ -82,6 +82,24 @@ public class JobsPage extends JobsWebElements {
         }
     }
 
+    public void highligthsSection(){
+       // waitForIt()
+    }
+
+    /// @Emil, czemu ponizsza metoda nie działa?
+    /*
+    * public void paymentDetails_paymentWage(WebElement minWage, WebElement maxWage){
+        waitForIt(this.minWage).sendKeys(minWage);
+        waitForIt(this.minAge).sendKeys(maxWage);
+    }
+    *
+    * */
+
+
+    public void paymentDetails_paymentFrequency(WebElement paymentFrequency){
+        waitForIt(paymentFrequency).click();
+    }
+
 
 
 
