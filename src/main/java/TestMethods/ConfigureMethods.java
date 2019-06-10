@@ -16,7 +16,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
-import java.util.NoSuchElementException;
+import org.openqa.selenium.NoSuchElementException;
 import java.util.logging.Level;
 
 public class ConfigureMethods {

@@ -82,19 +82,27 @@ public class JobsPage extends JobsWebElements {
         }
     }
 
-    public void highligthsSection(){
-       // waitForIt()
+    public void highligthsSection(WebElement...args) {
+        waitForIt(highlights).click();
+        try {
+            waitForIt(args[0]).click();
+            waitForIt(highlights).click();
+            waitForIt(args[1]).click();
+            waitForIt(highlights).click();
+            waitForIt(args[2]).click();
+            waitForIt(highlights).click();
+            waitForIt(args[3]).click();
+            waitForIt(highlights).click();
+            waitForIt(args[4]).click();
+        }catch (NullPointerException e) {
+            waitForIt(minAge).click();
+        }
     }
 
-    /// @Emil, czemu ponizsza metoda nie działa?
-    /*
-    * public void paymentDetails_paymentWage(WebElement minWage, WebElement maxWage){
+    public void paymentDetails_paymentWage(String minWage, String maxWage){
         waitForIt(this.minWage).sendKeys(minWage);
         waitForIt(this.minAge).sendKeys(maxWage);
     }
-    *
-    * */
-
 
     public void paymentDetails_paymentFrequency(WebElement paymentFrequency){
         waitForIt(paymentFrequency).click();
