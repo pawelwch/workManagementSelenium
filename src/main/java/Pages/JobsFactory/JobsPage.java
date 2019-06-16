@@ -48,7 +48,7 @@ public class JobsPage extends JobsWebElements {
         waitForIt(confirmJobDetails).click();
     }
 
-    public void numberOfLabourers(String min, String max){
+    public void numberOfLabourers(String min, String max) {
         waitForIt(minLabourers).sendKeys(min);
         waitForIt(maxLabourers).sendKeys(max);
     }
@@ -62,10 +62,12 @@ public class JobsPage extends JobsWebElements {
     }
 
 
-    /**@param args -wybiera język z listy dostępnych WebElementów w:
+    /**
+     * @param args -wybiera język z listy dostępnych WebElementów w:
      * @see JobsWebElements Parametr ten, to varargs, wiec moze przyjmować zmienna liczbe argumentów.
-     * dodatkowo metoda zamyka się poprzez kliknięciem w przycisk continue */
-    public void labourersDetails_languages(WebElement...args) {
+     * dodatkowo metoda zamyka się poprzez kliknięciem w przycisk continue
+     */
+    public void labourersDetails_languages(WebElement... args) {
         waitForIt(languages).click();
         try {
             waitForIt(args[0]).click();
@@ -77,12 +79,12 @@ public class JobsPage extends JobsWebElements {
             waitForIt(args[3]).click();
             waitForIt(languages).click();
             waitForIt(args[4]).click();
-        }catch (NullPointerException e) {
+        } catch (NullPointerException e) {
             waitForIt(minAge).click();
         }
     }
 
-    public void highligthsSection(WebElement...args) {
+    public void highligthsSection(WebElement... args) {
         waitForIt(highlights).click();
         try {
             waitForIt(args[0]).click();
@@ -94,22 +96,31 @@ public class JobsPage extends JobsWebElements {
             waitForIt(args[3]).click();
             waitForIt(highlights).click();
             waitForIt(args[4]).click();
-        }catch (NullPointerException e) {
+        } catch (NullPointerException e) {
             waitForIt(minAge).click();
         }
     }
 
-    public void paymentDetails_paymentWage(String minWage, String maxWage){
+    public void paymentDetails_paymentWage(String minWage, String maxWage) {
         waitForIt(this.minWage).sendKeys(minWage);
         waitForIt(this.minAge).sendKeys(maxWage);
     }
 
-    public void paymentDetails_paymentFrequency(WebElement paymentFrequency){
+    public void paymentDetails_paymentFrequency(WebElement paymentFrequency) {
         waitForIt(paymentFrequency).click();
     }
 
 
+    public void paymentDetails_paymentType(WebElement paymentType) {
+        waitForIt(paymentTypeInput).click();
+        waitForIt(paymentType).click();
+    }
 
+    public void previewOffer(){
+        waitForIt(previewOfferButton).click();
+    }
 
+    public void publishJobOffer(){
 
+    }
 }

@@ -14,8 +14,6 @@ public class JobsWebElements {
         PageFactory.initElements(driver, this);
     }
 
-
-
     @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[1]/label/input") WebElement title;
     @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement description;
     @FindBy(xpath = "//*[contains(text(), 'Continue')]") WebElement confirmJobBasicInformation;
@@ -59,11 +57,11 @@ public class JobsWebElements {
     @FindBy(id = "perMonth") public static WebElement perMonth;
     @FindBy(id = "total") public static WebElement total;
 
+    @FindBy(className = "css-10nd86i") WebElement paymentTypeInput;
+    @FindBy(id = "react-select-2-option-0") WebElement creditCard;
+    @FindBy(id = "react-select-2-option-1") WebElement bankTransfer;
+    @FindBy(id = "react-select-2-option-2") WebElement payPal;
 
-
-
-
-
-
+    @FindBy(xpath = "//button[text()='Preview']") WebElement previewOfferButton;
 
 }
