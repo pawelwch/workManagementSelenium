@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 //  RegisterWebElements - Definiujemy publiczną klasę która przechowuje elementy widoku RegisterPage
 public class RegisterWebElements {
 
+
+
     //  Konstruktor obiektu RegisterWebElements, który przekazuje zmienna driver, która jest obiektu typu WebDriver;
     RegisterWebElements(WebDriver driver) {
         this.driver = driver;

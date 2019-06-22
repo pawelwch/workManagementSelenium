@@ -20,14 +20,9 @@ public class RegisterPage extends RegisterWebElements{
         super(driver);
     }
 
-    /**Definiujemy metodę przekazująca w parametrze wartość typu String.
-        Wykonanie metody z parametrem spowoduje przekazanie parametru do elementu strony registerPhoneInput oraz kliknięcie submitFirstView;*/
-
-    public void logiIn () {
+    public void logIn () {
         waitForIt(logInButton).click();
     }
-
-
 
     public void selectCountry() {
         sleep(1000);

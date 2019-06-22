@@ -5,8 +5,14 @@ import org.openqa.selenium.WebElement;
 import static TestMethods.BaseMethods.*;
 import static TestMethods.ConfigureMethods.*;
 
+/**klasa JobsPage - klasa w której przechowujemy i wykonujemy metody dot. JobsPage. Roszerzona jest o klasę JobWebElements,
+ dzięki której będziemy się odwoływać do poszczególnych elementów strony.
+ */
 public class JobsPage extends JobsWebElements {
 
+    /** Metoda przekazująca w parametrze zmienna driver która jest obiektu typu WebDriver. Metoda super() powoduje wywołanie konstruktora klasy nadrzędnej.
+     W tym przypadku metoda JobsPage korzysta z konstruktora utworzonego w klasie JobsWebElements;
+     */
     public JobsPage(WebDriver driver) {
         super(driver);
     }
@@ -34,7 +40,6 @@ public class JobsPage extends JobsWebElements {
     *
     * */
 
-
     public void jobDetails_employmentType(WebElement employmentType) {
         waitForIt(employmentType).click();
     }
@@ -59,7 +64,6 @@ public class JobsPage extends JobsWebElements {
         waitForIt(this.minAge).sendKeys(minAge);
         waitForIt(this.maxAge).sendKeys(maxAge);
     }
-
 
     /**
      * @param args -wybiera język z listy dostępnych WebElementów w:
@@ -108,7 +112,6 @@ public class JobsPage extends JobsWebElements {
     public void paymentDetails_paymentFrequency(WebElement paymentFrequency) {
         waitForIt(paymentFrequency).click();
     }
-
 
     public void paymentDetails_paymentType(WebElement paymentType) {
         waitForIt(paymentTypeInput).click();

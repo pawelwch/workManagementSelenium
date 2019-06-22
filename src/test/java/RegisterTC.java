@@ -48,7 +48,7 @@ public class RegisterTC extends Register {
     @BeforeMethod(alwaysRun =  true)
     void setUp(){
         driver.manage().deleteAllCookies();
-        driver.get("http://18.196.86.213:3101");
+        driver.get("https://aws.lm-l4a-soft.ninja:3101/");
 //        setUpUser(REST_Methods.DataEnum.labourer);
     }
 

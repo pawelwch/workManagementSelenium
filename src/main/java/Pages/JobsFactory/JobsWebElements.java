@@ -5,15 +5,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+//  JobsWebElements - Definiujemy publiczną klasę która przechowuje elementy widoku JobsPage
 public class JobsWebElements {
 
+    //  Definiujemy zmieną driver która jest obiektem typu WebDriver;
     protected final WebDriver driver;
 
-    JobsWebElements (WebDriver driver) {
+    //  Konstruktor obiektu JobsWebElements, który przekazuje zmienna driver, która jest obiektu typu WebDriver;
+    JobsWebElements(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
+    // Lokalizujemy wszystkie elementy widoku JobsPage za pomocą adnotacji @Findby;
     @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[1]/label/input") WebElement title;
     @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement description;
     @FindBy(xpath = "//*[contains(text(), 'Continue')]") WebElement confirmJobBasicInformation;
