@@ -87,6 +87,10 @@ public class JobsPage extends JobsWebElements {
         }
     }
 
+    public void confirm_labourersDetails(){
+
+    }
+
     public void highligthsSection(WebElement... args) {
         waitForIt(highlights).click();
         try {

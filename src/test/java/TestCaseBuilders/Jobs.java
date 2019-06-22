@@ -90,10 +90,65 @@ public class Jobs {
         jobsPage.confirm_basicInformation();
         jobsPage.jobDetails_locationSelector();
         // metoda z datepickerem
-        jobsPage.jobDetails_assignmentType(shortTermEmployment);
+        jobsPage.jobDetails_assignmentType(bothAssignment);
         jobsPage.confirm_jobDetails();
-
     }
+
+    protected void withoutMinNumberOfWorkers(){
+        jobsPage.basicInformation(generateRandomString(100), generateRandomString(100));
+        jobsPage.confirm_basicInformation();
+        jobsPage.jobDetails_locationSelector();
+        // metoda z datepickerem
+        jobsPage.jobDetails_employmentType(shortTermEmployment);
+        jobsPage.jobDetails_assignmentType(other);
+        jobsPage.confirm_jobDetails();
+        jobsPage.numberOfLabourers("", "22");
+        jobsPage.labourersDetails(male, "120", "80" , "18", "50");
+        jobsPage.labourersDetails_languages(languagePolish);
+        jobsPage.confirm_labourersDetails();
+    }
+
+    protected void withoutMinWage(){
+        jobsPage.basicInformation(generateRandomString(100), generateRandomString(100));
+        jobsPage.confirm_basicInformation();
+        jobsPage.jobDetails_locationSelector();
+        // metoda z datepickerem
+        jobsPage.jobDetails_employmentType(fullTimeEmployment);
+        jobsPage.jobDetails_assignmentType(contractorAssignment);
+        jobsPage.confirm_jobDetails();
+        jobsPage.numberOfLabourers("12", "22");
+        jobsPage.labourersDetails(male, "120", "80" , "18", "50");
+        jobsPage.labourersDetails_languages(languagePolish);
+        jobsPage.confirm_labourersDetails();
+        jobsPage.highligthsSection(highVoltage, heavyMaterials);
+        jobsPage.paymentDetails_paymentWage("", "1000");
+        jobsPage.paymentDetails_paymentFrequency(perMonth);
+        jobsPage.paymentDetails_paymentType(creditCard);
+        jobsPage.previewOffer();
+    }
+
+    protected void withoutMaxWage(){
+        jobsPage.basicInformation(generateRandomString(100), generateRandomString(100));
+        jobsPage.confirm_basicInformation();
+        jobsPage.jobDetails_locationSelector();
+        // metoda z datepickerem
+        jobsPage.jobDetails_employmentType(fullTimeEmployment);
+        jobsPage.jobDetails_assignmentType(contractorAssignment);
+        jobsPage.confirm_jobDetails();
+        jobsPage.numberOfLabourers("12", "22");
+        jobsPage.labourersDetails(male, "120", "80" , "18", "50");
+        jobsPage.labourersDetails_languages(languagePolish);
+        jobsPage.confirm_labourersDetails();
+        jobsPage.highligthsSection(highVoltage, heavyMaterials);
+        jobsPage.paymentDetails_paymentWage("100", "");
+        jobsPage.paymentDetails_paymentFrequency(perMonth);
+        jobsPage.paymentDetails_paymentType(creditCard);
+        jobsPage.previewOffer();
+    }
+
+
+
+
 
 
 }
