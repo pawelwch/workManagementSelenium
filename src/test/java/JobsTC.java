@@ -58,5 +58,16 @@ public class JobsTC extends Jobs {
         addJob_SUCCESS();
     }
 
+    @Test
+    void AddJob_withoutTitle(){
+        withoutTitleJob();
+    }
+
+    @Test
+    void AddJob_withoutDescription(){
+        withoutDescriptionJob();
+    }
+
+
 
 }

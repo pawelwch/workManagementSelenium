@@ -58,10 +58,11 @@ public class JobsWebElements {
     @FindBy(id = "total") public static WebElement total;
 
     @FindBy(className = "css-10nd86i") WebElement paymentTypeInput;
-    @FindBy(id = "react-select-2-option-0") WebElement creditCard;
-    @FindBy(id = "react-select-2-option-1") WebElement bankTransfer;
-    @FindBy(id = "react-select-2-option-2") WebElement payPal;
+    @FindBy(id = "react-select-2-option-0") public static WebElement creditCard;
+    @FindBy(id = "react-select-2-option-1") public static WebElement bankTransfer;
+    @FindBy(id = "react-select-2-option-2") public static WebElement payPal;
 
     @FindBy(xpath = "//button[text()='Preview']") WebElement previewOfferButton;
 
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[2]/div[2]/button") WebElement publishButton;
 }

@@ -26,11 +26,10 @@ public class JobsPage extends JobsWebElements {
         waitForIt(firstSelectorElement).click();
     }
 
-    /*
+    /* EMIL MOGŁBYS ROZKMINIC TA METODE Z DATEPICKEREM ?
+
     * public void jobDetails_datePicker(WebElement) {
 
-        waitForIt(datePicker).click();
-        waitForIt(getDay).click();
     }
     *
     * */
@@ -121,6 +120,6 @@ public class JobsPage extends JobsWebElements {
     }
 
     public void publishJobOffer(){
-
+        waitForIt(publishButton).click();
     }
 }

@@ -40,6 +40,59 @@ public class Jobs {
         jobsPage.labourersDetails_languages(languagePolish,languageGerman,languageSpanish);
         //jobsPage.highligthsSection();
         jobsPage.paymentDetails_paymentWage("100", "200");
+        jobsPage.paymentDetails_paymentFrequency(perDay);
+        jobsPage.paymentDetails_paymentType(creditCard);
+        jobsPage.previewOffer();
+        jobsPage.publishJobOffer();
+    }
+
+    protected void withoutTitleJob(){
+        jobsPage.basicInformation("", generateRandomString(100));
+        jobsPage.confirm_basicInformation();
+    }
+
+    protected void withoutDescriptionJob(){
+        jobsPage.basicInformation(generateRandomString(100), "");
+        jobsPage.confirm_basicInformation();
+    }
+
+    protected void withoutLocationJob(){
+        jobsPage.basicInformation(generateRandomString(100), generateRandomString(100));
+        jobsPage.confirm_basicInformation();
+        // metoda z datepickerem
+        jobsPage.jobDetails_employmentType(fullTimeEmployment);
+        jobsPage.jobDetails_assignmentType(contractorAssignment);
+        jobsPage.confirm_jobDetails();
+    }
+
+    protected void withoutStartDateJob(){
+        jobsPage.basicInformation(generateRandomString(100), generateRandomString(100));
+        jobsPage.confirm_basicInformation();
+        jobsPage.jobDetails_locationSelector();
+        // metoda z datepickerem przekazująca tylko w parametrze EndDate
+        jobsPage.jobDetails_employmentType(partTimeEmployment);
+        jobsPage.jobDetails_assignmentType(contractorAssignment);
+        jobsPage.confirm_jobDetails();
+    }
+
+    protected void withoutEndDateJob(){
+        jobsPage.basicInformation(generateRandomString(100), generateRandomString(100));
+        jobsPage.confirm_basicInformation();
+        jobsPage.jobDetails_locationSelector();
+        // metoda z datepickerem przekazująca tylko w parametrze StartDate
+        jobsPage.jobDetails_employmentType(partTimeEmployment);
+        jobsPage.jobDetails_assignmentType(contractorAssignment);
+        jobsPage.confirm_jobDetails();
+    }
+
+    protected void withoutEmploymentType(){
+        jobsPage.basicInformation(generateRandomString(100), generateRandomString(100));
+        jobsPage.confirm_basicInformation();
+        jobsPage.jobDetails_locationSelector();
+        // metoda z datepickerem
+        jobsPage.jobDetails_assignmentType(shortTermEmployment);
+        jobsPage.confirm_jobDetails();
+
     }
 
 
