@@ -68,6 +68,53 @@ public class JobsTC extends Jobs {
         withoutDescriptionJob();
     }
 
+    @Test
+    void WithoutLocationJob(){
+        withoutLocationJob();
+    }
+
+    @Test
+    void WithoutStartDateJob(){
+        withoutStartDateJob();
+    }
+
+    @Test
+    void WithoutEndDateJob(){
+        withoutEndDateJob();
+    }
+
+    @Test
+    void WithoutEmploymentType(){
+        withoutEmploymentType();
+    }
+
+    @Test
+    void WithoutMinNumberOfWorkers(){
+        withoutMinNumberOfWorkers();
+    }
+
+    @Test
+    void WithoutMinWage(){
+        withoutMinWage();
+    }
+
+    @Test
+    void WithoutMaxWage(){
+        withoutMaxWage();
+    }
+
+    @Test
+    void WithoutPaymentFrequency(){
+        withoutPaymentFrequency();
+    }
+
+    @Test
+    void MinWageisBiggerThanMaxWage(){
+        minWageisBiggerThanMaxWage();
+    }
+
+
+
 
 
 }
