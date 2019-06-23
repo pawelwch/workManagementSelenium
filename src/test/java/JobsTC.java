@@ -109,8 +109,8 @@ public class JobsTC extends Jobs {
     }
 
     @Test
-    void MinWageisBiggerThanMaxWage(){
-        minWageisBiggerThanMaxWage();
+    void MinWageIsBiggerThanMaxWage(){
+        minWageIsBiggerThanMaxWage();
     }
 
 

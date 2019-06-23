@@ -25,7 +25,7 @@ public class RegisterWebElements {
 
     @FindBy(className = "selected-flag")WebElement countrySelector;
     @FindBy(xpath = "//*[@data-country-code='pl']") public static WebElement polishPrefix;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[2]/div/button") WebElement submitFirstView;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[2]/div/button") public static  WebElement submitFirstView;
     @FindBy(className = "error-message") public static WebElement errorPhoneInput;
 
 

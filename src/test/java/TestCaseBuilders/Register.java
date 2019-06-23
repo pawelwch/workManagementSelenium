@@ -16,6 +16,7 @@ import static JsonData.JsonParser_Notification.error_PhoneInput;
 import static JsonData.JsonParser_Notification.error_PinCode;
 import static TestMethods.BaseMethods.*;
 import static Pages.RegisterFactory.RegisterWebElements.*;
+import static TestMethods.ConfigureMethods.sleep;
 import static TestMethods.ConfigureMethods.waitForIt;
 import static TestMethods.StaticsData.*;
 
@@ -72,13 +73,18 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone("");
+        registerPage.submitPhone();
+        boolean actualValue = registerPage.submitFirstView.isEnabled();
+        if(!actualValue){
+            System.out.println("Pass");
+        }
     }
 
     protected void tooManyPhoneDigits() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone()+1);
-
+        checkNotify(errorPhoneInput, error_PhoneInput);
     }
 
     protected void tooLittleDigits() {

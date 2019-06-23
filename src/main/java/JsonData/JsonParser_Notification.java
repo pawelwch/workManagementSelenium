@@ -11,7 +11,7 @@ public class JsonParser_Notification {
 
 
     public static String error_PhoneInput;
-    public static String setUpAccount_email_no_email;
+    public static String error_Email;
     public static String error_SmsInput;
     public static String error_PinCode;
 
@@ -23,7 +23,7 @@ public class JsonParser_Notification {
             JSONObject jsonObject = (JSONObject) object;
             error_PhoneInput = (String) jsonObject.get("error_PhoneInput");
             error_SmsInput = (String) jsonObject.get("error_SmsInput");
-            setUpAccount_email_no_email = (String) jsonObject.get("koala");
+        //    error_Email = (String) jsonObject.get("error_Email;");
             error_PinCode = (String) jsonObject.get("error_PinCode");
 
         } catch (ParseException | IOException e) {

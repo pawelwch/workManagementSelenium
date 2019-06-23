@@ -164,7 +164,7 @@ public class Jobs {
         jobsPage.previewOffer();
     }
 
-    protected void minWageisBiggerThanMaxWage(){
+    protected void minWageIsBiggerThanMaxWage(){
         jobsPage.basicInformation(generateRandomString(100), generateRandomString(100));
         jobsPage.confirm_basicInformation();
         jobsPage.jobDetails_locationSelector();

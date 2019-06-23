@@ -2,6 +2,6 @@
 "error_PhoneInput": "Incorrect phone number format",
   "error_SmsInput": "",
   "error_PinCode": "Password should contain at least 6 digits and be identical with password confirmation",
-"koala": "Please provide correct email address or provide date of birth below."
+  "error_Email": "xxxx"
 
 }
