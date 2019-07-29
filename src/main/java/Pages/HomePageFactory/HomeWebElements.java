@@ -24,7 +24,7 @@ public class HomeWebElements {
     który jest lokalizowany na stronie i przypisywany do zmiennej signUpButton.
     Alternatywa to: WebElement signUp = driver.findElement(By.xpath(""));
     */
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/button[2]") WebElement signUpButton;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div[1]/button[2]") WebElement signUpButton;
     @FindBy (xpath = "//*[@type = 'password']") WebElement passwordInput;
     @FindBy(xpath =  "//*[contains(text(), 'LOG IN')]") WebElement logInButton;
     @FindBy(xpath =  "//*[contains(text(), 'Add job offer')]") WebElement addJobOfferButton;

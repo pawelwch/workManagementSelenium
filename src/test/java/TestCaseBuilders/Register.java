@@ -121,8 +121,12 @@ public class Register {
         registerPage.submitPhone ();
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(11);
-        // max znaków w setPinView to 10 na jeden input
         registerPage.setPinView(firstPin,firstPin);
+        boolean actualValue = pinConfirmButton.isEnabled();
+        
+        if(actualValue){
+            System.out.println("Pass");
+        }
     }
 
     protected void tooShortPinCode() {
