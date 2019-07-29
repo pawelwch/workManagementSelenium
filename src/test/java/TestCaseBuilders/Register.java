@@ -12,8 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-import static JsonData.JsonParser_Notification.error_PhoneInput;
-import static JsonData.JsonParser_Notification.error_PinCode;
+import static JsonData.JsonParser_Notification.*;
 import static TestMethods.BaseMethods.*;
 import static Pages.RegisterFactory.RegisterWebElements.*;
 import static TestMethods.ConfigureMethods.sleep;
@@ -136,8 +135,8 @@ public class Register {
         registerPage.submitPhone ();
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(5);
-        // min znaków w setPinView to 6 na jeden input
         registerPage.setPinView(firstPin,firstPin);
+        checkNotify(errorPinCode, error_PinCode);
     }
 
     protected void onlyFirstPinFilledOut() {
@@ -160,6 +159,7 @@ public class Register {
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(6);
         registerPage.setPinView("",firstPin);
+        checkNotify(errorPinCode, error_PinCode);
     }
 
     protected void emptyPinFields() {
@@ -169,7 +169,7 @@ public class Register {
         registerPage.submitPhone ();
         registerPage.confirmSms("");
         registerPage.setPinView("","");
-        /**Sprawdza ile przycisków jest aktywnych. Powinno być 0*/
+        checkNotify(errorPinCode, error_PinCode);
 
     }
 
@@ -189,7 +189,10 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_name_email_address("",email,address);
         registerPage.setUpAccount_policiesAndMessages(true,true);
-        //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
+        boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
+        checkNotify(errorSetupYourAccount, error_setupYourAccount);
+        if(buttonIsActive)
+            System.out.println("Pass");
     }
 
     protected void setupAccountWithoutDateOfBirth() {

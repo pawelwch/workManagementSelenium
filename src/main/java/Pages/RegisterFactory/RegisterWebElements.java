@@ -59,19 +59,20 @@ public class RegisterWebElements {
     @FindBy(id = "fullName")  WebElement fullName;
     @FindBy(id = "email")  WebElement email;
     @FindBy(id = "dropdown-year")  WebElement yearInput;
-    @FindBy(xpath = "//*[@value='20']")public static  WebElement day20;
+    @FindBy(xpath = "//*[@value='20']") public static  WebElement day20;
 
     @FindBy(id = "react-select-2-input") WebElement countrySelect;
     @FindBy(xpath = "//*[@id=\"react-select-2-option-0\"]") WebElement firstCountryInSelector;
     @FindBy(className = "css-1g6gooi") WebElement countryInput;
     @FindBy(xpath = "//*[@id=\"react-select-3-input\"]")  WebElement citySelector_LABOURER;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[1]/div[7]/div[1]/div[1]")  WebElement citySelectorc_CONTRACTOR;
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[1]/div[7]/div[1]/div[1]")  WebElement citySelector_CONTRACTOR;
     @FindBy(id = "react-select-3-input")  WebElement cityInput;
     @FindBy(id = "react-select-3-option-0") WebElement firstCityChoice;
     @FindBy(id = "address")  WebElement address;
     @FindBy(id = "policies")  WebElement policies;
     @FindBy(id = "messages")  WebElement messages;
-    @FindBy(xpath = "//*[contains(text(), 'Continue')]") WebElement confirmSetupAccount;
+    @FindBy(xpath = "//*[contains(text(), 'Continue')]") public static WebElement confirmSetupAccount;
+    @FindBy(xpath = "//div[@class='error-message") public static WebElement errorSetupYourAccount;
 
     @FindBy(id = "male" )public static WebElement male;
     @FindBy(id = "female" )public static WebElement female;

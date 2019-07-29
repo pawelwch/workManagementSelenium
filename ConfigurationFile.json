@@ -1,4 +1,4 @@
 {
-  "browser": "firefox",
-  "os": "windows"
+  "browser": "chrome",
+  "os": "linux"
 }

@@ -86,7 +86,7 @@ public class RegisterPage extends RegisterWebElements{
         if (element == labourer)
         waitForIt(citySelector_LABOURER).click();
         else {
-            waitForIt(citySelectorc_CONTRACTOR).click();
+            waitForIt(citySelector_CONTRACTOR).click();
         }
         waitForIt(cityInput).sendKeys("warsz");
         sleep(2000);

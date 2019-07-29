@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lm" />
-        <module name="lm-webAutomaticTests" />
         <module name="lm_automaticTests" />
+        <module name="lm-webAutomaticTests" />
       </profile>
     </annotationProcessing>
   </component>

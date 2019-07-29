@@ -2,6 +2,7 @@
 "error_PhoneInput": "Incorrect phone number format",
   "error_SmsInput": "",
   "error_PinCode": "Password should contain at least 6 digits and be identical with password confirmation",
-  "error_Email": "xxxx"
+  "error_Email": "xxxx",
+  "error_SetupYourAccount": "This field is required"
 
 }
