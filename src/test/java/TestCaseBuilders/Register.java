@@ -117,7 +117,7 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        registerPage.submitPhone();
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(11);
         registerPage.setPinView(firstPin,firstPin);

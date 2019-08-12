@@ -3,6 +3,7 @@ package Pages.RegisterFactory;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import static TestMethods.BaseMethods.*;
 import static TestMethods.ConfigureMethods.*;
@@ -27,10 +28,18 @@ public class RegisterPage extends RegisterWebElements{
     public void selectCountry() {
         sleep(1000);
         waitForIt(countrySelector).click();
+        sleep(1000);
         configureMethods.scroolToTheSomePoint(polishPrefix);
         sleep(1000);
         waitForIt(polishPrefix).click();
     }
+
+//    public void selectCountry() {
+//        sleep(1000);
+//        waitForIt(countrySelector).click();
+//        Select countryDropDown = new Select(countrySelector);
+//        countryDropDown.selectByValue("Poland");
+//    }
 
     public void registerCompletePhone(String phone) {
         waitForIt(registerPhoneInput).sendKeys(Keys.chord(Keys.CONTROL, "a",Keys.DELETE));
