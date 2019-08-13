@@ -53,7 +53,7 @@ public class ConfigureMethods {
                     driver = new FirefoxDriver();
                     break;
                 case "chrome":
-                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/windows/chromedriver.exe");
+                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/windows/chromedriver1.exe");
                     driver = new ChromeDriver();
                     break;
             }

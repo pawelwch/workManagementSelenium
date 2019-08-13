@@ -31,7 +31,7 @@ public class RegisterWebElements {
 
     @FindBy(xpath = "//*[@href='/log-in']") WebElement logInButton;
     @FindBy(id = "smsCodeInput") public static WebElement errorSmsInput;
-    @FindBy(xpath = "//*[.='Continue']") WebElement confirmSmsCodeButton;
+    @FindBy(className = "sc-jGxEUC") public static WebElement resendSmsCodeButton;
 
     @FindBy(xpath = "//*[@name = 'pinInput']") WebElement firstPinInput;
     @FindBy(xpath = "//*[@name = 'pinRepeatInput']") WebElement secondPinInput;
