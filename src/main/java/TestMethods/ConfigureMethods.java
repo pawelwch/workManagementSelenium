@@ -98,6 +98,7 @@ public class ConfigureMethods {
         }
     }
 
+
     /** Scrolluje strone do podanego elementu
      * @param element Podajemy webElement do ktorego chcemy scrollowac widok */
     public static void scroolToTheSomePoint(WebElement element) {

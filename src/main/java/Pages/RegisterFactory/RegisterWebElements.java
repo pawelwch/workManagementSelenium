@@ -22,6 +22,9 @@ public class RegisterWebElements {
 
     // Lokalizujemy wszystkie elementy widoku RegisterPage za pomocą adnotacji @Findby;
     @FindBy(id = "phone") WebElement registerPhoneInput;
+    @FindBy(tagName = "body") public static WebElement body;
+    @FindBy(className = "MuiFormHelperText-root") public static WebElement errorPhoneIsRequired;
+    @FindBy(className = "MuiFormHelperText-root") public static WebElement errorValidPhoneNumber;
 
     @FindBy(className = "sc-keVrkP")WebElement countrySelector;
     @FindBy(id = "react-select-4-option-2") public static WebElement polishPrefix;
@@ -32,9 +35,10 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@href='/log-in']") WebElement logInButton;
     @FindBy(id = "smsCodeInput") public static WebElement errorSmsInput;
     @FindBy(className = "sc-jGxEUC") public static WebElement resendSmsCodeButton;
+    @FindBy(className = "MuiInputBase-input MuiInput-input") public static WebElement lastDigitOfPhoneNumber;
 
-    @FindBy(xpath = "//*[@name = 'pinInput']") WebElement firstPinInput;
-    @FindBy(xpath = "//*[@name = 'pinRepeatInput']") WebElement secondPinInput;
+    @FindBy(id = "password") WebElement firstPinInput;
+    @FindBy(id = "passwordConfirm") WebElement secondPinInput;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/button") public static WebElement pinConfirmButton;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/p") public static WebElement errorPinCode;
     @FindBy(xpath = "//*[.='Labourer']") public static WebElement labourer;

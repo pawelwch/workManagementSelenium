@@ -94,28 +94,28 @@ public class RegisterTC extends Register {
     }
 
     @Test
-    void TooLongPinCode() {
-        tooLongPinCode();
+    void TooLongPasswordCode() {
+        tooLongPasswordCode();
     }
 
     @Test
-    void TooShortPinCode() {
-        tooShortPinCode();
+    void TooShortPasswordCode() {
+        tooShortPasswordCode();
     }
 
     @Test
-    void OnlyFirstPinFilledOut() {
-        onlyFirstPinFilledOut();
+    void OnlyFirstPasswordFilledOut() {
+        onlyFirstPasswordFilledOut();
     }
 
     @Test
-    void OnlySecondPinFilledOut() {
-        onlySecondPinFilledOut();
+    void OnlySecondPasswordFilledOut() {
+        onlySecondPasswordFilledOut();
     }
 
     @Test
-    void EmptyPinFields() {
-        emptyPinFields();
+    void EmptyPasswordFields() {
+        emptyPasswordFields();
     }
 
     @Test

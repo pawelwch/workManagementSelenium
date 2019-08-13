@@ -72,11 +72,9 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone("");
-        registerPage.submitPhone();
-        boolean actualValue = registerPage.submitFirstView.isEnabled();
-        if(!actualValue){
-            System.out.println("Pass");
-        }
+        baseMethods.clickSomewhere(body);
+        checkNotify(errorPhoneIsRequired, error_PhoneIsRequired);
+
     }
 
     protected void tooManyPhoneDigits() {
@@ -90,7 +88,8 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        // do poprawy
+        baseMethods.clickSomewhere(body);
+        checkNotify(errorValidPhoneNumber, error_ValidPhoneNumber);
     }
 
     protected void lettersInPhoneInput() {
@@ -100,7 +99,7 @@ public class Register {
         checkNotify(errorPhoneInput,error_PhoneInput);
     }
 
-    ///////////////////////////////////////////// DO ANALIZY
+
     protected void repeatedPhoneNumber() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
@@ -111,15 +110,14 @@ public class Register {
         registerPage.submitPhone();
         checkNotify(errorSmsInput, "");
     }
-///////////////////////////////////////////////////////
 
-    protected void tooLongPinCode() {
+    protected void tooLongPasswordCode() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
         registerPage.submitPhone();
         registerPage.confirmSms("");
-        String firstPin = generateRandomNumber(11);
+        String firstPin = generateRandomNumber(15);
         registerPage.setPinView(firstPin,firstPin);
         boolean actualValue = pinConfirmButton.isEnabled();
         
@@ -128,7 +126,7 @@ public class Register {
         }
     }
 
-    protected void tooShortPinCode() {
+    protected void tooShortPasswordCode() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -139,7 +137,7 @@ public class Register {
         checkNotify(errorPinCode, error_PinCode);
     }
 
-    protected void onlyFirstPinFilledOut() {
+    protected void onlyFirstPasswordFilledOut() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -151,7 +149,7 @@ public class Register {
         checkNotify(errorPinCode, error_PinCode);
     }
 
-    protected void onlySecondPinFilledOut() {
+    protected void onlySecondPasswordFilledOut() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -162,7 +160,7 @@ public class Register {
         checkNotify(errorPinCode, error_PinCode);
     }
 
-    protected void emptyPinFields() {
+    protected void emptyPasswordFields() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());

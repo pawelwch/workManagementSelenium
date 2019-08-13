@@ -39,7 +39,7 @@ public class BaseMethods {
      * @return zwraca numer telefonu */
     public static String generatePhone() {
         String number = (RandomStringUtils.randomNumeric(7));
-        return "83"+number;
+        return number;
     }
 
     /** Metoda generuje losowy adress email.
@@ -62,6 +62,15 @@ public class BaseMethods {
      * @param element id przycisku submit.*/
     public void submitButton(WebElement element) {
         configureMethods.waitForIt(element).submit();
+    }
+
+
+    /**Metoda za pomocą które klikamy w "ciało" strony aby odfocusować pole/input
+     *
+     * @param body parametr odnosi sie do WebElementu body
+     */
+    public void clickSomewhere(WebElement body){
+        body.click();
     }
 
 }

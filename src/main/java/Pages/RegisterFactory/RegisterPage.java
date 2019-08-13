@@ -43,6 +43,7 @@ public class RegisterPage extends RegisterWebElements{
     public void registerCompletePhone(String phone) {
         waitForIt(registerPhoneInput).sendKeys(Keys.chord(Keys.CONTROL, "a",Keys.DELETE));
         waitForIt(registerPhoneInput).sendKeys(phone);
+
     }
 
     public void submitPhone () {
@@ -51,7 +52,7 @@ public class RegisterPage extends RegisterWebElements{
 
     public void confirmSms(String sms) {
         waitForIt(resendSmsCodeButton).click();
-        sleep(1000)
+        sleep(1000);
 
     }
 

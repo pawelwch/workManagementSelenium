@@ -1,5 +1,7 @@
 {
-"error_PhoneInput": "Incorrect phone number format",
+  "error_PhoneIsRequired": "Phone number is required.",
+  "error_PhoneInput": "Incorrect phone number format",
+  "error_ValidPhoneNumber": "Please enter valid phone number.",
   "error_SmsInput": "",
   "error_PinCode": "Password should contain at least 6 digits and be identical with password confirmation",
   "error_Email": "xxxx",
