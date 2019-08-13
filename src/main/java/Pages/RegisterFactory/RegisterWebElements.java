@@ -21,11 +21,11 @@ public class RegisterWebElements {
     protected static WebDriver driver;
 
     // Lokalizujemy wszystkie elementy widoku RegisterPage za pomocą adnotacji @Findby;
-    @FindBy(xpath = "//*[@type='tel']") WebElement registerPhoneInput;
+    @FindBy(id = "phone") WebElement registerPhoneInput;
 
-    @FindBy(className = "selected-flag")WebElement countrySelector;
-    @FindBy(xpath = "//*[@data-country-code='pl']") public static WebElement polishPrefix;
-    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div[2]/div/div/div[2]/div/button") public static  WebElement submitFirstView;
+    @FindBy(className = "sc-keVrkP")WebElement countrySelector;
+    @FindBy(id = "react-select-4-option-2") public static WebElement polishPrefix;
+    @FindBy(className = "sc-cjHlYL") public static  WebElement submitFirstView;
     @FindBy(className = "error-message") public static WebElement errorPhoneInput;
 
 
