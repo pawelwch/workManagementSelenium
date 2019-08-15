@@ -64,7 +64,7 @@ public class RegisterPage extends RegisterWebElements{
     }
 
     public void confirmPin () {
-        waitForIt(pinConfirmButton).click();
+        waitForIt(passwordConfirmButton).click();
     }
 
     public String checkDisableButton (WebElement disableButton) {

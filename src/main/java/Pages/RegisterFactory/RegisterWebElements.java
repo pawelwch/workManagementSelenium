@@ -40,8 +40,8 @@ public class RegisterWebElements {
 
     @FindBy(id = "password") WebElement firstPinInput;
     @FindBy(id = "passwordConfirm") WebElement secondPinInput;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/button") public static WebElement pinConfirmButton;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/p") public static WebElement errorPinCode;
+    @FindBy(className = "MuiButtonBase-root") public static WebElement passwordConfirmButton;
+    @FindBy(className = "sc-eEieub") public static WebElement errorPinCode;
     @FindBy(xpath = "//*[.='Labourer']") public static WebElement labourer;
     @FindBy(xpath = "//*[.='Contractor']") public static WebElement contractor;
     @FindBy(xpath = "//*[.='Employer']") public static WebElement employer;

@@ -109,11 +109,8 @@ public class Register {
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(15);
         registerPage.setPinView(firstPin,firstPin);
-        boolean actualValue = pinConfirmButton.isEnabled();
-        
-        if(actualValue){
-            System.out.println("Pass");
-        }
+        boolean actualValue = passwordConfirmButton.isEnabled();
+        //dokończyć assercje
     }
 
     protected void tooShortPasswordCode() {
@@ -124,6 +121,7 @@ public class Register {
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(5);
         registerPage.setPinView(firstPin,firstPin);
+        baseMethods.clickSomewhere(body);
         checkNotify(errorPinCode, error_PinCode);
     }
 
@@ -135,8 +133,9 @@ public class Register {
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(6);
         registerPage.setPinView(firstPin,"");
-        registerPage.setPinView("","");
+        baseMethods.clickSomewhere(body);
         checkNotify(errorPinCode, error_PinCode);
+        // dokonczyc assercja czy button sie nie wyswietla
     }
 
     protected void onlySecondPasswordFilledOut() {
