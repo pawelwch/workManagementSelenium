@@ -87,7 +87,8 @@ public class Register {
     protected void tooLittleDigits() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhone());
+        String number = 8 + generateRandomNumber(7);
+        registerPage.registerCompletePhone(number);
         baseMethods.clickSomewhere(body);
         checkNotify(errorValidPhoneNumber, error_ValidPhoneNumber);
     }
@@ -97,19 +98,7 @@ public class Register {
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generateRandomString(9));
         baseMethods.clickSomewhere(body);
-        checkNotify(errorPhoneInput,error_PhoneInput);
-    }
-
-
-    protected void repeatedPhoneNumber() {
-        homePage.GoToSignUp();
-        registerPage.selectCountry();
-        String num = generatePhone();
-        registerPage.registerCompletePhone(num);
-        registerPage.submitPhone();
-        homePage.GoToSignUp();
-        registerPage.submitPhone();
-        checkNotify(errorSmsInput, "");
+        checkNotify(errorValidPhoneNumber, error_ValidPhoneNumber);
     }
 
     protected void tooLongPasswordCode() {

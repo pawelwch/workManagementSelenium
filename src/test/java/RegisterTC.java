@@ -89,11 +89,6 @@ public class RegisterTC extends Register {
     }
 
     @Test
-    void RepeatedPhoneNumber() {
-        repeatedPhoneNumber();
-    }
-
-    @Test
     void TooLongPasswordCode() {
         tooLongPasswordCode();
     }

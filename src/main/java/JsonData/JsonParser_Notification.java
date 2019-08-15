@@ -25,7 +25,6 @@ public class JsonParser_Notification {
         try {
             Object object = parser.parse(new FileReader(System.getProperty("user.dir")+"/src/main/resources/Tlumaczenia.json"));
             JSONObject jsonObject = (JSONObject) object;
-            error_PhoneInput = (String) jsonObject.get("error_PhoneInput");
             error_PhoneIsRequired = (String) jsonObject.get("error_PhoneIsRequired");
             error_ValidPhoneNumber = (String) jsonObject.get("error_ValidPhoneNumber");
             error_SmsInput = (String) jsonObject.get("error_SmsInput");
