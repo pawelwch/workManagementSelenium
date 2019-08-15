@@ -96,6 +96,7 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generateRandomString(9));
+        baseMethods.clickSomewhere(body);
         checkNotify(errorPhoneInput,error_PhoneInput);
     }
 
