@@ -101,7 +101,7 @@ public class Register {
         checkNotify(errorValidPhoneNumber, error_ValidPhoneNumber);
     }
 
-    protected void tooLongPasswordCode() {
+    protected void tooLongPassword() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());

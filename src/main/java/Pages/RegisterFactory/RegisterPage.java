@@ -52,8 +52,9 @@ public class RegisterPage extends RegisterWebElements{
 
     public void confirmSms(String sms) {
         waitForIt(resendSmsCodeButton).click();
-        sleep(1000);
-
+        String  number = waitForIt(sixthNumberOfSmsCode).getAttribute("value");
+        waitForIt(sixthNumberOfSmsCode).clear();
+        waitForIt(sixthNumberOfSmsCode).sendKeys(number);
     }
 
     public void setPinView(String pin1, String pin2) {

@@ -89,8 +89,8 @@ public class RegisterTC extends Register {
     }
 
     @Test
-    void TooLongPasswordCode() {
-        tooLongPasswordCode();
+    void TooLongPassword() {
+        tooLongPassword();
     }
 
     @Test

@@ -34,6 +34,7 @@ public class RegisterWebElements {
 
     @FindBy(xpath = "//*[@href='/log-in']") WebElement logInButton;
     @FindBy(id = "smsCodeInput") public static WebElement errorSmsInput;
+    @FindBy(name = "code-5") WebElement sixthNumberOfSmsCode;
     @FindBy(className = "sc-jGxEUC") public static WebElement resendSmsCodeButton;
     @FindBy(className = "MuiInputBase-input MuiInput-input") public static WebElement lastDigitOfPhoneNumber;
 
