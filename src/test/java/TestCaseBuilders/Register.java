@@ -5,6 +5,7 @@ import JsonData.JsonParser_Notification;
 import Pages.HomePageFactory.HomePage;
 import Pages.LoginFactory.LoginPage;
 import Pages.RegisterFactory.RegisterPage;
+import Pages.RegisterFactory.RegisterWebElements;
 import RestAPI.REST_Methods;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
@@ -18,6 +19,8 @@ import static Pages.RegisterFactory.RegisterWebElements.*;
 import static TestMethods.ConfigureMethods.sleep;
 import static TestMethods.ConfigureMethods.waitForIt;
 import static TestMethods.StaticsData.*;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 
 /**Klasa która przechowuje kroki TestCasów */
 public class Register {
@@ -50,8 +53,8 @@ public class Register {
         registerPage.confirmPin();
         registerPage.accountTypeSelector(accountType);
         registerPage.setUpAccount_name_email_address(generateRandomString(5),generateRandomEmail(),generateRandomString(20));
-        registerPage.setUpAccount_Birth_date(getYearSelector("1999"),getMonthSelector("March"),day20);
-        registerPage.setUpAccount_citySelector(accountType);
+        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
@@ -133,9 +136,14 @@ public class Register {
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(6);
         registerPage.setPinView(firstPin,"");
-        baseMethods.clickSomewhere(body);
         checkNotify(errorPinCode, error_PinCode);
-        // dokonczyc assercja czy button sie nie wyswietla
+        /*
+        SPRAWDZIC CZY BUTTON ISDISPLAYED
+        boolean buttonIsVisible = passwordConfirmButton.isDisplayed();
+        sleep(1000);
+        assertFalse(buttonIsVisible);
+         */
+
     }
 
     protected void onlySecondPasswordFilledOut() {
@@ -146,7 +154,7 @@ public class Register {
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(6);
         registerPage.setPinView("",firstPin);
-        checkNotify(errorPinCode, error_PinCode);
+        checkNotify(errorPinCodeDoesntMatch, error_PinCodeDoesntMatch);
     }
 
     protected void emptyPasswordFields() {
@@ -166,15 +174,17 @@ public class Register {
         registerPage.registerCompletePhone(generatePhone());
         registerPage.submitPhone ();
         registerPage.confirmSms("");
-        registerPage.setPinView("123456","123456");
+        registerPage.setPinView("Abc123456","Abc123456");
         registerPage.confirmPin();
         registerPage.accountTypeSelector(labourer);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
-        registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("February"),getDaySelector("10"));
-        registerPage.setUpAccount_citySelector(labourer);
-        registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_name_email_address("",email,address);
+        registerPage.setUpAccount_Birth_date("06 - 02 - 2019");
+        registerPage.setUpAccount_countrySelector();
+        registerPage.setUpAccount_citySelector("Wroc");
+
+
         registerPage.setUpAccount_policiesAndMessages(true,true);
         boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
         checkNotify(errorSetupYourAccount, error_setupYourAccount);
@@ -195,7 +205,7 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
-        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
@@ -214,7 +224,7 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
-        registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("January"),day20);
+        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
@@ -231,8 +241,8 @@ public class Register {
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
         registerPage.setUpAccount_name_email_address(name,email,"");
-        registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("March"),day20);
-        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
@@ -251,8 +261,8 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
-        registerPage.setUpAccount_Birth_date(getYearSelector("2000"),getMonthSelector("January"),day20);
-        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(false,true);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
@@ -271,8 +281,8 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
-        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("February"), day20);
-        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
@@ -293,8 +303,8 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
-        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("February"), day20);
-        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
@@ -316,8 +326,8 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
-        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("January"), day20);
-        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
@@ -343,8 +353,8 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
-        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("January"), day20);
-        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
@@ -371,8 +381,8 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
-        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("January"), day20);
-        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
@@ -399,8 +409,8 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
-        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("January"), day20);
-        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
@@ -429,8 +439,8 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
-        registerPage.setUpAccount_Birth_date(getYearSelector("2000"), getMonthSelector("January"), day20);
-        registerPage.setUpAccount_citySelector(labourer);
+        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();

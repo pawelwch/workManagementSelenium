@@ -21,58 +21,60 @@ public class RegisterWebElements {
     protected static WebDriver driver;
 
     // Lokalizujemy wszystkie elementy widoku RegisterPage za pomocą adnotacji @Findby;
-    @FindBy(id = "phone") WebElement registerPhoneInput;
-    @FindBy(tagName = "body") public static WebElement body;
-    @FindBy(className = "MuiFormHelperText-root") public static WebElement errorPhoneIsRequired;
-    @FindBy(className = "MuiFormHelperText-root") public static WebElement errorValidPhoneNumber;
 
+    @FindBy(tagName = "body") public static WebElement body;
+    @FindBy(xpath = "//*[@href='/log-in']") WebElement logInButton;
+
+    @FindBy(className = "MuiFormHelperText-root") public static WebElement errorPhoneIsRequired;
+    @FindBy(className = "error-message") public static WebElement errorPhoneInput;
+    @FindBy(className = "MuiFormHelperText-root") public static WebElement errorValidPhoneNumber;
     @FindBy(className = "sc-keVrkP")WebElement countrySelector;
     @FindBy(id = "react-select-4-option-2") public static WebElement polishPrefix;
+    @FindBy(id = "phone") WebElement registerPhoneInput;
     @FindBy(className = "sc-cjHlYL") public static  WebElement submitFirstView;
-    @FindBy(className = "error-message") public static WebElement errorPhoneInput;
 
 
-    @FindBy(xpath = "//*[@href='/log-in']") WebElement logInButton;
-    @FindBy(id = "smsCodeInput") public static WebElement errorSmsInput;
     @FindBy(name = "code-5") WebElement sixthNumberOfSmsCode;
     @FindBy(className = "sc-jGxEUC") public static WebElement resendSmsCodeButton;
-    @FindBy(className = "MuiInputBase-input MuiInput-input") public static WebElement lastDigitOfPhoneNumber;
 
+    @FindBy(className = "sc-eEieub") public static WebElement errorPinCode;
+    @FindBy(className = "sc-eEieub") public static WebElement errorPinCodeDoesntMatch;
     @FindBy(id = "password") WebElement firstPinInput;
     @FindBy(id = "passwordConfirm") WebElement secondPinInput;
-    @FindBy(className = "MuiButtonBase-root") public static WebElement passwordConfirmButton;
-    @FindBy(className = "sc-eEieub") public static WebElement errorPinCode;
-    @FindBy(xpath = "//*[.='Labourer']") public static WebElement labourer;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[4]/button") public static WebElement passwordConfirmButton;
+
+    @FindBy(id = "btn-labourer") public static WebElement labourer;
     @FindBy(xpath = "//*[.='Contractor']") public static WebElement contractor;
     @FindBy(xpath = "//*[.='Employer']") public static WebElement employer;
 
-    public static WebElement getYearSelector(String year) {
-        WebElement yearSelector = driver.findElement(By.xpath("//*[@value='"+year+"']"));
-        return yearSelector;
-    }
+//    public static WebElement getDaySelector(String day) {
+//        WebElement daySelector = driver.findElement(By.xpath("//*[@value='"+day+"']"));
+//        return daySelector;
+//    }
+//
+//    public static WebElement getMonthSelector(String month) {
+//        WebElement monthSelector = driver.findElement(By.xpath("//*[.='"+month+"']"));
+//        return monthSelector;
+//    }
+//
+//    public static WebElement getYearSelector(String year) {
+//        WebElement yearSelector = driver.findElement(By.xpath("//*[@value='"+year+"']"));
+//        return yearSelector;
+//    }
 
-    public static WebElement getMonthSelector(String month) {
-        WebElement monthSelector = driver.findElement(By.xpath("//*[.='"+month+"']"));
-        return monthSelector;
-    }
 
-    public static WebElement getDaySelector(String day) {
-        WebElement daySelector = driver.findElement(By.xpath("//*[@value='"+day+"']"));
-        return daySelector;
-    }
 
     @FindBy(id = "fullName")  WebElement fullName;
     @FindBy(id = "email")  WebElement email;
+    @FindBy(id = "dob") public static WebElement dayOfBirthInput;
+
     @FindBy(id = "dropdown-year")  WebElement yearInput;
     @FindBy(xpath = "//*[@value='20']") public static  WebElement day20;
 
-    @FindBy(id = "react-select-2-input") WebElement countrySelect;
-    @FindBy(xpath = "//*[@id=\"react-select-2-option-0\"]") WebElement firstCountryInSelector;
-    @FindBy(className = "css-1g6gooi") WebElement countryInput;
-    @FindBy(xpath = "//*[@id=\"react-select-3-input\"]")  WebElement citySelector_LABOURER;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[1]/div[7]/div[1]/div[1]")  WebElement citySelector_CONTRACTOR;
-    @FindBy(id = "react-select-3-input")  WebElement cityInput;
-    @FindBy(id = "react-select-3-option-0") WebElement firstCityChoice;
+    @FindBy(className = "sc-ghsgMZ") WebElement countryInput;
+    @FindBy(id = "react-select-5-option-0") WebElement firstCountryInSelector;
+    @FindBy(xpath = "//*[@id=\"react-select-3-input\"]")  WebElement cityInput;
+    @FindBy(id = "react-select-6-option-0") WebElement firstCityChoice;
     @FindBy(id = "address")  WebElement address;
     @FindBy(id = "policies")  WebElement policies;
     @FindBy(id = "messages")  WebElement messages;

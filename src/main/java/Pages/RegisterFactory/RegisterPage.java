@@ -1,5 +1,6 @@
 package Pages.RegisterFactory;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -83,30 +84,30 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(this.address).sendKeys(address);
     }
 
-    public void setUpAccount_Birth_date(WebElement year, WebElement month, WebElement day) {
-        waitForIt(yearInput).click();
-        waitForIt(year).click();
-        waitForIt(month).click();
-        waitForIt(day).click();
-    }
+//    public void setUpAccount_Birth_date(WebElement year, WebElement month, WebElement day) {
+//        waitForIt(yearInput).click();
+//        waitForIt(year).click();
+//        waitForIt(month).click();
+//        waitForIt(day).click();
+//    }
 
-    /**@param element - wpisujemy czy wybor selektora odnosi się do labourera czy contractora
-     */
-    public void setUpAccount_citySelector(WebElement element) {
-        if (element == labourer)
-        waitForIt(citySelector_LABOURER).click();
-        else {
-            waitForIt(citySelector_CONTRACTOR).click();
-        }
-        waitForIt(cityInput).sendKeys("warsz");
-        sleep(2000);
-        waitForIt(firstCityChoice).click();
+    public void setUpAccount_Birth_date(String dayOfBirth){
+        waitForIt(dayOfBirthInput).sendKeys(dayOfBirth);
     }
 
     public void setUpAccount_countrySelector() {
-            waitForIt(countrySelect).sendKeys("Polan");
-        sleep(2000);
+        waitForIt(countryInput).click();
+        sleep(1000);
+        System.out.println(countryInput.isEnabled());
+        System.out.println(countryInput.isDisplayed());
+        waitForIt(countryInput).sendKeys("Polan");
         waitForIt(firstCountryInSelector).click();
+    }
+
+    public void setUpAccount_citySelector(String country) {
+        waitForIt(cityInput).click();
+        waitForIt(cityInput).sendKeys(country);
+        waitForIt(firstCityChoice).click();
     }
 
     /**@param policies jesli ==true, to klika w checkbox z policies, jesli false, to nie.
