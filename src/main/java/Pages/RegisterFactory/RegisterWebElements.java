@@ -71,7 +71,8 @@ public class RegisterWebElements {
     @FindBy(id = "dropdown-year")  WebElement yearInput;
     @FindBy(xpath = "//*[@value='20']") public static  WebElement day20;
 
-    @FindBy(className = "sc-ghsgMZ") WebElement countryInput;
+    @FindBy(xpath = "//*[@id=\"country\"]/div") WebElement countryInput;
+    @FindBy(className = "react-select-5-input") WebElement countryInputText;
     @FindBy(id = "react-select-5-option-0") WebElement firstCountryInSelector;
     @FindBy(xpath = "//*[@id=\"react-select-3-input\"]")  WebElement cityInput;
     @FindBy(id = "react-select-6-option-0") WebElement firstCityChoice;

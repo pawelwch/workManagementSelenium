@@ -1,10 +1,8 @@
 package Pages.RegisterFactory;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 import static TestMethods.BaseMethods.*;
 import static TestMethods.ConfigureMethods.*;
@@ -100,7 +98,8 @@ public class RegisterPage extends RegisterWebElements{
         sleep(1000);
         System.out.println(countryInput.isEnabled());
         System.out.println(countryInput.isDisplayed());
-        waitForIt(countryInput).sendKeys("Polan");
+        sleep(2000);
+        waitForIt(countryInputText).sendKeys("Polan");
         waitForIt(firstCountryInSelector).click();
     }
 
