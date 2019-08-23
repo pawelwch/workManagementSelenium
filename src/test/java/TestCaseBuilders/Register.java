@@ -179,13 +179,12 @@ public class Register {
         registerPage.accountTypeSelector(labourer);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_gender(male);
         registerPage.setUpAccount_name_email_address("",email,address);
-        registerPage.setUpAccount_Birth_date("06 - 02 - 2019");
+        registerPage.setUpAccount_Birth_date("08 10 1993");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_citySelector("Wroc");
-
-
-        registerPage.setUpAccount_policiesAndMessages(true,true);
+        registerPage.setUpAccount_policiesAndMessages(true, true);
         boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
         checkNotify(errorSetupYourAccount, error_setupYourAccount);
         if(buttonIsActive)

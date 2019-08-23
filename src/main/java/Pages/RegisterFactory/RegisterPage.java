@@ -26,18 +26,10 @@ public class RegisterPage extends RegisterWebElements{
 
     public void selectCountry() {
         waitForIt(countrySelector).click();
-        sleep(1000);
         configureMethods.scroolToTheSomePoint(polishPrefix);
-        sleep(1000);
         waitForIt(polishPrefix).click();
     }
 
-//    public void selectCountry() {
-//        sleep(1000);
-//        waitForIt(countrySelector).click();
-//        Select countryDropDown = new Select(countrySelector);
-//        countryDropDown.selectByValue("Poland");
-//    }
 
     public void registerCompletePhone(String phone) {
         waitForIt(registerPhoneInput).sendKeys(Keys.chord(Keys.CONTROL, "a",Keys.DELETE));
@@ -59,7 +51,6 @@ public class RegisterPage extends RegisterWebElements{
     public void setPinView(String pin1, String pin2) {
         waitForIt(firstPinInput).sendKeys(pin1);
         waitForIt(secondPinInput).sendKeys(pin2);
-        sleep(1500);
     }
 
     public void confirmPin () {
@@ -76,18 +67,15 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(accountType).click();
     }
 
+    public void setUpAccount_gender(WebElement gender){
+        waitForIt(gender).click();
+    }
     public void setUpAccount_name_email_address(String fullName, String email, String address) {
         waitForIt(this.fullName).sendKeys(fullName);
         waitForIt(this.email).sendKeys(email);
         waitForIt(this.address).sendKeys(address);
     }
 
-//    public void setUpAccount_Birth_date(WebElement year, WebElement month, WebElement day) {
-//        waitForIt(yearInput).click();
-//        waitForIt(year).click();
-//        waitForIt(month).click();
-//        waitForIt(day).click();
-//    }
 
     public void setUpAccount_Birth_date(String dayOfBirth){
         waitForIt(dayOfBirthInput).sendKeys(dayOfBirth);
@@ -95,29 +83,27 @@ public class RegisterPage extends RegisterWebElements{
 
     public void setUpAccount_countrySelector() {
         waitForIt(countryInput).click();
-        sleep(1000);
         System.out.println(countryInput.isEnabled());
         System.out.println(countryInput.isDisplayed());
-        sleep(2000);
         waitForIt(countryInputText).sendKeys("Polan");
         waitForIt(firstCountryInSelector).click();
     }
 
     public void setUpAccount_citySelector(String country) {
         waitForIt(cityInput).click();
-        waitForIt(cityInput).sendKeys(country);
+        waitForIt(cityinputText).sendKeys(country);
         waitForIt(firstCityChoice).click();
     }
 
     /**@param policies jesli ==true, to klika w checkbox z policies, jesli false, to nie.
-     * @param messages jesli ==true, to klika w checkbox ze zgodą messeges, jesli false, to nie.
+     * @param marketing jesli ==true, to klika w checkbox ze zgodą messeges, jesli false, to nie.
      *                 Metoda dodatkowo kończy się kliknięciem w button Continue */
-    public void setUpAccount_policiesAndMessages(boolean policies, boolean messages) {
+    public void setUpAccount_policiesAndMessages(boolean policies, boolean marketing) {
         if (policies==true) {
             waitForIt(this.policies).click();
         }
-        if (messages==true) {
-            waitForIt(this.messages).click();
+        if (marketing==true) {
+            waitForIt(this.marketing).click();
         }
     }
 
