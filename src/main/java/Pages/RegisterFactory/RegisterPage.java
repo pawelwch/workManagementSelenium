@@ -91,7 +91,7 @@ public class RegisterPage extends RegisterWebElements{
 
     public void setUpAccount_citySelector(String country) {
         waitForIt(cityInput).click();
-        waitForIt(cityinputText).sendKeys(country);
+        waitForIt(cityInputText).sendKeys(country);
         waitForIt(firstCityChoice).click();
     }
 
@@ -111,16 +111,9 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(confirmSetupAccount).click();
     }
 
-    public void moreAboutYou_basicData(WebElement gender, String height, String weight, WebElement bloodType) {
+    public void moreAboutYou_height_weight( String height, String weight) {
         waitForIt(this.height).sendKeys(height);
         waitForIt(this.weight).sendKeys(weight);
-        try {
-            waitForIt(gender).click();
-            waitForIt(bloodType).click();
-        }
-        catch (NullPointerException e) {
-
-        }
     }
 
     /**@param isManual -jeśli jest true, to wpisuje w input wygenerowany losowy ciag znakow. False- wybiera z listy gotowych skilli.

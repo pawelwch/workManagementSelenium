@@ -45,7 +45,7 @@ public class Register {
         System.out.println(phone);
 
         homePage.GoToSignUp();
-        registerPage.selectCountry();
+        //registerPage.selectCountry();
         registerPage.registerCompletePhone(phone);
         registerPage.submitPhone();
         registerPage.confirmSms("");
@@ -53,12 +53,13 @@ public class Register {
         registerPage.confirmPin();
         registerPage.accountTypeSelector(accountType);
         registerPage.setUpAccount_name_email_address(generateRandomString(5),generateRandomEmail(),generateRandomString(20));
-        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
-        registerPage.setUpAccount_citySelector("Wroc");
+        registerPage.setUpAccount_gender(male);
+        registerPage.setUpAccount_Birth_date("08 10 1993");
         registerPage.setUpAccount_countrySelector();
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male,generateRandomNumber(3),generateRandomNumber(2),zero_minus);
+        registerPage.moreAboutYou_height_weight(generateRandomNumber(3),generateRandomNumber(2));
         registerPage.moreAboutYou_skillSet(true, skillExcell, null, null);
         registerPage.moreAboutYou_licensesAndCertificates(false,licenseTwo, null, null);
         registerPage.moreAboutYou_education(educationVol1);
@@ -170,7 +171,7 @@ public class Register {
 
     protected void setupAccountWithoutFullName() {
         homePage.GoToSignUp();
-        registerPage.selectCountry();
+       // registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
         registerPage.submitPhone ();
         registerPage.confirmSms("");
@@ -185,10 +186,13 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
-        boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
-        checkNotify(errorSetupYourAccount, error_setupYourAccount);
-        if(buttonIsActive)
-            System.out.println("Pass");
+        checkNotify(errorFullName, error_FullName);
+        /**
+         * boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
+         *         if(!buttonIsActive)
+         *             System.out.println("Pass");
+         */
+
     }
 
     protected void setupAccountWithoutDateOfBirth() {
@@ -286,7 +290,7 @@ public class Register {
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(null, "180", "80", a_minus);
+        registerPage.moreAboutYou_height_weight( "180", "80");
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
         protected void aboutYourselfOnlyWithGender() {
@@ -307,7 +311,7 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "", "", null);
+        registerPage.moreAboutYou_height_weight( "", "");
         registerPage.confirm_moreAboutYou();
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
@@ -330,7 +334,7 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
+        registerPage.moreAboutYou_height_weight( "180", "80");
         registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
         registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
         registerPage.moreAboutYou_education(educationVol1);
@@ -357,7 +361,7 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
+        registerPage.moreAboutYou_height_weight( "180", "80");
         registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
         registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
         registerPage.moreAboutYou_education(educationVol1);
@@ -385,7 +389,7 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
+        registerPage.moreAboutYou_height_weight( "180", "80");
         registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
         registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
         registerPage.moreAboutYou_education(educationVol1);
@@ -413,7 +417,7 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
+        registerPage.moreAboutYou_height_weight("180", "80");
         registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
         registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
         registerPage.moreAboutYou_education(educationVol1);
@@ -443,7 +447,7 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
+        registerPage.moreAboutYou_height_weight( "180", "80");
         registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
         registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
         registerPage.moreAboutYou_education(educationVol1);

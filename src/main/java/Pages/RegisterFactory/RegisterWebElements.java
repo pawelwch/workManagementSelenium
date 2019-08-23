@@ -28,8 +28,8 @@ public class RegisterWebElements {
     @FindBy(className = "MuiFormHelperText-root") public static WebElement errorPhoneIsRequired;
     @FindBy(className = "error-message") public static WebElement errorPhoneInput;
     @FindBy(className = "MuiFormHelperText-root") public static WebElement errorValidPhoneNumber;
-    @FindBy(className = "sc-keVrkP")WebElement countrySelector;
-    @FindBy(id = "react-select-4-option-2") public static WebElement polishPrefix;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/section/div/form/div[1]/div/div/div[1]/div/div/div[1]")WebElement countrySelector;
+    @FindBy(id = "react-select-13-option-2") public static WebElement polishPrefix;
     @FindBy(id = "phone") WebElement registerPhoneInput;
     @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/section/div/form/div[2]/div/button") public static  WebElement submitFirstView;
 
@@ -44,8 +44,8 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[4]/button") public static WebElement passwordConfirmButton;
 
     @FindBy(id = "btn-labourer") public static WebElement labourer;
-    @FindBy(xpath = "//*[.='Contractor']") public static WebElement contractor;
-    @FindBy(xpath = "//*[.='Employer']") public static WebElement employer;
+    @FindBy(id = "btn-contractor") public static WebElement contractor;
+    @FindBy(id = "btn-employer") public static WebElement employer;
 
 //    public static WebElement getDaySelector(String day) {
 //        WebElement daySelector = driver.findElement(By.xpath("//*[@value='"+day+"']"));
@@ -67,6 +67,7 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[1]/div/button[3]")public static WebElement other;
 
     @FindBy(id = "fullName")  WebElement fullName;
+    @FindBy(xpath = "//*[@id=\"fullName\"]/span")public static WebElement errorFullName;
     @FindBy(id = "email")  WebElement email;
     @FindBy(id = "dob") public static WebElement dayOfBirthInput;
 
@@ -74,19 +75,19 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@value='20']") public static  WebElement day20;
 
     @FindBy(xpath = "//*[@id=\"country\"]/div") WebElement countryInput;
-    @FindBy(id = "react-select-5-input") WebElement countryInputText;
+    @FindBy(id = "react-select-14-input") WebElement countryInputText;
     @FindBy(id = "react-select-5-option-0") WebElement firstCountryInSelector;
     @FindBy(xpath = "//*[@id=\"city\"]/div")  WebElement cityInput;
-    @FindBy(id = "react-select-6-input") WebElement cityinputText;
+    @FindBy(id = "react-select-6-input") WebElement cityInputText;
     @FindBy(id = "react-select-6-option-0") WebElement firstCityChoice;
     @FindBy(id = "address")  WebElement address;
     @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[8]/div[1]/label/span[2]")  WebElement policies;
     @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[8]/div[2]/label/span[2]")  WebElement marketing;
-    @FindBy(xpath = "//*[contains(text(), 'Continue')]") public static WebElement confirmSetupAccount;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]") public static WebElement confirmSetupAccount;
     @FindBy(xpath = "//div[@class='error-message") public static WebElement errorSetupYourAccount;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div/label/input" ) WebElement height;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div/label/input" ) WebElement weight;
+    @FindBy(id = "height") WebElement height;
+    @FindBy(id = "weight") WebElement weight;
     @FindBy(id = "a+" )public static WebElement a_plus;
     @FindBy(id = "a-" )public static WebElement a_minus;
     @FindBy(id = "b+" )public static WebElement b_plus;
