@@ -18,13 +18,16 @@ public class HomePage extends HomeWebElements{
 
     /**GoToSignUp - metoda publiczna, która korzysta z elementu(signUpButton) klasy HomeWebElements. Metoda klika button.*/
     public void GoToSignUp(){
-        sleep(1000);
-        signUpButton.click();
+        waitForIt(signUpButton).click();
     }
 
-    public void AddOffer () {
-        waitForIt(addJobOfferButton).click();
+    public void GoToLogin(){
+        //dopisac metode przekierowujaca do widoku logowania
     }
+
+//    public void AddOffer () {
+//        waitForIt(addJobOfferButton).click();
+//    }
 
 
 

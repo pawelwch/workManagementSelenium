@@ -20,9 +20,14 @@ public class LoginWebElements {
     protected WebDriver driver;
 
     // Lokalizujemy wszystkie elementy widoku LoginPage za pomocą adnotacji @Findby;
+    @FindBy() WebElement countrySelector;
+    @FindBy() WebElement polishPrefix;
     @FindBy(xpath = "//*[@type='tel']") WebElement loginPhoneInput;
     @FindBy(xpath = "//*[.='Continue']") WebElement loginContinueButton;
     @FindBy(xpath = "//*[@href='/sign-up']") WebElement signUpButton;
+
+
+
 
 
 }

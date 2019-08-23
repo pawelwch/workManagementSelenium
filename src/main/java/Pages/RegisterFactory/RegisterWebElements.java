@@ -88,34 +88,37 @@ public class RegisterWebElements {
 
     @FindBy(id = "height") WebElement height;
     @FindBy(id = "weight") WebElement weight;
-    @FindBy(id = "a+" )public static WebElement a_plus;
-    @FindBy(id = "a-" )public static WebElement a_minus;
-    @FindBy(id = "b+" )public static WebElement b_plus;
-    @FindBy(id = "b-" )public static WebElement b_minus;
-    @FindBy(id = "ab+" )public static WebElement ab_plus;
-    @FindBy(id = "ab-" )public static WebElement ab_minus;
-    @FindBy(id = "0+" )public static WebElement zero_plus;
-    @FindBy(id = "0-" )public static WebElement zero_minus;
-    @FindBy(className = "css-1hwfws3" ) WebElement skillsets;
+//    @FindBy(id = "a+" )public static WebElement a_plus;
+//    @FindBy(id = "a-" )public static WebElement a_minus;
+//    @FindBy(id = "b+" )public static WebElement b_plus;
+//    @FindBy(id = "b-" )public static WebElement b_minus;
+//    @FindBy(id = "ab+" )public static WebElement ab_plus;
+//    @FindBy(id = "ab-" )public static WebElement ab_minus;
+//    @FindBy(id = "0+" )public static WebElement zero_plus;
+//    @FindBy(id = "0-" )public static WebElement zero_minus;
+    @FindBy() WebElement skillsets;
     @FindBy(xpath = "//*[@id=\"react-select-2-input\"]") WebElement skillInputTyping; //zmienic na id
-    @FindBy(id = "react-select-2-option-0")public static WebElement skillExcell;
-    @FindBy(id = "react-select-2-option-1")public static WebElement skillMsOffice;
-    @FindBy(id = "react-select-2-option-2")public static WebElement skillProgramming;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[6]/div/div/div[1]" ) WebElement licensesAndCertificates;
+//    @FindBy(id = "react-select-2-option-0")public static WebElement skillExcell;
+//    @FindBy(id = "react-select-2-option-1")public static WebElement skillMsOffice;
+//    @FindBy(id = "react-select-2-option-2")public static WebElement skillProgramming;
+    @FindBy() WebElement licensesAndCertificates;
     @FindBy(id = "react-select-3-input" ) WebElement licensesInputTyping;
-    @FindBy(id = "react-select-3-option-0" )public static WebElement licenseOne;
-    @FindBy(id = "react-select-3-option-1" )public static WebElement licenseTwo;
-    @FindBy(id = "react-select-3-option-2" )public static WebElement licenseThree;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[7]/div/div/div[1]" ) WebElement education;
-    @FindBy(id = "react-select-4-option-0" )public static WebElement educationVol1;
-    @FindBy(id = "react-select-4-option-1" )public static WebElement educationVol2;
-    @FindBy(id = "react-select-4-option-2" )public static WebElement educationVol3;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[8]/div/div/div[1]" ) WebElement languages;
-    @FindBy(id = "react-select-5-option-0" )public static WebElement languagePolish;
-    @FindBy(id = "react-select-5-option-1" )public static WebElement languageEnglish;
-    @FindBy(id = "react-select-5-option-2" )public static WebElement languageGerman;
-    @FindBy(id = "react-select-5-option-3" )public static WebElement languageHindi;
-    @FindBy(id = "react-select-5-option-4" )public static WebElement languageSpanish;
+//    @FindBy(id = "react-select-3-option-0" )public static WebElement licenseOne;
+//    @FindBy(id = "react-select-3-option-1" )public static WebElement licenseTwo;
+//    @FindBy(id = "react-select-3-option-2" )public static WebElement licenseThree;
+    @FindBy() WebElement education;
+//    @FindBy(id = "react-select-4-option-0" )public static WebElement educationVol1;
+//    @FindBy(id = "react-select-4-option-1" )public static WebElement educationVol2;
+//    @FindBy(id = "react-select-4-option-2" )public static WebElement educationVol3;
+    @FindBy() WebElement languages;
+//    @FindBy(id = "react-select-5-option-0" )public static WebElement languagePolish;
+//    @FindBy(id = "react-select-5-option-1" )public static WebElement languageEnglish;
+//    @FindBy(id = "react-select-5-option-2" )public static WebElement languageGerman;
+//    @FindBy(id = "react-select-5-option-3" )public static WebElement languageHindi;
+//    @FindBy(id = "react-select-5-option-4" )public static WebElement languageSpanish;
+
+    @FindBy() WebElement biography;
+
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[9]/button") WebElement continueButtonMoreAboutU;
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[1]/button") WebElement skipButton;

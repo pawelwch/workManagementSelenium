@@ -182,6 +182,10 @@ public class RegisterPage extends RegisterWebElements{
         }
     }
 
+    public void moreAboutYou_biography() {
+        waitForIt(biography).sendKeys(generateRandomString(200));
+    }
+
     public void confirm_moreAboutYou () {
         waitForIt(continueButtonMoreAboutU).click();
     }

@@ -60,10 +60,11 @@ public class Register {
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.moreAboutYou_height_weight(generateRandomNumber(3),generateRandomNumber(2));
-        registerPage.moreAboutYou_skillSet(true, skillExcell, null, null);
-        registerPage.moreAboutYou_licensesAndCertificates(false,licenseTwo, null, null);
-        registerPage.moreAboutYou_education(educationVol1);
-        registerPage.moreAboutYou_languages(languageHindi, languageEnglish, languageGerman,null, null);
+        registerPage.moreAboutYou_skillSet(true);
+        registerPage.moreAboutYou_licensesAndCertificates(false);
+        //registerPage.moreAboutYou_education();
+        registerPage.moreAboutYou_languages(null, null);
+        registerPage.moreAboutYou_biography();
         registerPage.confirm_moreAboutYou();
         registerPage.photoUpload("browser",AVATAR);
         registerPage.uploadIdCard(AVATAR,PDF);
@@ -335,10 +336,10 @@ public class Register {
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.moreAboutYou_height_weight( "180", "80");
-        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
-        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
-        registerPage.moreAboutYou_education(educationVol1);
-        registerPage.moreAboutYou_languages(languageEnglish, languagePolish, languageGerman, languageHindi, languageSpanish);
+        registerPage.moreAboutYou_skillSet(false);
+        registerPage.moreAboutYou_licensesAndCertificates(false);
+        //registerPage.moreAboutYou_education("");
+        registerPage.moreAboutYou_languages();
         registerPage.confirm_moreAboutYou();
         registerPage.photoUpload("skip", "");
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
@@ -362,10 +363,10 @@ public class Register {
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.moreAboutYou_height_weight( "180", "80");
-        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
-        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
-        registerPage.moreAboutYou_education(educationVol1);
-        registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
+        registerPage.moreAboutYou_skillSet(false);
+        registerPage.moreAboutYou_licensesAndCertificates(false);
+        //registerPage.moreAboutYou_education();
+        registerPage.moreAboutYou_languages();
         registerPage.confirm_moreAboutYou();
         registerPage.photoUpload("browser",  AVATAR);
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
@@ -390,10 +391,10 @@ public class Register {
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.moreAboutYou_height_weight( "180", "80");
-        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
-        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
-        registerPage.moreAboutYou_education(educationVol1);
-        registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
+        registerPage.moreAboutYou_skillSet(false);
+        registerPage.moreAboutYou_licensesAndCertificates(false);
+        //registerPage.moreAboutYou_education();
+        registerPage.moreAboutYou_languages();
         registerPage.confirm_moreAboutYou();
         registerPage.photoUpload("browser",  PNG);
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
@@ -418,10 +419,10 @@ public class Register {
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.moreAboutYou_height_weight("180", "80");
-        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
-        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
-        registerPage.moreAboutYou_education(educationVol1);
-        registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
+        registerPage.moreAboutYou_skillSet(false);
+        registerPage.moreAboutYou_licensesAndCertificates(false);
+        //registerPage.moreAboutYou_education();
+        registerPage.moreAboutYou_languages();
         registerPage.confirm_moreAboutYou();
         registerPage.photoUpload("browser",  AVATAR);
         registerPage.uploadIdCard(IDCARD, IDCARD1);
@@ -448,10 +449,10 @@ public class Register {
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.moreAboutYou_height_weight( "180", "80");
-        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
-        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
-        registerPage.moreAboutYou_education(educationVol1);
-        registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
+        registerPage.moreAboutYou_skillSet(false);
+        registerPage.moreAboutYou_licensesAndCertificates(false);
+        //registerPage.moreAboutYou_education();
+        registerPage.moreAboutYou_languages();
         registerPage.confirm_moreAboutYou();
         registerPage.photoUpload("browser", AVATAR);
         registerPage.uploadCertificates(CERT, CERT1);
