@@ -12,9 +12,9 @@ import TestMethods.ConfigureMethods;
 import org.openqa.selenium.WebDriver;
 
 import static JsonData.JsonParser_Notification.error_PhoneIsRequired;
+import static JsonData.JsonParser_Notification.error_ValidPhoneNumber;
 import static Pages.LoginFactory.LoginWebElements.*;
-import static TestMethods.BaseMethods.checkNotify;
-import static TestMethods.BaseMethods.generatePhone;
+import static TestMethods.BaseMethods.*;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
@@ -47,12 +47,15 @@ public class Login {
         checkNotify(errorPhoneIsRequired, error_PhoneIsRequired);
     }
 
-    public void login_tooLongPhoneNumber(){
-
-    }
 
     public void login_tooShortPhoneNumber(){
-
+        homePage.GoToLogin();
+        String number = 8 + generateRandomNumber(7);
+        loginPage.fillLoginPhoneInput(number);
+        baseMethods.clickSomewhere(loginBody);
+        loginPage.submitPhone();
+        checkNotify(errorValidPhoneNumber, error_ValidPhoneNumber);
+        // do poprawy
     }
 
     public void login_incorrectPassword(){

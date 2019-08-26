@@ -27,6 +27,7 @@ public class LoginWebElements {
     @FindBy(id = "submitLoginPhone")public static WebElement loginContinueButton;
     @FindBy(xpath = "//*[contains(@class, 'sc-cugefK')]")public static WebElement buttonIsVisible;
     @FindBy(className = "sc-cmthru")public static WebElement errorPhoneIsRequired;
+    @FindBy(className = "kwpFki") public static WebElement errorValidPhoneNumber;
     @FindBy(id = "loginSignupLink") WebElement signUpButton;
 
     @FindBy(id = "password") WebElement passwordInput;

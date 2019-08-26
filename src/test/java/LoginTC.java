@@ -63,11 +63,6 @@ public class LoginTC extends Login{
     }
 
     @Test
-    void Login_TooLongPhoneNumber(){
-        login_tooLongPhoneNumber();
-    }
-
-    @Test
     void Login_TooShortPhoneNumber(){
         login_tooShortPhoneNumber();
     }
