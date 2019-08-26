@@ -28,13 +28,20 @@ public class LoginPage extends LoginWebElements{
         waitForIt(polishPrefix).click();
     }
 
-    public void loginCompletePhone(String phone) {
-        waitForIt(loginPhoneInput).sendKeys(Keys.chord(Keys.CONTROL, "a",Keys.DELETE));
+    public void fillLoginPhoneInput(String phone) {
         waitForIt(loginPhoneInput).sendKeys(phone);
     }
 
     public void submitPhone() {
-        // waitForIt().click();
+        waitForIt(loginContinueButton).click();
+    }
+
+    public void fillLoginPasswordInput(String password){
+        waitForIt(passwordInput).sendKeys(password);
+    }
+
+    public void submitLoginPassword(){
+        waitForIt(passwordContinueButton).click();
     }
 }
 

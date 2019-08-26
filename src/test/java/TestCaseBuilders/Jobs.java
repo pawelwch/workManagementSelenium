@@ -27,7 +27,7 @@ public class Jobs {
     protected REST_Methods rest_methods ;
 
     protected void addJob_SUCCESS () {
-        homePage.AddOffer();
+        //homePage.AddOffer();
         jobsPage.basicInformation(generateRandomString(20), generateRandomString(120));
         jobsPage.confirm_basicInformation();
         jobsPage.jobDetails_locationSelector();

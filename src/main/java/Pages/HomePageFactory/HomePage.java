@@ -22,7 +22,7 @@ public class HomePage extends HomeWebElements{
     }
 
     public void GoToLogin(){
-        //dopisac metode przekierowujaca do widoku logowania
+        waitForIt(logInButton).click();
     }
 
 //    public void AddOffer () {

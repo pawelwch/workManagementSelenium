@@ -21,6 +21,7 @@ public class JsonParser_Notification {
     public static String error_FullName;
 
 
+
     /**Metoda, która parsuje json'y*/
     public static void parseJson() {
         JSONParser parser = new JSONParser();

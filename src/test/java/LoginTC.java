@@ -77,6 +77,12 @@ public class LoginTC extends Login{
         login_incorrectPassword();
     }
 
+    @Test
+    void Login_EmptyPasswordInput(){
+        login_emptyPasswordInput();
+    }
+
+
     @AfterMethod(alwaysRun = true)
     void clearLastTestCase () {
         driver.manage().deleteAllCookies();

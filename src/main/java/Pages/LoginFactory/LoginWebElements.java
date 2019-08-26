@@ -20,14 +20,17 @@ public class LoginWebElements {
     protected WebDriver driver;
 
     // Lokalizujemy wszystkie elementy widoku LoginPage za pomocą adnotacji @Findby;
-    @FindBy() WebElement countrySelector;
-    @FindBy() WebElement polishPrefix;
-    @FindBy(xpath = "//*[@type='tel']") WebElement loginPhoneInput;
-    @FindBy(xpath = "//*[.='Continue']") WebElement loginContinueButton;
-    @FindBy(xpath = "//*[@href='/sign-up']") WebElement signUpButton;
+    @FindBy(tagName = "body") public static WebElement loginBody;
+    @FindBy(className = "sc-cqpYsc gNDfCh") WebElement countrySelector;
+    @FindBy(id = "react-select-13-option-2") WebElement polishPrefix;
+    @FindBy(id = "phone") WebElement loginPhoneInput;
+    @FindBy(id = "submitLoginPhone")public static WebElement loginContinueButton;
+    @FindBy(xpath = "//*[contains(@class, 'sc-cugefK')]")public static WebElement buttonIsVisible;
+    @FindBy(className = "sc-cmthru")public static WebElement errorPhoneIsRequired;
+    @FindBy(id = "loginSignupLink") WebElement signUpButton;
 
-
-
+    @FindBy(id = "password") WebElement passwordInput;
+    @FindBy(id = "submitLoginPassword") WebElement passwordContinueButton;
 
 
 }
