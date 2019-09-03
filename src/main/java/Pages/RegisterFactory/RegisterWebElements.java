@@ -28,14 +28,14 @@ public class RegisterWebElements {
     @FindBy(className = "MuiFormHelperText-root") public static WebElement errorPhoneIsRequired;
     @FindBy(className = "error-message") public static WebElement errorPhoneInput;
     @FindBy(className = "MuiFormHelperText-root") public static WebElement errorValidPhoneNumber;
-    @FindBy(className = "sc-keVrkP")WebElement countrySelector;
-    @FindBy(id = "react-select-4-option-2") public static WebElement polishPrefix;
+    @FindBy(className = "sc-cqpYsc")WebElement countrySelector;
+    @FindBy(id = "react-select-2-option-2") public static WebElement polishPrefix;
     @FindBy(id = "phone") WebElement registerPhoneInput;
-    @FindBy(className = "sc-cjHlYL") public static  WebElement submitFirstView;
+    @FindBy(id = "submitSignupPhone") public static  WebElement submitFirstView;
 
 
     @FindBy(name = "code-5") WebElement sixthNumberOfSmsCode;
-    @FindBy(className = "sc-jGxEUC") public static WebElement resendSmsCodeButton;
+    @FindBy(className = "sc-eopZyb") public static WebElement resendSmsCodeButton;
 
     @FindBy(className = "sc-eEieub") public static WebElement errorPinCode;
     @FindBy(className = "sc-eEieub") public static WebElement errorPinCodeDoesntMatch;

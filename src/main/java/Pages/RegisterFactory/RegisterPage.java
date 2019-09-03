@@ -126,17 +126,6 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(confirmSetupAccount).click();
     }
 
-    public void moreAboutYou_basicData(WebElement gender, String height, String weight, WebElement bloodType) {
-        waitForIt(this.height).sendKeys(height);
-        waitForIt(this.weight).sendKeys(weight);
-        try {
-            waitForIt(gender).click();
-            waitForIt(bloodType).click();
-        }
-        catch (NullPointerException e) {
-
-        }
-    }
 
     /**@param isManual -jeśli jest true, to wpisuje w input wygenerowany losowy ciag znakow. False- wybiera z listy gotowych skilli.
      * @param args -Webelement skilli. Aktywuje się w sytuacji, kiedy isManual==false.  Może generować max do 3 roznych skilli*/
