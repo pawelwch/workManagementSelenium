@@ -47,23 +47,10 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[.='Contractor']") public static WebElement contractor;
     @FindBy(xpath = "//*[.='Employer']") public static WebElement employer;
 
-//    public static WebElement getDaySelector(String day) {
-//        WebElement daySelector = driver.findElement(By.xpath("//*[@value='"+day+"']"));
-//        return daySelector;
-//    }
-//
-//    public static WebElement getMonthSelector(String month) {
-//        WebElement monthSelector = driver.findElement(By.xpath("//*[.='"+month+"']"));
-//        return monthSelector;
-//    }
-//
-//    public static WebElement getYearSelector(String year) {
-//        WebElement yearSelector = driver.findElement(By.xpath("//*[@value='"+year+"']"));
-//        return yearSelector;
-//    }
 
-
-
+    //@FindBy(id = ) WebElement male;
+    //@FindBy(id = ) WebElement female;
+    //@FindBy(id = ) WebElement other;
     @FindBy(id = "fullName")  WebElement fullName;
     @FindBy(id = "email")  WebElement email;
     @FindBy(id = "dob") public static WebElement dayOfBirthInput;

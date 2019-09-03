@@ -47,10 +47,6 @@ public class RegisterPage extends RegisterWebElements{
 
     }
 
-    public void submitPhone () {
-        waitForIt(submitFirstView).click();
-    }
-
     public void confirmSms(String sms) {
         waitForIt(resendSmsCodeButton).click();
         String  number = waitForIt(sixthNumberOfSmsCode).getAttribute("value");
@@ -61,11 +57,6 @@ public class RegisterPage extends RegisterWebElements{
     public void setPinView(String pin1, String pin2) {
         waitForIt(firstPinInput).sendKeys(pin1);
         waitForIt(secondPinInput).sendKeys(pin2);
-        sleep(1500);
-    }
-
-    public void confirmPin () {
-        waitForIt(passwordConfirmButton).click();
     }
 
     public String checkDisableButton (WebElement disableButton) {
@@ -76,6 +67,10 @@ public class RegisterPage extends RegisterWebElements{
 
     public void accountTypeSelector(WebElement accountType) {
         waitForIt(accountType).click();
+    }
+
+    public void setUpAccount_gender(WebElement gender){
+        waitForIt(gender).click();
     }
 
     public void setUpAccount_name_email_address(String fullName, String email, String address) {

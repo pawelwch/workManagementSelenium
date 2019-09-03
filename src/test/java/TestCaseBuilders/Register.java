@@ -47,10 +47,10 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(phone);
-        registerPage.submitPhone();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView(pinCode, pinCode);
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(accountType);
         registerPage.setUpAccount_name_email_address(generateRandomString(5),generateRandomEmail(),generateRandomString(20));
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
@@ -58,7 +58,6 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male,generateRandomNumber(3),generateRandomNumber(2),zero_minus);
         registerPage.moreAboutYou_skillSet(true, skillExcell, null, null);
         registerPage.moreAboutYou_licensesAndCertificates(false,licenseTwo, null, null);
         registerPage.moreAboutYou_education(educationVol1);
@@ -108,7 +107,7 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(15);
         registerPage.setPinView(firstPin,firstPin);
@@ -120,7 +119,7 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(5);
         registerPage.setPinView(firstPin,firstPin);
@@ -132,7 +131,7 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(6);
         registerPage.setPinView(firstPin,"");
@@ -150,7 +149,7 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         String firstPin = generateRandomNumber(6);
         registerPage.setPinView("",firstPin);
@@ -161,21 +160,21 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("","");
         checkNotify(errorPinCode, error_PinCode);
 
     }
 
-    protected void setupAccountWithoutFullName() {
+    protected void setupAccountWithoutGender(){
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("Abc123456","Abc123456");
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
@@ -183,8 +182,29 @@ public class Register {
         registerPage.setUpAccount_Birth_date("06 - 02 - 2019");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_citySelector("Wroc");
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+        boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
+        checkNotify(errorSetupYourAccount, error_setupYourAccount);
+        if(buttonIsActive)
+            System.out.println("Pass");
+    }
 
-
+    protected void setupAccountWithoutFullName() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        BaseMethods.submitButton(submitFirstView);
+        registerPage.confirmSms("");
+        registerPage.setPinView("Abc123456","Abc123456");
+        BaseMethods.submitButton(passwordConfirmButton);
+        registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(male);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address("",email,address);
+        registerPage.setUpAccount_Birth_date("06 - 02 - 2019");
+        registerPage.setUpAccount_countrySelector();
+        registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
         boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
         checkNotify(errorSetupYourAccount, error_setupYourAccount);
@@ -196,10 +216,10 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
@@ -215,10 +235,10 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
@@ -233,10 +253,10 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
@@ -252,10 +272,10 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("123456","123456");
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
@@ -272,10 +292,10 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("123456", "123456");
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
@@ -287,17 +307,16 @@ public class Register {
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(null, "180", "80", a_minus);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
         protected void aboutYourselfOnlyWithGender() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("123456", "123456");
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
@@ -308,7 +327,6 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "", "", null);
         registerPage.confirm_moreAboutYou();
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
@@ -317,10 +335,10 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("123456", "123456");
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
@@ -331,7 +349,6 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
         registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
         registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
         registerPage.moreAboutYou_education(educationVol1);
@@ -344,10 +361,10 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("123456", "123456");
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
@@ -358,7 +375,6 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
         registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
         registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
         registerPage.moreAboutYou_education(educationVol1);
@@ -372,10 +388,10 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("123456", "123456");
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
@@ -386,7 +402,6 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
         registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
         registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
         registerPage.moreAboutYou_education(educationVol1);
@@ -400,10 +415,10 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone ();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("123456", "123456");
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
@@ -414,7 +429,6 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
         registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
         registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
         registerPage.moreAboutYou_education(educationVol1);
@@ -430,10 +444,10 @@ public class Register {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        registerPage.submitPhone();
+        BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("123456", "123456");
-        registerPage.confirmPin();
+        BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
@@ -444,7 +458,6 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
         registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
         registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
         registerPage.moreAboutYou_education(educationVol1);
