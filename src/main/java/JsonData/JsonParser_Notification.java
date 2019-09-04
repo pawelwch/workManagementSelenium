@@ -16,6 +16,7 @@ public class JsonParser_Notification {
     public static String error_Email;
     public static String error_SmsInput;
     public static String error_PinCode;
+    public static String error_PinCodeDoesntMatch;
     public static String error_setupYourAccount;
 
 
@@ -30,6 +31,7 @@ public class JsonParser_Notification {
             error_SmsInput = (String) jsonObject.get("error_SmsInput");
         //    error_Email = (String) jsonObject.get("error_Email;");
             error_PinCode = (String) jsonObject.get("error_PinCode");
+            error_PinCodeDoesntMatch = (String) jsonObject.get("error_PinCodeDoesntMatch");
             error_setupYourAccount = (String) jsonObject.get("error_setupYourAccount");
 
         } catch (ParseException | IOException e) {

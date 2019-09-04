@@ -114,6 +114,11 @@ public class RegisterTC extends Register {
     }
 
     @Test
+    void SetuAccountWithoutGender(){
+        setupAccountWithoutGender();
+    }
+
+    @Test
     void SetupAccountWithoutFullNameField() {
         setupAccountWithoutFullName();
     }

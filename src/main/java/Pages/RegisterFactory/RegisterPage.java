@@ -1,5 +1,6 @@
 package Pages.RegisterFactory;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -46,10 +47,6 @@ public class RegisterPage extends RegisterWebElements{
 
     }
 
-    public void submitPhone () {
-        waitForIt(submitFirstView).click();
-    }
-
     public void confirmSms(String sms) {
         waitForIt(resendSmsCodeButton).click();
         String  number = waitForIt(sixthNumberOfSmsCode).getAttribute("value");
@@ -60,11 +57,6 @@ public class RegisterPage extends RegisterWebElements{
     public void setPinView(String pin1, String pin2) {
         waitForIt(firstPinInput).sendKeys(pin1);
         waitForIt(secondPinInput).sendKeys(pin2);
-        sleep(1500);
-    }
-
-    public void confirmPin () {
-        waitForIt(pinConfirmButton).click();
     }
 
     public String checkDisableButton (WebElement disableButton) {
@@ -77,36 +69,40 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(accountType).click();
     }
 
+    public void setUpAccount_gender(WebElement gender){
+        waitForIt(gender).click();
+    }
+
     public void setUpAccount_name_email_address(String fullName, String email, String address) {
         waitForIt(this.fullName).sendKeys(fullName);
         waitForIt(this.email).sendKeys(email);
         waitForIt(this.address).sendKeys(address);
     }
 
-    public void setUpAccount_Birth_date(WebElement year, WebElement month, WebElement day) {
-        waitForIt(yearInput).click();
-        waitForIt(year).click();
-        waitForIt(month).click();
-        waitForIt(day).click();
-    }
+//    public void setUpAccount_Birth_date(WebElement year, WebElement month, WebElement day) {
+//        waitForIt(yearInput).click();
+//        waitForIt(year).click();
+//        waitForIt(month).click();
+//        waitForIt(day).click();
+//    }
 
-    /**@param element - wpisujemy czy wybor selektora odnosi się do labourera czy contractora
-     */
-    public void setUpAccount_citySelector(WebElement element) {
-        if (element == labourer)
-        waitForIt(citySelector_LABOURER).click();
-        else {
-            waitForIt(citySelector_CONTRACTOR).click();
-        }
-        waitForIt(cityInput).sendKeys("warsz");
-        sleep(2000);
-        waitForIt(firstCityChoice).click();
+    public void setUpAccount_Birth_date(String dayOfBirth){
+        waitForIt(dayOfBirthInput).sendKeys(dayOfBirth);
     }
 
     public void setUpAccount_countrySelector() {
-            waitForIt(countrySelect).sendKeys("Polan");
-        sleep(2000);
+        waitForIt(countryInput).click();
+        sleep(1000);
+        System.out.println(countryInput.isEnabled());
+        System.out.println(countryInput.isDisplayed());
+        waitForIt(countryInput).sendKeys("Polan");
         waitForIt(firstCountryInSelector).click();
+    }
+
+    public void setUpAccount_citySelector(String country) {
+        waitForIt(cityInput).click();
+        waitForIt(cityInput).sendKeys(country);
+        waitForIt(firstCityChoice).click();
     }
 
     /**@param policies jesli ==true, to klika w checkbox z policies, jesli false, to nie.
@@ -125,17 +121,6 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(confirmSetupAccount).click();
     }
 
-    public void moreAboutYou_basicData(WebElement gender, String height, String weight, WebElement bloodType) {
-        waitForIt(this.height).sendKeys(height);
-        waitForIt(this.weight).sendKeys(weight);
-        try {
-            waitForIt(gender).click();
-            waitForIt(bloodType).click();
-        }
-        catch (NullPointerException e) {
-
-        }
-    }
 
     /**@param isManual -jeśli jest true, to wpisuje w input wygenerowany losowy ciag znakow. False- wybiera z listy gotowych skilli.
      * @param args -Webelement skilli. Aktywuje się w sytuacji, kiedy isManual==false.  Może generować max do 3 roznych skilli*/
