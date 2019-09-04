@@ -228,7 +228,7 @@ public class Register {
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
-        //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
+        checkNotify(errorSetupYourAccount, error_setupYourAccount);
     }
 
     protected void setupAccountWithoutCity() {
@@ -247,7 +247,10 @@ public class Register {
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
-        //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
+        boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
+        checkNotify(errorSetupYourAccount, error_setupYourAccount);
+        if(buttonIsActive)
+            System.out.println("Pass");
     }
     protected void setupAccountWithoutAddress() {
         homePage.GoToSignUp();
