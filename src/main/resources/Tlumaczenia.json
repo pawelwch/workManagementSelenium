@@ -5,6 +5,7 @@
   "error_PinCode": "Password must be at least 6 characters long.",
   "error_PinCodeDoesntMatch": "Passwords doesn’t match.",
   "error_Email": "xxxx",
-  "error_SetupYourAccount": "This field is required"
+  "error_SetupYourAccount": "This field is required",
+  "error_FullName": "Full name is required."
 
 }

@@ -184,7 +184,7 @@ public class RegisterTC extends Register {
         driver.manage().deleteAllCookies();
     }
 
-    /**Adnotacja @AfterClass ustawia różne konfiguracje, które będą wykonane po wykonaniu każdego testu;
+    /**Adnotacja @AfterTest ustawia różne konfiguracje, które będą wykonane po wykonaniu każdego testu;
      W tym przypadku adnotacja odnosi się do metody turnDown(), która powoduje zamknięcie Drivera;
      */
     @AfterTest (alwaysRun = true)

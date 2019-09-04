@@ -1,8 +1,10 @@
 package Pages.LoginFactory;
 
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+import static TestMethods.BaseMethods.configureMethods;
 import static TestMethods.ConfigureMethods.waitForIt;
 
 /*
@@ -20,14 +22,26 @@ public class LoginPage extends LoginWebElements{
         super(driver);
     }
 
-    /*
-    Definiujemy metodę przekazująca w parametrze wartość typu String.
-    Wykonanie metody spowoduje przekazanie parametru do elementu strony loginPhoneInput oraz kliknięcie loginContinueButton;
-     */
-    public void loginView(String phone) {
-        loginPhoneInput.sendKeys(phone);
-        loginContinueButton.click();
+    public void selectCountry() {
+        waitForIt(countrySelector).click();
+        configureMethods.scroolToTheSomePoint(polishPrefix);
+        waitForIt(polishPrefix).click();
+    }
 
+    public void fillLoginPhoneInput(String phone) {
+        waitForIt(loginPhoneInput).sendKeys(phone);
+    }
+
+    public void submitPhone() {
+        waitForIt(loginContinueButton).click();
+    }
+
+    public void fillLoginPasswordInput(String password){
+        waitForIt(passwordInput).sendKeys(password);
+    }
+
+    public void submitLoginPassword(){
+        waitForIt(passwordContinueButton).click();
     }
 }
 

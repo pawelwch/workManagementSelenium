@@ -24,17 +24,7 @@ public class HomeWebElements {
     który jest lokalizowany na stronie i przypisywany do zmiennej signUpButton.
     Alternatywa to: WebElement signUp = driver.findElement(By.xpath(""));
     */
-    @FindBy(className = "MuiButton-label") WebElement signUpButton;
-    @FindBy (xpath = "//*[@type = 'password']") WebElement passwordInput;
-    @FindBy(xpath =  "//*[contains(text(), 'LOG IN')]") WebElement logInButton;
-    @FindBy(xpath =  "//*[contains(text(), 'Add job offer')]") WebElement addJobOfferButton;
+    @FindBy(id = "authSignupLink") WebElement signUpButton;
+    @FindBy(id = "authLoginLink") WebElement logInButton;
 
-//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
-//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
-//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
-//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
-//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
-//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
-//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
-//    @FindBy(xpath =  "//*[@id=\"app\"]/div[2]/div/div[3]/textarea") WebElement descriptionJob;
 }
