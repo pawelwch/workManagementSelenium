@@ -314,7 +314,6 @@ public class Register {
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(null, "180", "80", a_minus);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
         protected void aboutYourselfOnlyWithGender() {
@@ -358,11 +357,6 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_basicData(male, "180", "80", a_minus);
-        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
-        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
-        registerPage.moreAboutYou_education(educationVol1);
-        registerPage.moreAboutYou_languages(languageEnglish, languagePolish, languageGerman, languageHindi, languageSpanish);
         registerPage.confirm_moreAboutYou();
         registerPage.photoUpload("skip", "");
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
@@ -385,10 +379,6 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
-        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
-        registerPage.moreAboutYou_education(educationVol1);
-        registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
         registerPage.moreAboutYou_height_weight( "180", "80");
         registerPage.moreAboutYou_skillSet(false);
         registerPage.moreAboutYou_licensesAndCertificates(false);
@@ -417,10 +407,6 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
-        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
-        registerPage.moreAboutYou_education(educationVol1);
-        registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
         registerPage.moreAboutYou_height_weight( "180", "80");
         registerPage.moreAboutYou_skillSet(false);
         registerPage.moreAboutYou_licensesAndCertificates(false);
@@ -449,10 +435,6 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
-        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
-        registerPage.moreAboutYou_education(educationVol1);
-        registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
         registerPage.moreAboutYou_height_weight("180", "80");
         registerPage.moreAboutYou_skillSet(false);
         registerPage.moreAboutYou_licensesAndCertificates(false);
@@ -483,10 +465,6 @@ public class Register {
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_skillSet(false, skillMsOffice, skillExcell, skillProgramming);
-        registerPage.moreAboutYou_licensesAndCertificates(false, licenseOne, licenseTwo, licenseThree);
-        registerPage.moreAboutYou_education(educationVol1);
-        registerPage.moreAboutYou_languages(languageEnglish, null, null, null);
         registerPage.moreAboutYou_height_weight( "180", "80");
         registerPage.moreAboutYou_skillSet(false);
         registerPage.moreAboutYou_licensesAndCertificates(false);
