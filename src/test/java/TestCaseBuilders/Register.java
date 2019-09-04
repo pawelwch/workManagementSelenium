@@ -179,9 +179,10 @@ public class Register {
         registerPage.setPinView("Abc123456","Abc123456");
         BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
-        registerPage.setUpAccount_name_email_address("",email,address);
+        registerPage.setUpAccount_name_email_address(name,email,address);
         registerPage.setUpAccount_Birth_date("06 - 02 - 2019");
         registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_citySelector("Wroc");
@@ -204,7 +205,6 @@ public class Register {
         registerPage.setUpAccount_gender(male);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
-        registerPage.setUpAccount_gender(male);
         registerPage.setUpAccount_name_email_address("",email,address);
         registerPage.setUpAccount_Birth_date("08 10 1993");
         registerPage.setUpAccount_countrySelector();
@@ -225,6 +225,7 @@ public class Register {
         registerPage.setPinView("123456","123456");
         BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(male);
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
@@ -249,7 +250,7 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
-        registerPage.setUpAccount_countrySelector();
+        //registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
         boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
         checkNotify(errorSetupYourAccount, error_setupYourAccount);
