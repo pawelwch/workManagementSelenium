@@ -18,6 +18,8 @@ public class JsonParser_Notification {
     public static String error_PinCode;
     public static String error_PinCodeDoesntMatch;
     public static String error_setupYourAccount;
+    public static String error_FullName;
+
 
 
     /**Metoda, która parsuje json'y*/
@@ -33,6 +35,7 @@ public class JsonParser_Notification {
             error_PinCode = (String) jsonObject.get("error_PinCode");
             error_PinCodeDoesntMatch = (String) jsonObject.get("error_PinCodeDoesntMatch");
             error_setupYourAccount = (String) jsonObject.get("error_setupYourAccount");
+            error_FullName = (String) jsonObject.get("error_FullName");
 
         } catch (ParseException | IOException e) {
             e.printStackTrace();
