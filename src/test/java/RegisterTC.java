@@ -35,7 +35,7 @@ public class RegisterTC extends Register {
         jsonParser_notification = new JsonParser_Notification();
         baseMethods = new BaseMethods();
         configureMethods = new ConfigureMethods(driver);
-        driver = browserPicker();
+        driver = browserPicker("chrome");
         homePage = new HomePage(driver);
         registerPage = new RegisterPage(driver);
         loginPage = new LoginPage(driver);
