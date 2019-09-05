@@ -37,10 +37,6 @@ public class RegisterPage extends RegisterWebElements{
 
     }
 
-    public void submitPhone () {
-        waitForIt(submitFirstView).click();
-    }
-
     public void confirmSms(String sms) {
         waitForIt(resendSmsCodeButton).click();
         String  number = waitForIt(sixthNumberOfSmsCode).getAttribute("value");
@@ -70,6 +66,7 @@ public class RegisterPage extends RegisterWebElements{
     public void setUpAccount_gender(WebElement gender){
         waitForIt(gender).click();
     }
+
     public void setUpAccount_name_email_address(String fullName, String email, String address) {
         waitForIt(this.fullName).sendKeys(fullName);
         waitForIt(this.email).sendKeys(email);
