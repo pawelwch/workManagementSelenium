@@ -78,17 +78,15 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(dayOfBirthInput).sendKeys(dayOfBirth);
     }
 
-    public void setUpAccount_countrySelector() {
+    public void setUpAccount_countrySelector(String country) {
         waitForIt(countryInput).click();
-        System.out.println(countryInput.isEnabled());
-        System.out.println(countryInput.isDisplayed());
-        waitForIt(countryInputText).sendKeys("Polan");
+        waitForIt(countryInputText).sendKeys(country);
         waitForIt(firstCountryInSelector).click();
     }
 
-    public void setUpAccount_citySelector(String country) {
+    public void setUpAccount_citySelector(String city) {
         waitForIt(cityInput).click();
-        waitForIt(cityInputText).sendKeys(country);
+        waitForIt(cityInputText).sendKeys(city);
         waitForIt(firstCityChoice).click();
     }
 

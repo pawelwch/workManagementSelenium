@@ -78,10 +78,10 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@value='20']") public static  WebElement day20;
 
     @FindBy(className = "sc-ghsgMZ") WebElement countryInput;
-    @FindBy() WebElement countryInputText;
-    @FindBy(id = "react-select-5-option-0") WebElement firstCountryInSelector;
+    @FindBy(className = "css-1g6gooi") WebElement countryInputText;
+    @FindBy(id = "react-select-4-option-0") WebElement firstCountryInSelector;
     @FindBy(xpath = "//*[@id=\"react-select-3-input\"]")  WebElement cityInput;
-    @FindBy() WebElement cityInputText;
+    @FindBy(className = "css-1g6gooi") WebElement cityInputText;
     @FindBy(id = "react-select-6-option-0") WebElement firstCityChoice;
     @FindBy(id = "address")  WebElement address;
     @FindBy(id = "agreePolicies")  WebElement policies;

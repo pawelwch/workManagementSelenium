@@ -55,7 +55,7 @@ public class Register {
         registerPage.setUpAccount_name_email_address(generateRandomString(5),generateRandomEmail(),generateRandomString(20));
         registerPage.setUpAccount_gender(male);
         registerPage.setUpAccount_Birth_date("08 10 1993");
-        registerPage.setUpAccount_countrySelector();
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
@@ -184,7 +184,7 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
         registerPage.setUpAccount_Birth_date("06 - 02 - 2019");
-        registerPage.setUpAccount_countrySelector();
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
         boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
@@ -207,7 +207,7 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address("",email,address);
         registerPage.setUpAccount_Birth_date("08 10 1993");
-        registerPage.setUpAccount_countrySelector();
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
         boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
@@ -230,8 +230,8 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
-        registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
         checkNotify(errorSetupYourAccount, error_setupYourAccount);
     }
@@ -270,8 +270,8 @@ public class Register {
         String email = generateRandomEmail();
         registerPage.setUpAccount_name_email_address(name,email,"");
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
-        registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
@@ -290,8 +290,8 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
-        registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(false,true);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
@@ -310,8 +310,8 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
-        registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.confirm_SetUpAccount();
@@ -331,8 +331,8 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
-        registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.moreAboutYou_height_weight( "", "");
@@ -354,8 +354,8 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
-        registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.confirm_moreAboutYou();
@@ -376,8 +376,8 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
-        registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.moreAboutYou_height_weight( "180", "80");
@@ -404,8 +404,8 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
-        registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.moreAboutYou_height_weight( "180", "80");
@@ -432,8 +432,8 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
-        registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.moreAboutYou_height_weight("180", "80");
@@ -462,8 +462,8 @@ public class Register {
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
-        registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true, true);
         registerPage.confirm_SetUpAccount();
         registerPage.moreAboutYou_height_weight( "180", "80");
