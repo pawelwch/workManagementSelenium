@@ -35,7 +35,7 @@ public class RegisterWebElements {
 
 
     @FindBy(name = "code-5") WebElement sixthNumberOfSmsCode;
-    @FindBy(className = "sc-eopZyb") public static WebElement resendSmsCodeButton;
+    @FindBy(className = "sc-eEieub") public static WebElement resendSmsCodeButton;
 
     @FindBy(className = "sc-eEieub") public static WebElement errorPinCode;
     @FindBy(className = "sc-eEieub") public static WebElement errorPinCodeDoesntMatch;
@@ -77,11 +77,11 @@ public class RegisterWebElements {
     @FindBy(id = "dropdown-year")  WebElement yearInput;
     @FindBy(xpath = "//*[@value='20']") public static  WebElement day20;
 
-    @FindBy(className = "sc-ghsgMZ") WebElement countryInput;
-    @FindBy(className = "css-1g6gooi") WebElement countryInputText;
-    @FindBy(id = "react-select-4-option-0") WebElement firstCountryInSelector;
-    @FindBy(xpath = "//*[@id=\"react-select-3-input\"]")  WebElement cityInput;
-    @FindBy(className = "css-1g6gooi") WebElement cityInputText;
+    @FindBy(xpath = "//*[@id=\"country\"]/div/div/div") WebElement countryInput;
+    @FindBy(id = "react-select-3-input") WebElement countryInputText;
+    @FindBy(id = "react-select-3-option-0") WebElement firstCountryInSelector;
+    @FindBy(xpath = "//*[@id=\"city\"]/div/div/div")  WebElement cityInput;
+    @FindBy(id = "react-select-4-input") WebElement cityInputText;
     @FindBy(id = "react-select-6-option-0") WebElement firstCityChoice;
     @FindBy(id = "address")  WebElement address;
     @FindBy(id = "agreePolicies")  WebElement policies;
