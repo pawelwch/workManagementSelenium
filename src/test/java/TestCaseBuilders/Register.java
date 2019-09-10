@@ -73,7 +73,7 @@ public class Register {
         registerPage.continueDocumetsUploadButton();
     }
 
-    protected void noPhoneNumber(){
+    protected void signUp_WithNoPhoneNumber(){
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone("");
@@ -82,14 +82,14 @@ public class Register {
 
     }
 
-    protected void tooManyPhoneDigits() {
+    protected void signUp_WithTooManyPhoneDigits() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone()+1);
         checkNotify(errorPhoneInput, error_PhoneInput);
     }
 
-    protected void tooLittleDigits() {
+    protected void signUp_WithTooLittlePhoneDigits() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         String number = 8 + generateRandomNumber(7);
@@ -98,7 +98,7 @@ public class Register {
         checkNotify(errorValidPhoneNumber, error_ValidPhoneNumber);
     }
 
-    protected void lettersInPhoneInput() {
+    protected void signUp_WithLettersInPhoneInput() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generateRandomString(9));
@@ -106,7 +106,7 @@ public class Register {
         checkNotify(errorValidPhoneNumber, error_ValidPhoneNumber);
     }
 
-    protected void tooLongPassword() {
+    protected void signUp_WithTooLongPassword() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -118,7 +118,7 @@ public class Register {
         //dokończyć assercje
     }
 
-    protected void tooShortPasswordCode() {
+    protected void signUp_WithTooShortPassword() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -130,7 +130,7 @@ public class Register {
         checkNotify(errorPinCode, error_PinCode);
     }
 
-    protected void onlyFirstPasswordFilledOut() {
+    protected void signUp_WithOnlyFirstPasswordFilledOut() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -148,7 +148,7 @@ public class Register {
 
     }
 
-    protected void onlySecondPasswordFilledOut() {
+    protected void signUp_WithOnlySecondPasswordFilledOut() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -159,7 +159,7 @@ public class Register {
         checkNotify(errorPinCodeDoesntMatch, error_PinCodeDoesntMatch);
     }
 
-    protected void emptyPasswordFields() {
+    protected void signUp_WithEmptyPasswordFields() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -170,7 +170,7 @@ public class Register {
 
     }
 
-    protected void setupAccountWithoutGender(){
+    protected void signUp_WithoutGender(){
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -193,7 +193,7 @@ public class Register {
             System.out.println("Pass");
     }
 
-    protected void setupAccountWithoutFullName() {
+    protected void signUp_WithoutFullName() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -216,7 +216,7 @@ public class Register {
             System.out.println("Pass");
     }
 
-    protected void setupAccountWithoutDateOfBirth() {
+    protected void signUp_WithoutDateOfBirth() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -236,7 +236,7 @@ public class Register {
         checkNotify(errorSetupYourAccount, error_setupYourAccount);
     }
 
-    protected void setupAccountWithoutCity() {
+    protected void signUp_WithoutCity() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -257,7 +257,8 @@ public class Register {
         if(buttonIsActive)
             System.out.println("Pass");
     }
-    protected void setupAccountWithoutAddress() {
+
+    protected void signUp_WithoutAddress() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -276,7 +277,7 @@ public class Register {
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
 
-    protected void setupAccountWithoutPolicies() {
+    protected void signUp_WithoutPolicies() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -296,51 +297,9 @@ public class Register {
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
 
-    protected void aboutYourselfWithoutGender() {
-        homePage.GoToSignUp();
-        registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhone());
-        BaseMethods.submitButton(submitFirstView);
-        registerPage.confirmSms("");
-        registerPage.setPinView("123456", "123456");
-        BaseMethods.submitButton(passwordConfirmButton);
-        registerPage.accountTypeSelector(labourer);
-        String name = generateRandomString(5) + " " + generateRandomString(5);
-        String email = generateRandomEmail();
-        String address = generateRandomString(10) + " 2/2";
-        registerPage.setUpAccount_name_email_address(name, email, address);
-        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
-        registerPage.setUpAccount_countrySelector("Pola");
-        registerPage.setUpAccount_citySelector("Wroc");
-        registerPage.setUpAccount_policiesAndMessages(true, true);
-        registerPage.confirm_SetUpAccount();
-        registerPage.confirm_SetUpAccount();
-        //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
-    }
-        protected void aboutYourselfOnlyWithGender() {
-        homePage.GoToSignUp();
-        registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhone());
-        BaseMethods.submitButton(submitFirstView);
-        registerPage.confirmSms("");
-        registerPage.setPinView("123456", "123456");
-        BaseMethods.submitButton(passwordConfirmButton);
-        registerPage.accountTypeSelector(labourer);
-        String name = generateRandomString(5) + " " + generateRandomString(5);
-        String email = generateRandomEmail();
-        String address = generateRandomString(10) + " 2/2";
-        registerPage.setUpAccount_name_email_address(name, email, address);
-        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
-        registerPage.setUpAccount_countrySelector("Pola");
-        registerPage.setUpAccount_citySelector("Wroc");
-        registerPage.setUpAccount_policiesAndMessages(true, true);
-        registerPage.confirm_SetUpAccount();
-        registerPage.moreAboutYou_height_weight( "", "");
-        registerPage.confirm_moreAboutYou();
-            //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
-    }
 
-        protected void noProfilePicture() {
+
+    protected void signUp_WithNoProfilePicture() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -362,7 +321,8 @@ public class Register {
         registerPage.photoUpload("skip", "");
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
-        protected void jpgProfilePicture(){
+
+    protected void signUp_WithJpgProfilePicture(){
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -390,7 +350,7 @@ public class Register {
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
 
-        protected void pngProfilePicture() {
+        protected void signUp_WithPngProfilePicture() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -418,7 +378,7 @@ public class Register {
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
 
-    protected void documentsUploadOnlyWithIdCard() {
+    protected void signUp_DocumentsUploadOnlyWithIdCard() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -448,7 +408,7 @@ public class Register {
 
     }
 
-    protected void documentsUploadOnlyWithCertificates() {
+    protected void signUp_DocumentsUploadOnlyWithCertificates() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());

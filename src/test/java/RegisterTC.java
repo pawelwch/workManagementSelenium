@@ -69,113 +69,108 @@ public class RegisterTC extends Register {
     }
 
     @Test
-    void NoPhoneNumber() {
-        noPhoneNumber();
+    void SignUpWithNoPhoneNumber() {
+        signUp_WithNoPhoneNumber();
     }
 
     @Test
-    void TooManyPhoneDigits() {
-        tooManyPhoneDigits();
+    void SignUpWithTooManyPhoneDigits() {
+        signUp_WithTooManyPhoneDigits();
     }
 
     @Test
-    void TooLittlePhoneDigits() {
-        tooLittleDigits();
+    void SignUpWithTooLittlePhoneDigits() {
+        signUp_WithTooLittlePhoneDigits();
     }
 
     @Test
-    void LettersInPhoneInput() {
-        lettersInPhoneInput();
+    void SignUpWithLettersInPhoneInput() {
+        signUp_WithLettersInPhoneInput();
     }
 
     @Test
-    void TooLongPassword() {
-        tooLongPassword();
+    void SignUpWithTooLongPassword() {
+        signUp_WithTooLongPassword();
     }
 
     @Test
-    void TooShortPasswordCode() {
-        tooShortPasswordCode();
+    void SignUpWithTooShortPasswordCode() {
+        signUp_WithTooShortPassword();
     }
 
     @Test
     void OnlyFirstPasswordFilledOut() {
-        onlyFirstPasswordFilledOut();
+        signUp_WithOnlyFirstPasswordFilledOut();
     }
 
     @Test
     void OnlySecondPasswordFilledOut() {
-        onlySecondPasswordFilledOut();
+        signUp_WithOnlySecondPasswordFilledOut();
     }
 
     @Test
     void EmptyPasswordFields() {
-        emptyPasswordFields();
+        signUp_WithEmptyPasswordFields();
     }
 
     @Test
     void SetuAccountWithoutGender(){
-        setupAccountWithoutGender();
+        signUp_WithoutGender();
     }
 
     @Test
     void SetupAccountWithoutFullNameField() {
-        setupAccountWithoutFullName();
+        signUp_WithoutFullName();
     }
 
     @Test
     void SetupAccountWithoutDateOfBirth() {
-        setupAccountWithoutDateOfBirth();
+        signUp_WithoutDateOfBirth();
     }
 
     @Test
     void SetupAccountWithoutCity() {
-        setupAccountWithoutCity();
+        signUp_WithoutCity();
     }
 
     @Test
     void SetupAccountWithoutAddress() {
-        setupAccountWithoutAddress();
+        signUp_WithoutAddress();
     }
 
     @Test
     void SetupAccountWithoutPolicies() {
-        setupAccountWithoutPolicies();
+        signUp_WithoutPolicies();
     }
 
     @Test
     void AboutYourselfWithoutGender() {
-        aboutYourselfWithoutGender();
-    }
-
-    @Test
-    void AboutYourselfOnlyWithGender() {
-        aboutYourselfOnlyWithGender();
+        signUp_WithoutGender();
     }
 
     @Test
     void NoProfilePicture() {
-        noProfilePicture();
+        signUp_WithNoProfilePicture();
     }
 
     @Test
     void JPGProfilePicture() {
-        jpgProfilePicture();
+        signUp_WithJpgProfilePicture();
     }
 
     @Test
     void PNGProfilePicture() {
-        pngProfilePicture();
+        signUp_WithPngProfilePicture();
     }
 
     @Test
     void DocumentsUploadOnlyWithIdCard() {
-        documentsUploadOnlyWithIdCard();
+        signUp_DocumentsUploadOnlyWithIdCard();
     }
 
     @Test
     void DocumentsUploadOnlyWithCertificates() {
-        documentsUploadOnlyWithCertificates();
+        signUp_DocumentsUploadOnlyWithCertificates();
     }
 
 
