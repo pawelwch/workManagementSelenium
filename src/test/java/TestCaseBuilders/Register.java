@@ -378,7 +378,7 @@ public class Register {
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
 
-    protected void signUp_DocumentsUploadOnlyWithIdCard() {
+    protected void signUp_DocumentsUploadedOnlyWithIdCard() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -408,7 +408,7 @@ public class Register {
 
     }
 
-    protected void signUp_DocumentsUploadOnlyWithCertificates() {
+    protected void signUp_DocumentsUploadedOnlyWithCertificates() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());

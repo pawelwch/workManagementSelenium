@@ -165,12 +165,12 @@ public class RegisterTC extends Register {
 
     @Test
     void DocumentsUploadOnlyWithIdCard() {
-        signUp_DocumentsUploadOnlyWithIdCard();
+        signUp_DocumentsUploadedOnlyWithIdCard();
     }
 
     @Test
     void DocumentsUploadOnlyWithCertificates() {
-        signUp_DocumentsUploadOnlyWithCertificates();
+        signUp_DocumentsUploadedOnlyWithCertificates();
     }
 
 
