@@ -28,14 +28,14 @@ public class RegisterWebElements {
     @FindBy(className = "MuiFormHelperText-root") public static WebElement errorPhoneIsRequired;
     @FindBy(className = "error-message") public static WebElement errorPhoneInput;
     @FindBy(className = "MuiFormHelperText-root") public static WebElement errorValidPhoneNumber;
-    @FindBy(className = "sc-cqpYsc")WebElement countrySelector;
-    @FindBy(id = "react-select-2-option-2") public static WebElement polishPrefix;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/section/div/form/div[1]/div/div/div[1]/div/div/div[1]")WebElement countrySelector;
+    @FindBy(xpath = "//*[@id=\"react-select-4-option-176\"]") public static WebElement polishPrefix;
     @FindBy(id = "phone") WebElement registerPhoneInput;
     @FindBy(id = "submitSignupPhone") public static  WebElement submitFirstView;
 
 
     @FindBy(name = "code-5") WebElement sixthNumberOfSmsCode;
-    @FindBy(className = "sc-eEieub") public static WebElement resendSmsCodeButton;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/section/div/div[2]/p") public static WebElement resendSmsCodeButton;
 
     @FindBy(className = "sc-eEieub") public static WebElement errorPinCode;
     @FindBy(className = "sc-eEieub") public static WebElement errorPinCodeDoesntMatch;
@@ -81,7 +81,7 @@ public class RegisterWebElements {
     @FindBy(id = "react-select-3-input") WebElement countryInputText;
     @FindBy(id = "react-select-3-option-0") WebElement firstCountryInSelector;
     @FindBy(xpath = "//*[@id=\"city\"]/div/div/div")  WebElement cityInput;
-    @FindBy(id = "react-select-4-input") WebElement cityInputText;
+    @FindBy(xpath = "//*[@id=\"react-select-6-input\"]") WebElement cityInputText;
     @FindBy(id = "react-select-6-option-0") WebElement firstCityChoice;
     @FindBy(id = "address")  WebElement address;
     @FindBy(id = "agreePolicies")  WebElement policies;
