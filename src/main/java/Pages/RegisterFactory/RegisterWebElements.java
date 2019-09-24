@@ -37,8 +37,8 @@ public class RegisterWebElements {
     @FindBy(name = "code-5") WebElement sixthNumberOfSmsCode;
     @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/section/div/div[2]/p") public static WebElement resendSmsCodeButton;
 
-    @FindBy(className = "sc-eEieub") public static WebElement errorPinCode;
-    @FindBy(className = "sc-eEieub") public static WebElement errorPinCodeDoesntMatch;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[3]/span") public static WebElement errorPinCode;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[3]/span") public static WebElement errorPinCodeDoesntMatch;
     @FindBy(id = "password") WebElement firstPinInput;
     @FindBy(id = "passwordConfirm") WebElement secondPinInput;
     @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[4]/button") public static WebElement passwordConfirmButton;
@@ -84,21 +84,15 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@id=\"react-select-6-input\"]") WebElement cityInputText;
     @FindBy(id = "react-select-6-option-0") WebElement firstCityChoice;
     @FindBy(id = "address")  WebElement address;
-    @FindBy(id = "agreePolicies")  WebElement policies;
-    @FindBy(id = "agreeMarketing")  WebElement marketing;
-    @FindBy(xpath = "//*[contains(text(), 'Continue')]") public static WebElement confirmSetupAccount;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[8]/div[1]/label/span[2]/span")  WebElement policies;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[8]/div[2]/label/span[2]/span")  WebElement marketing;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]") public static WebElement confirmSetupAccount;
     @FindBy(xpath = "//div[@class='error-message") public static WebElement errorSetupYourAccount;
+    @FindBy(xpath = "//*[@id=\"fullName\"]/span") public static WebElement errorFullName;
 
     @FindBy(id = "height") WebElement height;
     @FindBy(id = "weight") WebElement weight;
-//    @FindBy(id = "a+" )public static WebElement a_plus;
-//    @FindBy(id = "a-" )public static WebElement a_minus;
-//    @FindBy(id = "b+" )public static WebElement b_plus;
-//    @FindBy(id = "b-" )public static WebElement b_minus;
-//    @FindBy(id = "ab+" )public static WebElement ab_plus;
-//    @FindBy(id = "ab-" )public static WebElement ab_minus;
-//    @FindBy(id = "0+" )public static WebElement zero_plus;
-//    @FindBy(id = "0-" )public static WebElement zero_minus;
+
     @FindBy() WebElement skillsets;
     @FindBy(xpath = "//*[@id=\"react-select-2-input\"]") WebElement skillInputTyping; //zmienic na id
 //    @FindBy(id = "react-select-2-option-0")public static WebElement skillExcell;
