@@ -89,7 +89,9 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]") public static WebElement confirmSetupAccount;
     @FindBy(xpath = "//div[@class='error-message") public static WebElement errorSetupYourAccount;
     @FindBy(xpath = "//*[@id=\"fullName\"]/span") public static WebElement errorFullName;
-
+    @FindBy(xpath = "//*[@id=\"dob-helper-text\"]/span") public static WebElement errorDateOfBirth;
+    @FindBy(xpath = "//*[@id=\"city\"]/span") public static WebElement errorCity;
+    @FindBy(xpath = "//*[@id=\"address\"]/span") public static WebElement errorAddress;
     @FindBy(id = "height") WebElement height;
     @FindBy(id = "weight") WebElement weight;
 

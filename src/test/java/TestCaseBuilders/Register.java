@@ -200,7 +200,7 @@ public class Register {
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
         int buttonIsActive = driver.findElements(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]")).size();
-        //checkNotify(errorSetupYourAccount, error_setupYourAccount);
+        checkNotify(errorSetupYourAccount, error_setupYourAccount);
         assertEquals(buttonIsActive, 0);
     }
 
@@ -221,7 +221,9 @@ public class Register {
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
+        int buttonIsActive = driver.findElements(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]")).size();
         checkNotify(errorFullName, error_FullName);
+        assertEquals(buttonIsActive, 0);
     }
 
     protected void signUp_WithoutDateOfBirth() {
@@ -241,7 +243,9 @@ public class Register {
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
-        checkNotify(errorSetupYourAccount, error_setupYourAccount);
+        int buttonIsActive = driver.findElements(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]")).size();
+        checkNotify(errorDateOfBirth, error_DateOfBirth);
+        assertEquals(buttonIsActive, 0);
     }
 
     protected void signUp_WithoutCity() {
@@ -261,10 +265,9 @@ public class Register {
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
         //registerPage.setUpAccount_countrySelector();
         registerPage.setUpAccount_policiesAndMessages(true,true);
-        boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
-        checkNotify(errorSetupYourAccount, error_setupYourAccount);
-        if(buttonIsActive)
-            System.out.println("Pass");
+        int buttonIsActive = driver.findElements(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]")).size();
+        checkNotify(errorCity, error_City);
+        assertEquals(buttonIsActive, 0);
     }
 
     protected void signUp_WithoutAddress() {
@@ -284,7 +287,10 @@ public class Register {
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
-        //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
+        int buttonIsActive = driver.findElements(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]")).size();
+        checkNotify(errorAddress, error_Address);
+        assertEquals(buttonIsActive, 0);
+
     }
 
     protected void signUp_WithoutPolicies() {

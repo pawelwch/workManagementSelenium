@@ -26,9 +26,7 @@ public class RegisterPage extends RegisterWebElements{
 
     public void selectCountry() {
         waitForIt(countrySelector).click();
-        sleep(1000);
         configureMethods.scroolToTheSomePoint(polishPrefix);
-        sleep(1000);
         waitForIt(polishPrefix).click();
     }
 

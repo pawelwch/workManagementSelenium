@@ -147,11 +147,6 @@ public class RegisterTC extends Register {
     }
 
     @Test
-    void AboutYourselfWithoutGender() {
-        signUp_WithoutGender();
-    }
-
-    @Test
     void NoProfilePicture() {
         signUp_WithNoProfilePicture();
     }

@@ -19,6 +19,9 @@ public class JsonParser_Notification {
     public static String error_PinCodeDoesntMatch;
     public static String error_setupYourAccount;
     public static String error_FullName;
+    public static String error_DateOfBirth;
+    public static String error_City;
+    public static String error_Address;
 
 
 
@@ -36,6 +39,9 @@ public class JsonParser_Notification {
             error_PinCodeDoesntMatch = (String) jsonObject.get("error_PinCodeDoesntMatch");
             error_setupYourAccount = (String) jsonObject.get("error_setupYourAccount");
             error_FullName = (String) jsonObject.get("error_FullName");
+            error_DateOfBirth = (String) jsonObject.get("error_DateOfBirth");
+            error_City = (String) jsonObject.get("error_City");
+            error_Address = (String) jsonObject.get("error_Address");
 
         } catch (ParseException | IOException e) {
             e.printStackTrace();

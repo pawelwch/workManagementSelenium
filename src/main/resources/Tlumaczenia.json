@@ -6,6 +6,8 @@
   "error_PinCodeDoesntMatch": "Passwords doesn’t match.",
   "error_Email": "xxxx",
   "error_SetupYourAccount": "This field is required",
-  "error_FullName": "Full name is required."
-
+  "error_FullName": "Full name is required.",
+  "error_DateOfBirth": "Date of Birth is required.",
+  "error_City": "City is required.",
+  "error_Address": "Address is required."
 }
