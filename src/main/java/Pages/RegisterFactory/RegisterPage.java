@@ -26,13 +26,15 @@ public class RegisterPage extends RegisterWebElements{
 
     public void selectCountry() {
         waitForIt(countrySelector).click();
+        sleep(1000);
         configureMethods.scroolToTheSomePoint(polishPrefix);
+        sleep(1000);
         waitForIt(polishPrefix).click();
     }
 
 
     public void registerCompletePhone(String phone) {
-        waitForIt(registerPhoneInput).sendKeys(Keys.chord(Keys.CONTROL, "a",Keys.DELETE));
+        waitForIt(registerPhoneInput).sendKeys(Keys.chord(Keys.CONTROL, "",Keys.DELETE));
         waitForIt(registerPhoneInput).sendKeys(phone);
 
     }

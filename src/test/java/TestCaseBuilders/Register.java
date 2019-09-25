@@ -9,6 +9,7 @@ import Pages.RegisterFactory.RegisterWebElements;
 import RestAPI.REST_Methods;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -84,7 +85,7 @@ public class Register {
     protected void signUp_WithTooManyPhoneDigits() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone(generatePhone()+1);
+        registerPage.registerCompletePhone(generatePhone()+"123");
         checkNotify(errorPhoneInput, error_PhoneInput);
     }
 
@@ -105,16 +106,15 @@ public class Register {
         checkNotify(errorValidPhoneNumber, error_ValidPhoneNumber);
     }
 
-    protected void signUp_WithTooLongPassword() {
+    protected void signUp_WithSuperLongPassword() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
         BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
-        String firstPin = generateRandomNumber(15);
+        String firstPin = generateRandomNumber(25);
         registerPage.setPinView(firstPin,firstPin);
         boolean actualValue = passwordConfirmButton.isEnabled();
-        //dokończyć assercje
     }
 
     protected void signUp_WithTooShortPassword() {
@@ -128,6 +128,20 @@ public class Register {
         baseMethods.clickSomewhere(body);
         checkNotify(errorPinCode, error_PinCode);
     }
+
+    protected void signUp_PasswordsAreNotTheSame() {
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        BaseMethods.submitButton(submitFirstView);
+        registerPage.confirmSms("");
+        String firstPassword = generateRandomNumber(5);
+        String secondPassword = generateRandomNumber(5);
+        registerPage.setPinView(firstPassword, secondPassword);
+        baseMethods.clickSomewhere(body);
+        checkNotify(errorPinCodeDoesntMatch, error_PinCodeDoesntMatch);
+    }
+
 
     protected void signUp_WithOnlyFirstPasswordFilledOut() {
         homePage.GoToSignUp();
@@ -185,10 +199,9 @@ public class Register {
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
-        boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
-        checkNotify(errorSetupYourAccount, error_setupYourAccount);
-        if(buttonIsActive)
-            System.out.println("Pass");
+        int buttonIsActive = driver.findElements(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]")).size();
+        //checkNotify(errorSetupYourAccount, error_setupYourAccount);
+        assertEquals(buttonIsActive, 0);
     }
 
     protected void signUp_WithoutFullName() {
@@ -208,10 +221,7 @@ public class Register {
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
-        boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
-        checkNotify(errorSetupYourAccount, error_setupYourAccount);
-        if(buttonIsActive)
-            System.out.println("Pass");
+        checkNotify(errorFullName, error_FullName);
     }
 
     protected void signUp_WithoutDateOfBirth() {

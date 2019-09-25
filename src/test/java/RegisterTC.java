@@ -89,14 +89,17 @@ public class RegisterTC extends Register {
     }
 
     @Test
-    void SignUpWithTooLongPassword() {
-        signUp_WithTooLongPassword();
+    void SignUpWithSuperLongPassword() {
+        signUp_WithSuperLongPassword();
     }
 
     @Test
     void SignUpWithTooShortPasswordCode() {
         signUp_WithTooShortPassword();
     }
+
+    @Test
+    void SignUpPasswordsAreNotTheSame() { signUp_PasswordsAreNotTheSame(); }
 
     @Test
     void OnlyFirstPasswordFilledOut() {
@@ -114,7 +117,7 @@ public class RegisterTC extends Register {
     }
 
     @Test
-    void SetuAccountWithoutGender(){
+    void SetupAccountWithoutGender(){
         signUp_WithoutGender();
     }
 

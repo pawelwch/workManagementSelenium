@@ -41,7 +41,7 @@ public class BaseMethods {
     /**Metoda, ktora generuje 9cyfrowy numer telefonu, zaczynajacy sie na "1". Ze względów bezpieczeństwa
      * @return zwraca numer telefonu */
     public static String generatePhone() {
-        String number = (RandomStringUtils.randomNumeric(9));
+        String number = "8" + (RandomStringUtils.randomNumeric(8));
         return number;
     }
 
