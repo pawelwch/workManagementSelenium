@@ -9,6 +9,7 @@ import Pages.RegisterFactory.RegisterWebElements;
 import RestAPI.REST_Methods;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -19,8 +20,7 @@ import static Pages.RegisterFactory.RegisterWebElements.*;
 import static TestMethods.ConfigureMethods.sleep;
 import static TestMethods.ConfigureMethods.waitForIt;
 import static TestMethods.StaticsData.*;
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.*;
 
 /**Klasa która przechowuje kroki TestCasów */
 public class Register {
@@ -200,9 +200,9 @@ public class Register {
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
-        //boolean buttonIsActive = registerPage.confirmSetupAccount.isEnabled();
+        int buttonIsActive = driver.findElements(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]")).size();
         //checkNotify(errorSetupYourAccount, error_setupYourAccount);
-        //assertFalse(buttonIsActive);
+        assertEquals(buttonIsActive, 0);
     }
 
     protected void signUp_WithoutFullName() {
