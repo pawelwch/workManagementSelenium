@@ -3,13 +3,16 @@ package TestMethods;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import java.util.Random;
 
 public class BaseMethods {
 
-
+    public static WebDriver driver;
     public static ConfigureMethods configureMethods;
     static private Random random = new Random();
     static private StringBuilder stringBuilder = new StringBuilder();
@@ -64,6 +67,15 @@ public class BaseMethods {
         configureMethods.waitForIt(element).submit();
     }
 
+    public static void exceptValue(WebElement element){
+        try {
+            element.isDisplayed();
+            System.out.println("Pass");
+        }
+        catch (NoSuchElementException e) {
+            throw new RuntimeException("This is where you put the message");
+        }
+    }
 
     /**Metoda za pomocą które klikamy w "ciało" strony aby odfocusować pole/input
      *

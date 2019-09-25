@@ -19,8 +19,7 @@ import static Pages.RegisterFactory.RegisterWebElements.*;
 import static TestMethods.ConfigureMethods.sleep;
 import static TestMethods.ConfigureMethods.waitForIt;
 import static TestMethods.StaticsData.*;
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.*;
 
 /**Klasa która przechowuje kroki TestCasów */
 public class Register {
@@ -166,8 +165,7 @@ public class Register {
         BaseMethods.submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("","");
-        checkNotify(errorPinCode, error_PinCode);
-
+        // dopisac assercje na brak buttona;
     }
 
     protected void signUp_WithoutGender(){
