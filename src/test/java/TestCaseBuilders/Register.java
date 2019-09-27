@@ -17,8 +17,7 @@ import org.testng.Assert;
 import static JsonData.JsonParser_Notification.*;
 import static TestMethods.BaseMethods.*;
 import static Pages.RegisterFactory.RegisterWebElements.*;
-import static TestMethods.ConfigureMethods.sleep;
-import static TestMethods.ConfigureMethods.waitForIt;
+import static TestMethods.ConfigureMethods.*;
 import static TestMethods.StaticsData.*;
 import static org.testng.Assert.*;
 
@@ -239,7 +238,9 @@ public class Register {
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name,email,address);
+        registerPage.setUpAccount_Birth_date("");
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
@@ -261,9 +262,10 @@ public class Register {
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name,email,address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
-        //registerPage.setUpAccount_countrySelector();
+        //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_policiesAndMessages(true,true);
         int buttonIsActive = driver.findElements(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]")).size();
         checkNotify(errorCity, error_City);
@@ -282,6 +284,7 @@ public class Register {
         registerPage.setUpAccount_gender(male);
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name,email,"");
         registerPage.setUpAccount_Birth_date("20 - 05 - 1993");
         //registerPage.setUpAccount_countrySelector("Pola");
@@ -305,6 +308,7 @@ public class Register {
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name,email,address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
         registerPage.setUpAccount_countrySelector("Pola");
@@ -327,6 +331,7 @@ public class Register {
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
         registerPage.setUpAccount_countrySelector("Pola");
@@ -350,6 +355,7 @@ public class Register {
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
         registerPage.setUpAccount_countrySelector("Pola");
@@ -378,6 +384,7 @@ public class Register {
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
         registerPage.setUpAccount_countrySelector("Pola");
@@ -406,6 +413,7 @@ public class Register {
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
         registerPage.setUpAccount_countrySelector("Pola");
@@ -436,6 +444,7 @@ public class Register {
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
         registerPage.setUpAccount_countrySelector("Pola");

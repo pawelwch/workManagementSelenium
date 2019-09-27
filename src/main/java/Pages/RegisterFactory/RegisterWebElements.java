@@ -84,8 +84,8 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@id=\"react-select-6-input\"]") WebElement cityInputText;
     @FindBy(id = "react-select-6-option-0") WebElement firstCityChoice;
     @FindBy(id = "address")  WebElement address;
-    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[8]/div[1]/label/span[2]/span")  WebElement policies;
-    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[8]/div[2]/label/span[2]/span")  WebElement marketing;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[8]/div[1]/label/span[2]/span") public static WebElement policies;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[8]/div[2]/label/span[2]/span") public static WebElement marketing;
     @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]") public static WebElement confirmSetupAccount;
     @FindBy(xpath = "//div[@class='error-message") public static WebElement errorSetupYourAccount;
     @FindBy(xpath = "//*[@id=\"fullName\"]/span") public static WebElement errorFullName;
