@@ -84,43 +84,44 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@id=\"react-select-6-input\"]") WebElement cityInputText;
     @FindBy(id = "react-select-6-option-0") WebElement firstCityChoice;
     @FindBy(id = "address")  WebElement address;
-    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[8]/div[1]/label/span[2]/span")  WebElement policies;
-    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[8]/div[2]/label/span[2]/span")  WebElement marketing;
-    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]") public static WebElement confirmSetupAccount;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[8]/div[1]/label/span[2]/span") public static WebElement policies;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[8]/div[2]/label/span[2]/span") public static WebElement marketing;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button") public static WebElement confirmSetupAccount;
     @FindBy(xpath = "//div[@class='error-message") public static WebElement errorSetupYourAccount;
     @FindBy(xpath = "//*[@id=\"fullName\"]/span") public static WebElement errorFullName;
     @FindBy(xpath = "//*[@id=\"dob-helper-text\"]/span") public static WebElement errorDateOfBirth;
     @FindBy(xpath = "//*[@id=\"city\"]/span") public static WebElement errorCity;
     @FindBy(xpath = "//*[@id=\"address\"]/span") public static WebElement errorAddress;
-    @FindBy(id = "height") WebElement height;
-    @FindBy(id = "weight") WebElement weight;
 
-    @FindBy() WebElement skillsets;
-    @FindBy(xpath = "//*[@id=\"react-select-2-input\"]") WebElement skillInputTyping; //zmienic na id
-//    @FindBy(id = "react-select-2-option-0")public static WebElement skillExcell;
-//    @FindBy(id = "react-select-2-option-1")public static WebElement skillMsOffice;
-//    @FindBy(id = "react-select-2-option-2")public static WebElement skillProgramming;
-    @FindBy() WebElement licensesAndCertificates;
+    @FindBy(id = "height") public static WebElement height;
+    @FindBy(id = "weight") public static WebElement weight;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[2]/div/div/div/div") WebElement skillsets;
+    @FindBy(xpath = "//*[@id=\"react-select-2-input\"]") WebElement skillInputTyping;
+    @FindBy(xpath = "//*[@id=\"react-select-14-option-0\"]") public static WebElement excelSkill;
+    @FindBy(xpath = "//*[@id=\"react-select-14-option-1\"]") public static WebElement msOfficeSkill;
+    @FindBy(xpath = "//*[@id=\"react-select-14-option-1\"]") public static WebElement programmingSkill;
+    @FindBy(xpath = "//*[@id=\"react-select-14-option-1\"]") public static WebElement javaSkill;
+    @FindBy(xpath = "//*[@id=\"react-select-14-option-1\"]") public static WebElement javaScriptSkill;
+    @FindBy(xpath = "//*[@id=\"react-select-14-option-1\"]") public static WebElement oneSkill;
+    @FindBy(xpath = "//*[@id=\"react-select-14-option-1\"]") public static WebElement twoSkill;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[3]/div/div/div/div") WebElement licensesAndCertificates;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[4]/div/div/div/div") WebElement education;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/form/div[5]/div/div/div/div") WebElement languages;
+    @FindBy(id = "biography") WebElement biography;
+    @FindBy(id = "signupSkipStep") public static WebElement skipButton;
+
     @FindBy(id = "react-select-3-input" ) WebElement licensesInputTyping;
-//    @FindBy(id = "react-select-3-option-0" )public static WebElement licenseOne;
-//    @FindBy(id = "react-select-3-option-1" )public static WebElement licenseTwo;
-//    @FindBy(id = "react-select-3-option-2" )public static WebElement licenseThree;
-    @FindBy() WebElement education;
-//    @FindBy(id = "react-select-4-option-0" )public static WebElement educationVol1;
-//    @FindBy(id = "react-select-4-option-1" )public static WebElement educationVol2;
-//    @FindBy(id = "react-select-4-option-2" )public static WebElement educationVol3;
-    @FindBy() WebElement languages;
-//    @FindBy(id = "react-select-5-option-0" )public static WebElement languagePolish;
-//    @FindBy(id = "react-select-5-option-1" )public static WebElement languageEnglish;
-//    @FindBy(id = "react-select-5-option-2" )public static WebElement languageGerman;
-//    @FindBy(id = "react-select-5-option-3" )public static WebElement languageHindi;
-//    @FindBy(id = "react-select-5-option-4" )public static WebElement languageSpanish;
 
-    @FindBy() WebElement biography;
+    @FindBy(xpath = "//*[@id=\"react-select-9-option-0\"]") public static WebElement bachelorEducation;
+
+
+
+
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[9]/button") WebElement continueButtonMoreAboutU;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[1]/button") WebElement skipButton;
+
     @FindBy (xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[1]/input") WebElement uploadPhoto;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[2]/button") WebElement savePhoto;
     @FindBy (xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[2]/button") WebElement takeAPhoto;

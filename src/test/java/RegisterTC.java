@@ -147,6 +147,16 @@ public class RegisterTC extends Register {
     }
 
     @Test
+    void WithoutMoreAboutYourself() {
+        signUp_WithoutMoreAboutYourself();
+    }
+
+    @Test
+    void SetupAccountWithoutHeightAndWeight(){
+        signUp_withoutHeightAndWeight();
+    }
+
+    @Test
     void NoProfilePicture() {
         signUp_WithNoProfilePicture();
     }

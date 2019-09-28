@@ -3,6 +3,7 @@ package TestCaseBuilders;
 import JsonData.JsonParser;
 import JsonData.JsonParser_Notification;
 import Pages.HomePageFactory.HomePage;
+import Pages.HomePageFactory.HomeWebElements;
 import Pages.LoginFactory.LoginPage;
 import Pages.RegisterFactory.RegisterPage;
 import Pages.RegisterFactory.RegisterWebElements;
@@ -17,8 +18,7 @@ import org.testng.Assert;
 import static JsonData.JsonParser_Notification.*;
 import static TestMethods.BaseMethods.*;
 import static Pages.RegisterFactory.RegisterWebElements.*;
-import static TestMethods.ConfigureMethods.sleep;
-import static TestMethods.ConfigureMethods.waitForIt;
+import static TestMethods.ConfigureMethods.*;
 import static TestMethods.StaticsData.*;
 import static org.testng.Assert.*;
 
@@ -58,7 +58,7 @@ public class Register {
         registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
-        registerPage.confirm_SetUpAccount();
+
         registerPage.moreAboutYou_height_weight(generateRandomNumber(3),generateRandomNumber(2));
         registerPage.moreAboutYou_skillSet(true);
         registerPage.moreAboutYou_licensesAndCertificates(false);
@@ -195,6 +195,7 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_Birth_date("06 - 02 - 1993");
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
@@ -217,6 +218,7 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address("",email,address);
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_Birth_date("08 10 1993");
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
@@ -240,6 +242,8 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
+        scroolToTheSomePoint(marketing);
+        registerPage.setUpAccount_Birth_date("");
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
@@ -262,8 +266,9 @@ public class Register {
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
-        //registerPage.setUpAccount_countrySelector();
+        //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_policiesAndMessages(true,true);
         int buttonIsActive = driver.findElements(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]")).size();
         checkNotify(errorCity, error_City);
@@ -279,10 +284,11 @@ public class Register {
         registerPage.setPinView("123456","123456");
         BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
-        registerPage.setUpAccount_gender(male);
+        registerPage.setUpAccount_gender(female);
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
         registerPage.setUpAccount_name_email_address(name,email,"");
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_Birth_date("20 - 05 - 1993");
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
@@ -302,19 +308,72 @@ public class Register {
         registerPage.setPinView("123456","123456");
         BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(other);
         String name = generateRandomString(5) + " " +generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         registerPage.setUpAccount_name_email_address(name,email,address);
-        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
-        registerPage.setUpAccount_countrySelector("Pola");
+        scroolToTheSomePoint(marketing);
+        registerPage.setUpAccount_Birth_date("20 - 02 - 1922");
+        //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(false,true);
-        //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
+        int buttonIsActive = driver.findElements(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]")).size();
+        //checkNotify(errorAddress, error_Address);
+        assertEquals(buttonIsActive, 0);
+
     }
 
 
+    protected void signUp_WithoutMoreAboutYourself(){
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        BaseMethods.submitButton(submitFirstView);
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        BaseMethods.submitButton(passwordConfirmButton);
+        registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(other);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name,email,address);
+        scroolToTheSomePoint(marketing);
+        registerPage.setUpAccount_Birth_date("20 - 02 - 1922");
+        //registerPage.setUpAccount_countrySelector("Pola");
+        registerPage.setUpAccount_citySelector("Wroc");
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+        BaseMethods.submitButton(confirmSetupAccount);
+        registerPage.clickAtSkipViewButton(skipButton);
 
+    }
+
+    protected void signUp_withoutHeightAndWeight(){
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        BaseMethods.submitButton(submitFirstView);
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        BaseMethods.submitButton(passwordConfirmButton);
+        registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(other);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name,email,address);
+        scroolToTheSomePoint(marketing);
+        registerPage.setUpAccount_Birth_date("20 - 02 - 1922");
+        //registerPage.setUpAccount_countrySelector("Pola");
+        registerPage.setUpAccount_citySelector("Wroc");
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+        BaseMethods.submitButton(confirmSetupAccount);
+        registerPage.moreAboutYou_skillSet(false, excelSkill, javaScriptSkill, msOfficeSkill);
+        registerPage.moreAboutYou_licensesAndCertificates(true);
+        //registerPage.moreAboutYou_education();
+
+    }
     protected void signUp_WithNoProfilePicture() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
@@ -324,15 +383,17 @@ public class Register {
         registerPage.setPinView("123456", "123456");
         BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(female);
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
-        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
-        registerPage.setUpAccount_countrySelector("Pola");
+        registerPage.setUpAccount_Birth_date("20 - 01 - 1945");
+        //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
-        registerPage.confirm_SetUpAccount();
+        BaseMethods.submitButton(confirmSetupAccount);
         registerPage.confirm_moreAboutYou();
         registerPage.photoUpload("skip", "");
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
@@ -350,12 +411,13 @@ public class Register {
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
-        registerPage.setUpAccount_countrySelector("Pola");
+        //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
-        registerPage.confirm_SetUpAccount();
+
         registerPage.moreAboutYou_height_weight( "180", "80");
         registerPage.moreAboutYou_skillSet(false);
         registerPage.moreAboutYou_licensesAndCertificates(false);
@@ -378,12 +440,13 @@ public class Register {
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
         registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
-        registerPage.confirm_SetUpAccount();
+
         registerPage.moreAboutYou_height_weight( "180", "80");
         registerPage.moreAboutYou_skillSet(false);
         registerPage.moreAboutYou_licensesAndCertificates(false);
@@ -406,12 +469,13 @@ public class Register {
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
         registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
-        registerPage.confirm_SetUpAccount();
+
         registerPage.moreAboutYou_height_weight("180", "80");
         registerPage.moreAboutYou_skillSet(false);
         registerPage.moreAboutYou_licensesAndCertificates(false);
@@ -436,12 +500,13 @@ public class Register {
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
+        scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
         registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
-        registerPage.confirm_SetUpAccount();
+
         registerPage.moreAboutYou_height_weight( "180", "80");
         registerPage.moreAboutYou_skillSet(false);
         registerPage.moreAboutYou_licensesAndCertificates(false);
