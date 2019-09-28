@@ -102,8 +102,9 @@ public class RegisterPage extends RegisterWebElements{
         }
     }
 
-    public void confirm_SetUpAccount () {
-        waitForIt(confirmSetupAccount).click();
+    public void clickAtSkipViewButton(WebElement skipButton){
+        sleep(2000);
+        waitForIt(skipButton).click();
     }
 
     public void moreAboutYou_height_weight( String height, String weight) {
