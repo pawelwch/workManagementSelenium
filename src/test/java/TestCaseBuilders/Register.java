@@ -371,9 +371,65 @@ public class Register {
         BaseMethods.submitButton(confirmSetupAccount);
         registerPage.moreAboutYou_skillSet(false, excelSkill, javaScriptSkill, msOfficeSkill);
         registerPage.moreAboutYou_licensesAndCertificates(true);
-        //registerPage.moreAboutYou_education();
-
+        registerPage.moreAboutYou_education(masterEducation);
+        registerPage.moreAboutYou_languages(polishLanguage, englishLanguage);
+        registerPage.moreAboutYou_biography();
     }
+
+    protected void signUp_withoutSkillsets(){
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        BaseMethods.submitButton(submitFirstView);
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        BaseMethods.submitButton(passwordConfirmButton);
+        registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(other);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name,email,address);
+        scroolToTheSomePoint(marketing);
+        registerPage.setUpAccount_Birth_date("20 - 02 - 1922");
+        //registerPage.setUpAccount_countrySelector("Pola");
+        registerPage.setUpAccount_citySelector("Wroc");
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+        BaseMethods.submitButton(confirmSetupAccount);
+        registerPage.moreAboutYou_height_weight("200", "90");
+        registerPage.moreAboutYou_licensesAndCertificates(true);
+        registerPage.moreAboutYou_education(masterEducation);
+        registerPage.moreAboutYou_languages(polishLanguage, englishLanguage);
+        registerPage.moreAboutYou_biography();
+    }
+
+    protected void signUp_withoutLicensesAndCerificates(){
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        BaseMethods.submitButton(submitFirstView);
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        BaseMethods.submitButton(passwordConfirmButton);
+        registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(other);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name,email,address);
+        scroolToTheSomePoint(marketing);
+        registerPage.setUpAccount_Birth_date("20 - 02 - 1922");
+        //registerPage.setUpAccount_countrySelector("Pola");
+        registerPage.setUpAccount_citySelector("Wroc");
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+        BaseMethods.submitButton(confirmSetupAccount);
+        registerPage.moreAboutYou_height_weight("200", "90");
+        registerPage.moreAboutYou_skillSet(false, excelSkill, javaScriptSkill, msOfficeSkill);
+        registerPage.moreAboutYou_education(masterEducation);
+        registerPage.moreAboutYou_languages(polishLanguage, englishLanguage);
+        registerPage.moreAboutYou_biography();
+    }
+
     protected void signUp_WithNoProfilePicture() {
         homePage.GoToSignUp();
         registerPage.selectCountry();

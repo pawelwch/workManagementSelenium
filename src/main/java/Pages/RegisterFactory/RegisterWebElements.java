@@ -114,7 +114,12 @@ public class RegisterWebElements {
     @FindBy(id = "react-select-3-input" ) WebElement licensesInputTyping;
 
     @FindBy(xpath = "//*[@id=\"react-select-9-option-0\"]") public static WebElement bachelorEducation;
+    @FindBy(xpath = "//*[@id=\"react-select-9-option-1\"]") public static WebElement engineerEducation;
+    @FindBy(xpath = "//*[@id=\"react-select-9-option-2\"]") public static WebElement masterEducation;
 
+    @FindBy(xpath = "//*[@id=\"react-select-10-option-0\"]") public static WebElement polishLanguage;
+    @FindBy(xpath = "//*[@id=\"react-select-10-option-1\"]") public static WebElement englishLanguage;
+    @FindBy(xpath = "//*[@id=\"react-select-10-option-2\"]") public static WebElement spanishLanguage;
 
 
 
