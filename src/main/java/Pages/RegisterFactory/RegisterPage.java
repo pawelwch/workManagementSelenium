@@ -182,10 +182,6 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(biography).sendKeys(generateRandomString(200));
     }
 
-    public void confirm_moreAboutYou () {
-        waitForIt(continueButtonMoreAboutU).click();
-    }
-
     public void photoUpload (String action, String photoPath) {
         sleep(1000);
         switch (action) {

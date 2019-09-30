@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import java.util.Random;
 
+import static TestMethods.ConfigureMethods.sleep;
+
 public class BaseMethods {
 
     public static WebDriver driver;
@@ -64,7 +66,7 @@ public class BaseMethods {
     /**Metoda klika na przycisk akceptacji (sumbit), na każdej stronie, która taki przycisk posiada.
      * @param element id przycisku submit.*/
     public static void submitButton(WebElement element) {
-        configureMethods.waitForIt(element).submit();
+        ConfigureMethods.waitForIt(element).submit();
     }
 
     public static void exceptValue(WebElement element){
