@@ -66,7 +66,7 @@ public class BaseMethods {
     /**Metoda klika na przycisk akceptacji (sumbit), na każdej stronie, która taki przycisk posiada.
      * @param element id przycisku submit.*/
     public static void submitButton(WebElement element) {
-        ConfigureMethods.waitForIt(element).submit();
+        ConfigureMethods.waitForIt(element).click();
     }
 
     public static void exceptValue(WebElement element){

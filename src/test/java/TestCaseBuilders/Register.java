@@ -518,7 +518,7 @@ public class Register {
         registerPage.moreAboutYou_languages(polishLanguage, englishLanguage);
     }
 
-    protected void signUp_WithNoProfilePicture() {
+    protected void signUp_WithoutProfilePicture() {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -553,24 +553,22 @@ public class Register {
         registerPage.setPinView("123456", "123456");
         BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(female);
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
-        registerPage.setUpAccount_Birth_date("20 - 05 - 2013");
+        registerPage.setUpAccount_Birth_date("20 - 01 - 1945");
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
-
-        registerPage.moreAboutYou_height_weight( "180", "80");
-        registerPage.moreAboutYou_skillSet(false);
-        registerPage.moreAboutYou_licensesAndCertificates(false);
-        //registerPage.moreAboutYou_education();
-        registerPage.moreAboutYou_languages();
-
-        registerPage.photoUpload("browser",  AVATAR);
-            //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
+        sleep(1500);
+        BaseMethods.submitButton(confirmSetupAccount);
+        sleep(1000);
+        registerPage.clickAtSkipViewButton(skipButton);
+        registerPage.uploadProfilePicture("C:\\Users\\Pablo\\Desktop\\LM automty\\lm_automaticTests\\src\\main\\resources\\Images_And_Documents\\Avatar.jpg");
+        sleep(2000);
     }
 
         protected void signUp_WithPngProfilePicture() {
