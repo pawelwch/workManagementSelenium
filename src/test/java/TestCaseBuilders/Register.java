@@ -65,7 +65,7 @@ public class Register {
         //registerPage.moreAboutYou_education();
         registerPage.moreAboutYou_languages(null, null);
         registerPage.moreAboutYou_biography();
-        registerPage.confirm_moreAboutYou();
+
         registerPage.photoUpload("browser",AVATAR);
         registerPage.uploadIdCard(AVATAR,PDF);
         registerPage.uploadCertificates(AVATAR, PDF);
@@ -344,6 +344,7 @@ public class Register {
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
+        sleep(1000);
         BaseMethods.submitButton(confirmSetupAccount);
         registerPage.clickAtSkipViewButton(skipButton);
 
@@ -368,6 +369,7 @@ public class Register {
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
+        sleep(1000);
         BaseMethods.submitButton(confirmSetupAccount);
         registerPage.moreAboutYou_skillSet(false, excelSkill, javaScriptSkill, msOfficeSkill);
         registerPage.moreAboutYou_licensesAndCertificates(true);
@@ -395,6 +397,7 @@ public class Register {
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
+        sleep(1000);
         BaseMethods.submitButton(confirmSetupAccount);
         registerPage.moreAboutYou_height_weight("200", "90");
         registerPage.moreAboutYou_licensesAndCertificates(true);
@@ -403,7 +406,7 @@ public class Register {
         registerPage.moreAboutYou_biography();
     }
 
-    protected void signUp_withoutLicensesAndCerificates(){
+    protected void signUp_withoutLicensesAndCertificates(){
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -422,12 +425,97 @@ public class Register {
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true,true);
+        sleep(1000);
         BaseMethods.submitButton(confirmSetupAccount);
         registerPage.moreAboutYou_height_weight("200", "90");
         registerPage.moreAboutYou_skillSet(false, excelSkill, javaScriptSkill, msOfficeSkill);
         registerPage.moreAboutYou_education(masterEducation);
         registerPage.moreAboutYou_languages(polishLanguage, englishLanguage);
         registerPage.moreAboutYou_biography();
+    }
+
+    protected void signUp_withoutEducation(){
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        BaseMethods.submitButton(submitFirstView);
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        BaseMethods.submitButton(passwordConfirmButton);
+        registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(other);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name,email,address);
+        scroolToTheSomePoint(marketing);
+        registerPage.setUpAccount_Birth_date("20 - 02 - 1922");
+        //registerPage.setUpAccount_countrySelector("Pola");
+        registerPage.setUpAccount_citySelector("Wroc");
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+        sleep(1000);
+        BaseMethods.submitButton(confirmSetupAccount);
+        registerPage.moreAboutYou_height_weight("200", "90");
+        registerPage.moreAboutYou_licensesAndCertificates(true);
+        registerPage.moreAboutYou_skillSet(false, excelSkill, javaScriptSkill, msOfficeSkill);
+        registerPage.moreAboutYou_languages(polishLanguage, englishLanguage);
+        registerPage.moreAboutYou_biography();
+    }
+
+    protected void signUp_withoutLanguages(){
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        BaseMethods.submitButton(submitFirstView);
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        BaseMethods.submitButton(passwordConfirmButton);
+        registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(other);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name,email,address);
+        scroolToTheSomePoint(marketing);
+        registerPage.setUpAccount_Birth_date("20 - 02 - 1922");
+        //registerPage.setUpAccount_countrySelector("Pola");
+        registerPage.setUpAccount_citySelector("Wroc");
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+        sleep(1000);
+        BaseMethods.submitButton(confirmSetupAccount);
+        registerPage.moreAboutYou_height_weight("200", "90");
+        registerPage.moreAboutYou_licensesAndCertificates(true);
+        registerPage.moreAboutYou_skillSet(false, excelSkill, javaScriptSkill, msOfficeSkill);
+        registerPage.moreAboutYou_education(masterEducation);
+        registerPage.moreAboutYou_biography();
+    }
+
+    protected void signUp_withoutBiography(){
+        homePage.GoToSignUp();
+        registerPage.selectCountry();
+        registerPage.registerCompletePhone(generatePhone());
+        BaseMethods.submitButton(submitFirstView);
+        registerPage.confirmSms("");
+        registerPage.setPinView("123456","123456");
+        BaseMethods.submitButton(passwordConfirmButton);
+        registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(other);
+        String name = generateRandomString(5) + " " +generateRandomString(5);
+        String email = generateRandomEmail();
+        String address = generateRandomString(10) + " 2/2";
+        registerPage.setUpAccount_name_email_address(name,email,address);
+        scroolToTheSomePoint(marketing);
+        registerPage.setUpAccount_Birth_date("20 - 02 - 1922");
+        //registerPage.setUpAccount_countrySelector("Pola");
+        registerPage.setUpAccount_citySelector("Wroc");
+        registerPage.setUpAccount_policiesAndMessages(true,true);
+        sleep(1000);
+        BaseMethods.submitButton(confirmSetupAccount);
+        registerPage.moreAboutYou_height_weight("200", "90");
+        registerPage.moreAboutYou_licensesAndCertificates(true);
+        registerPage.moreAboutYou_skillSet(false, excelSkill, javaScriptSkill, msOfficeSkill);
+        registerPage.moreAboutYou_education(masterEducation);
+        registerPage.moreAboutYou_languages(polishLanguage, englishLanguage);
     }
 
     protected void signUp_WithNoProfilePicture() {
@@ -449,10 +537,11 @@ public class Register {
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
+        sleep(1000);
         BaseMethods.submitButton(confirmSetupAccount);
-        registerPage.confirm_moreAboutYou();
+        registerPage.clickAtSkipViewButton(skipButton);
         registerPage.photoUpload("skip", "");
-            //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
+
     }
 
     protected void signUp_WithJpgProfilePicture(){
@@ -479,7 +568,7 @@ public class Register {
         registerPage.moreAboutYou_licensesAndCertificates(false);
         //registerPage.moreAboutYou_education();
         registerPage.moreAboutYou_languages();
-        registerPage.confirm_moreAboutYou();
+
         registerPage.photoUpload("browser",  AVATAR);
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
@@ -502,13 +591,12 @@ public class Register {
         registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
-
         registerPage.moreAboutYou_height_weight( "180", "80");
         registerPage.moreAboutYou_skillSet(false);
         registerPage.moreAboutYou_licensesAndCertificates(false);
         //registerPage.moreAboutYou_education();
         registerPage.moreAboutYou_languages();
-        registerPage.confirm_moreAboutYou();
+
         registerPage.photoUpload("browser",  PNG);
             //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
     }
@@ -537,7 +625,6 @@ public class Register {
         registerPage.moreAboutYou_licensesAndCertificates(false);
         //registerPage.moreAboutYou_education();
         registerPage.moreAboutYou_languages();
-        registerPage.confirm_moreAboutYou();
         registerPage.photoUpload("browser",  AVATAR);
         registerPage.uploadIdCard(IDCARD, IDCARD1);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
@@ -568,7 +655,7 @@ public class Register {
         registerPage.moreAboutYou_licensesAndCertificates(false);
         //registerPage.moreAboutYou_education();
         registerPage.moreAboutYou_languages();
-        registerPage.confirm_moreAboutYou();
+
         registerPage.photoUpload("browser", AVATAR);
         registerPage.uploadCertificates(CERT, CERT1);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
