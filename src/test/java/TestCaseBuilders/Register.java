@@ -563,11 +563,11 @@ public class Register {
         //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
-        sleep(1500);
+        sleep(1000);
         BaseMethods.submitButton(confirmSetupAccount);
         sleep(1000);
         registerPage.clickAtSkipViewButton(skipButton);
-        registerPage.uploadProfilePicture("C:\\Users\\Pablo\\Desktop\\LM automty\\lm_automaticTests\\src\\main\\resources\\Images_And_Documents\\Avatar.jpg");
+        registerPage.uploadProfilePicture("//home/maryna//Pulpit//Projekty//lm_automaticTests//src//main//resources//Images_And_Documents//Avatar1.jpg");
         sleep(2000);
     }
 
@@ -580,23 +580,22 @@ public class Register {
         registerPage.setPinView("123456", "123456");
         BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(other);
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("1993 - 10 - 08");
-        registerPage.setUpAccount_countrySelector("Pola");
+        //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
-        registerPage.moreAboutYou_height_weight( "180", "80");
-        registerPage.moreAboutYou_skillSet(false);
-        registerPage.moreAboutYou_licensesAndCertificates(false);
-        //registerPage.moreAboutYou_education();
-        registerPage.moreAboutYou_languages();
-
-        registerPage.photoUpload("browser",  PNG);
-            //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
+        sleep(1000);
+        BaseMethods.submitButton(confirmSetupAccount);
+        sleep(1000);
+        registerPage.clickAtSkipViewButton(skipButton);
+        registerPage.uploadProfilePicture("//home/maryna//Pulpit//Projekty//lm_automaticTests//src//main//resources//Images_And_Documents//pngFile.png");
+        sleep(2000);
     }
 
     protected void signUp_DocumentsUploadedOnlyWithIdCard() {

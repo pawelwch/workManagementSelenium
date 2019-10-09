@@ -122,7 +122,7 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@id=\"react-select-10-option-2\"]") public static WebElement spanishLanguage;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[9]/button") WebElement continueButtonMoreAboutU;
 
-    @FindBy(id = "signupBrowseGallery") public static WebElement uploadProfilePictureButton;
+    @FindBy(id = "picture") public static WebElement uploadProfilePictureButton;
     @FindBy (xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[1]/input") WebElement uploadPhoto;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[2]/button") WebElement savePhoto;
     @FindBy (xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[2]/button") WebElement takeAPhoto;
