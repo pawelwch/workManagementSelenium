@@ -26,6 +26,7 @@ public class RegisterPage extends RegisterWebElements{
 
     public void selectCountry() {
         waitForIt(countrySelector).click();
+        sleep(1000);
         configureMethods.scroolToTheSomePoint(polishPrefix);
         waitForIt(polishPrefix).click();
     }
@@ -200,7 +201,7 @@ public class RegisterPage extends RegisterWebElements{
     }
 
     public void uploadProfilePicture(String picturePath){
-        sleep(1000);
+        sleep(2000);
         uploadProfilePictureButton.sendKeys(picturePath);
     }
 
