@@ -66,9 +66,9 @@ public class Register {
         registerPage.moreAboutYou_languages(null, null);
         registerPage.moreAboutYou_biography();
 
-        registerPage.photoUpload("browser",AVATAR);
-        registerPage.uploadIdCard(AVATAR,PDF);
-        registerPage.uploadCertificates(AVATAR, PDF);
+//        registerPage.photoUpload("browser",AVATAR);
+//        registerPage.uploadIdCard(AVATAR,PDF);
+//        registerPage.uploadCertificates(AVATAR, PDF);
         registerPage.idNumber(generateRandomNumber(5));
         registerPage.continueDocumetsUploadButton();
     }
@@ -567,7 +567,7 @@ public class Register {
         BaseMethods.submitButton(confirmSetupAccount);
         sleep(1000);
         registerPage.clickAtSkipViewButton(skipButton);
-        registerPage.uploadProfilePicture("//home/maryna//Pulpit//Projekty//lm_automaticTests//src//main//resources//Images_And_Documents//Avatar1.jpg");
+        registerPage.uploadProfilePicture(JPG_PROFILE_PICTURE);
         sleep(2000);
     }
 
@@ -594,7 +594,7 @@ public class Register {
         BaseMethods.submitButton(confirmSetupAccount);
         sleep(1000);
         registerPage.clickAtSkipViewButton(skipButton);
-        registerPage.uploadProfilePicture("//home/maryna//Pulpit//Projekty//lm_automaticTests//src//main//resources//Images_And_Documents//pngFile.png");
+        registerPage.uploadProfilePicture(PNG_PROFILE_PICTURE);
         sleep(2000);
     }
 
@@ -622,7 +622,7 @@ public class Register {
         registerPage.moreAboutYou_licensesAndCertificates(false);
         //registerPage.moreAboutYou_education();
         registerPage.moreAboutYou_languages();
-        registerPage.photoUpload("browser",  AVATAR);
+        //registerPage.photoUpload("browser",  AVATAR);
         registerPage.uploadIdCard(IDCARD, IDCARD1);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
 
@@ -653,7 +653,7 @@ public class Register {
         //registerPage.moreAboutYou_education();
         registerPage.moreAboutYou_languages();
 
-        registerPage.photoUpload("browser", AVATAR);
+        //registerPage.photoUpload("browser", AVATAR);
         registerPage.uploadCertificates(CERT, CERT1);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
 
