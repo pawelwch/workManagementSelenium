@@ -199,6 +199,11 @@ public class RegisterPage extends RegisterWebElements{
         }
     }
 
+    public void uploadProfilePicture(String picturePath){
+        sleep(1000);
+        uploadProfilePictureButton.sendKeys(picturePath);
+    }
+
     public void uploadIdCard (String idCardPath, String nextFile) {
         sleep(1000);
         uploadIdCard.sendKeys(idCardPath);
