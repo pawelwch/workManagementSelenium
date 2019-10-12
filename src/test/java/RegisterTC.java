@@ -161,7 +161,7 @@ public class RegisterTC extends Register {
         signUp_WithJpgProfilePicture();
     }
 
-    @Test void PNGProfilePicture() {
+    @Test void SignUpWithPNGProfilePicture() {
         signUp_WithPngProfilePicture();
     }
 
