@@ -1,12 +1,10 @@
 package TestMethods;
 
+import Pages.RegisterFactory.RegisterPage;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.testng.Assert;
 import java.util.Random;
 
@@ -85,6 +83,18 @@ public class BaseMethods {
      */
     public void clickSomewhere(WebElement body){
         body.click();
+    }
+
+    public static void checkIfPictureIsPresent(WebElement picture) throws Exception{
+        Boolean ImagePresent = (Boolean) ((JavascriptExecutor)driver).executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", picture);
+        if (!ImagePresent)
+        {
+            System.out.println("Image not displayed.");
+        }
+        else
+        {
+            System.out.println("Image displayed.");
+        }
     }
 
 }
