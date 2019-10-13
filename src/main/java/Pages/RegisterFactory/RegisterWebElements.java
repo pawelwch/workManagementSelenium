@@ -123,19 +123,26 @@ public class RegisterWebElements {
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[9]/button") WebElement continueButtonMoreAboutU;
 
     @FindBy(id = "picture") public static WebElement uploadProfilePictureButton;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/img") public static WebElement currentProfilePicture;
     @FindBy (xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[1]/input") WebElement uploadPhoto;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[2]/button") WebElement savePhoto;
-    @FindBy (xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[2]/button") WebElement takeAPhoto;
 
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[1]/div[3]/div/input") WebElement uploadIdCard;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[2]/div[3]/div/input") WebElement uploadCertificates;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/div[1]/div[1]") public static WebElement idCardLabel;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/div[1]/div[2]") public static WebElement certificatesLabel;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/div/div/div[1]/div[3]") public static WebElement idNumberLabel;
+
+    @FindBy(id = "document1") public static WebElement addMissingFileButtonOne;
+    @FindBy(id = "document2") public static WebElement addMissingFileButtonTwo;
+    @FindBy(xpath = "//*[@id=\"app\"]/main/div/div[2]/div/div/div/div/button") public static WebElement submitDocuments;
+
+
     /**Selektory takie jak addNextFile, cancleButton, deleteButton oraz submit wystarczy podac tylko raz, bo na widoku dodawania certyfikatów,
      * jak i na widoku dodawania zdjec z cardId te selektory sa takie same*/
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/input[2]") WebElement addNextFile;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[3]/span[2]/button") WebElement cancleButton;
     @FindBy(xpath = "//*[.=Delete]") WebElement deleteButton;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div/div[2]/button") WebElement submitCardId;
+
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[3]/div[2]/p[2]/input") WebElement idNumber;
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div/div[4]/button") WebElement continueDocumentsUpload;
 

@@ -183,41 +183,58 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(biography).sendKeys(generateRandomString(200));
     }
 
+//    public void photoUpload (String action, String photoPath) {
+//        sleep(1000);
+//        switch (action) {
+//            case "skip":
+//                waitForIt(skipButton).click();
+//                break;
+//            case "browser":
+//                uploadPhoto.sendKeys(photoPath);
+//                sleep(2000);
+//                waitForIt(savePhoto).click();
+//                break;
+//            case "takePhoto":
+//                waitForIt(takeAPhoto).click();
+//                break;
+//        }
+//    }
+
     public void photoUpload (String action, String photoPath) {
         sleep(1000);
-        switch (action) {
-            case "skip":
-                waitForIt(skipButton).click();
-                break;
-            case "browser":
-                uploadPhoto.sendKeys(photoPath);
-                sleep(2000);
-                waitForIt(savePhoto).click();
-                break;
-            case "takePhoto":
-                waitForIt(takeAPhoto).click();
-                break;
-        }
+       switch (action) {
+        case "skip":
+        waitForIt(skipButton).click();
+        break;
+        case "browser":
+        uploadPhoto.sendKeys(photoPath);
+        sleep(2000);
+        waitForIt(savePhoto).click();
+        break;
+        case "takePhoto":
+        //waitForIt(takeAPhoto).click();
+        break;
     }
+}
 
     public void uploadProfilePicture(String picturePath){
         sleep(2000);
         uploadProfilePictureButton.sendKeys(picturePath);
     }
 
-    public void uploadIdCard (String idCardPath, String nextFile) {
-        sleep(1000);
-        uploadIdCard.sendKeys(idCardPath);
-        addNextFile.sendKeys(nextFile);
-        waitForIt(submitCardId).click();
+    public void uploadIdCard (String idCardPath, String nextIdCardPath) {
+        waitForIt(idCardLabel).click();
+        addMissingFileButtonOne.sendKeys(idCardPath);
+        addMissingFileButtonTwo.sendKeys(nextIdCardPath);
+        waitForIt(submitDocuments).click();
     }
 
-    public void uploadCertificates (String CertificatesPath, String nextFile) {
-        sleep(1000);
-        uploadCertificates.sendKeys(CertificatesPath);
-        addNextFile.sendKeys(nextFile);
-        waitForIt(submitCardId).click();
-    }
+//    public void uploadCertificates (String CertificatesPath, String nextFile) {
+//        sleep(1000);
+//        uploadCertificates.sendKeys(CertificatesPath);
+//        addNextFile.sendKeys(nextFile);
+//        waitForIt(submitCardId).click();
+//    }
 
     public void idNumber (String idNumber) {
         sleep(1000);

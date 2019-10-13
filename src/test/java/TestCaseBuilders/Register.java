@@ -544,14 +544,14 @@ public class Register {
 
     }
 
-    protected void signUp_WithJpgProfilePicture(){
+    protected void signUp_WithJpgProfilePicture() throws Exception{
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
-        BaseMethods.submitButton(submitFirstView);
+        submitButton(submitFirstView);
         registerPage.confirmSms("");
         registerPage.setPinView("123456", "123456");
-        BaseMethods.submitButton(passwordConfirmButton);
+        submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
         registerPage.setUpAccount_gender(female);
         String name = generateRandomString(5) + " " + generateRandomString(5);
@@ -564,14 +564,15 @@ public class Register {
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
         sleep(1000);
-        BaseMethods.submitButton(confirmSetupAccount);
+        submitButton(confirmSetupAccount);
         sleep(1000);
         registerPage.clickAtSkipViewButton(skipButton);
         registerPage.uploadProfilePicture(JPG_PROFILE_PICTURE);
         sleep(2000);
+        checkIfPictureIsPresent(currentProfilePicture);
     }
 
-        protected void signUp_WithPngProfilePicture() {
+        protected void signUp_WithPngProfilePicture() throws Exception {
         homePage.GoToSignUp();
         registerPage.selectCountry();
         registerPage.registerCompletePhone(generatePhone());
@@ -596,6 +597,7 @@ public class Register {
         registerPage.clickAtSkipViewButton(skipButton);
         registerPage.uploadProfilePicture(PNG_PROFILE_PICTURE);
         sleep(2000);
+        checkIfPictureIsPresent(currentProfilePicture);
     }
 
     protected void signUp_DocumentsUploadedOnlyWithIdCard() {
@@ -607,25 +609,22 @@ public class Register {
         registerPage.setPinView("123456", "123456");
         BaseMethods.submitButton(passwordConfirmButton);
         registerPage.accountTypeSelector(labourer);
+        registerPage.setUpAccount_gender(male);
         String name = generateRandomString(5) + " " + generateRandomString(5);
         String email = generateRandomEmail();
         String address = generateRandomString(10) + " 2/2";
         scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_name_email_address(name, email, address);
         registerPage.setUpAccount_Birth_date("1993 - 10 - 08");
-        registerPage.setUpAccount_countrySelector("Pola");
+        //registerPage.setUpAccount_countrySelector("Pola");
         registerPage.setUpAccount_citySelector("Wroc");
         registerPage.setUpAccount_policiesAndMessages(true, true);
-
-        registerPage.moreAboutYou_height_weight("180", "80");
-        registerPage.moreAboutYou_skillSet(false);
-        registerPage.moreAboutYou_licensesAndCertificates(false);
-        //registerPage.moreAboutYou_education();
-        registerPage.moreAboutYou_languages();
-        //registerPage.photoUpload("browser",  AVATAR);
+        sleep(1000);
+        BaseMethods.submitButton(confirmSetupAccount);
+        sleep(1000);
+        registerPage.clickAtSkipViewButton(skipButton);
+        registerPage.clickAtSkipViewButton(skipButton);
         registerPage.uploadIdCard(IDCARD, IDCARD1);
-        //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
-
     }
 
     protected void signUp_DocumentsUploadedOnlyWithCertificates() {
@@ -654,7 +653,7 @@ public class Register {
         registerPage.moreAboutYou_languages();
 
         //registerPage.photoUpload("browser", AVATAR);
-        registerPage.uploadCertificates(CERT, CERT1);
+        //registerPage.uploadCertificates(CERT, CERT1);
         //Dopisać walidacje, czy przycisk "Continue" "jest disable" i czy pojawia się error pod inputem
 
     }
