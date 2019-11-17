@@ -76,7 +76,7 @@ public class Register {
     protected void signUp_WithNoPhoneNumber(){
         homePage.GoToSignUp();
         registerPage.selectCountry();
-        registerPage.registerCompletePhone("");
+        registerPage.registerCompletePhone(" ");
         baseMethods.clickSomewhere(body);
         checkNotify(errorPhoneIsRequired, error_PhoneIsRequired);
 
