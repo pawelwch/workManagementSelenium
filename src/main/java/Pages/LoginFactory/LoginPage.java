@@ -1,8 +1,10 @@
 package Pages.LoginFactory;
 
 
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import static TestMethods.BaseMethods.configureMethods;
 import static TestMethods.ConfigureMethods.waitForIt;
@@ -13,7 +15,7 @@ dzięki której będziemy się odwoływać do poszczególnych elementów strony.
  */
 public class LoginPage extends LoginWebElements{
 
-   // Konstruktor klasy przekazujący w parametrze zmienną driver która jest obiektu typu WebDriver.
+    // Konstruktor klasy przekazujący w parametrze zmienną driver która jest obiektu typu WebDriver.
     public LoginPage(WebDriver driver) {
        /*
         Metoda super() powoduje wywołanie konstruktora klasy nadrzędnej.
@@ -43,6 +45,7 @@ public class LoginPage extends LoginWebElements{
     public void submitLoginPassword(){
         waitForIt(passwordContinueButton).click();
     }
+
 }
 
 

@@ -268,7 +268,8 @@ public class Register {
         registerPage.setUpAccount_name_email_address(name,email,address);
         scroolToTheSomePoint(marketing);
         registerPage.setUpAccount_Birth_date("1993 - 10 - 08");
-        //registerPage.setUpAccount_countrySelector("Pola");
+        registerPage.setUpAccount_countrySelector("Pola");
+        registerPage.setUpAccount_citySelector("");
         registerPage.setUpAccount_policiesAndMessages(true,true);
         int buttonIsActive = driver.findElements(By.xpath("//*[@id=\"app\"]/main/div/div/div/div/div/form/div[9]/div/button/span[1]")).size();
         checkNotify(errorCity, error_City);

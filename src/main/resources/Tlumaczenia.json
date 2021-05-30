@@ -1,9 +1,9 @@
 {
-  "error_PhoneIsRequired": "Phone number is required.",
+  "error_PhoneIsRequired": "Please enter valid phone number.",
   "error_ValidPhoneNumber": "Please enter valid phone number.",
   "error_SmsInput": "",
   "error_PinCode": "Password must be at least 6 characters long.",
-  "error_PinCodeDoesntMatch": "Passwords doesn’t match.",
+  "error_PinCodeDoesntMatch": "Passwords doesn’t match",
   "error_Email": "xxxx",
   "error_SetupYourAccount": "This field is required",
   "error_FullName": "Full name is required.",

@@ -1,6 +1,7 @@
 package TestCaseBuilders;
 
 import JsonData.JsonParser;
+import Pages.CreatedOffersFactory.CreatedOffersPage;
 import Pages.HomePageFactory.HomePage;
 import Pages.JobsFactory.JobsPage;
 import Pages.LoginFactory.LoginPage;
@@ -9,6 +10,7 @@ import RestAPI.REST_Methods;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeTest;
 
 import static Pages.JobsFactory.JobsWebElements.*;
 import static TestMethods.BaseMethods.generateRandomString;

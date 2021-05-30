@@ -25,6 +25,6 @@ public class HomeWebElements {
     Alternatywa to: WebElement signUp = driver.findElement(By.xpath(""));
     */
     @FindBy(xpath = "//*[@id=\"app\"]/header/div[1]/div/div/div/div/div[2]/div[2]/div/a")public static WebElement signUpButton;
-    @FindBy(id = "authLoginLink")public static WebElement logInButton;
+    @FindBy(xpath = "//*[@id=\"app\"]/header/div/div/div[1]/div/div/div[2]/div[2]/a")public static WebElement logInButton;
 
 }
