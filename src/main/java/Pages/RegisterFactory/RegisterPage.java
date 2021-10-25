@@ -241,7 +241,7 @@ public class RegisterPage extends RegisterWebElements{
         waitForIt(this.idNumber).sendKeys(idNumber);
     }
 
-    public void continueDocumetsUploadButton () {
+    public void continueDocumentsUploadButton() {
         sleep(2000);
         waitForIt(continueDocumentsUpload).click();
     }

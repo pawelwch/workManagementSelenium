@@ -3,17 +3,14 @@ package TestCaseBuilders;
 import JsonData.JsonParser;
 import JsonData.JsonParser_Notification;
 import Pages.HomePageFactory.HomePage;
-import Pages.HomePageFactory.HomeWebElements;
 import Pages.LoginFactory.LoginPage;
 import Pages.RegisterFactory.RegisterPage;
-import Pages.RegisterFactory.RegisterWebElements;
 import RestAPI.REST_Methods;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
 import static JsonData.JsonParser_Notification.*;
 import static TestMethods.BaseMethods.*;
@@ -70,7 +67,7 @@ public class Register {
 //        registerPage.uploadIdCard(AVATAR,PDF);
 //        registerPage.uploadCertificates(AVATAR, PDF);
         registerPage.idNumber(generateRandomNumber(5));
-        registerPage.continueDocumetsUploadButton();
+        registerPage.continueDocumentsUploadButton();
     }
 
     protected void signUp_WithNoPhoneNumber(){

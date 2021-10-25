@@ -53,27 +53,27 @@ public class LoginTest extends Login{
      Adnotacja odnosi się do wykonania konkretnej metody odpowiadjącej konkretnemu TestCase;
      */
     @Test
-    void Login_SUCCES(){
+    void login_SUCCES(){
         login_SUCCESS();
     }
 
     @Test
-    void Login_EmptyPhoneNumberInput(){
+    void login_EmptyPhoneNumberInput(){
         login_emptyPhoneNumberInput();
     }
 
     @Test
-    void Login_TooShortPhoneNumber(){
+    void login_TooShortPhoneNumber(){
         login_tooShortPhoneNumber();
     }
 
     @Test
-    void Login_IncorrectPassword(){
+    void login_IncorrectPassword(){
         login_incorrectPassword();
     }
 
     @Test
-    void Login_EmptyPasswordInput(){
+    void login_EmptyPasswordInput(){
         login_emptyPasswordInput();
     }
 

@@ -55,14 +55,14 @@ public class RegisterTest extends Register {
     /**Adnotacja @Test jest to konkretny TestCase;
      Adnotacja odnosi się do wykonania konkretnej metody odpowiadjącej konkretnemu TestCase;
      */
-    @Test void RegisterAsLabourer_SUCCESS() { register(labourer); }
+    @Test void registerAsLabourer_SUCCESS() { register(labourer); }
 
-    @Test void RegisterAsContractor_SUCCESS() { register(contractor); }
+    @Test void registerAsContractor_SUCCESS() { register(contractor); }
 
-    @Test void RegisterAsEmployer_SUCCESS() { register(employer); }
+    @Test void registerAsEmployer_SUCCESS() { register(employer); }
 
 
-    @Test void SignUpWithNoPhoneNumber() {
+    @Test void signUpWithNoPhoneNumber() {
         signUp_WithNoPhoneNumber();
     }
 
@@ -70,105 +70,105 @@ public class RegisterTest extends Register {
 //        signUp_WithTooManyPhoneDigits();
 //    }
 
-    @Test void SignUpWithTooLittlePhoneDigits() {
+    @Test void signUpWithTooLittlePhoneDigits() {
         signUp_WithTooLittlePhoneDigits();
     }
 
-    @Test void SignUpWithLettersInPhoneInput() {
+    @Test void signUpWithLettersInPhoneInput() {
         signUp_WithLettersInPhoneInput();
     }
 
-    @Test void SignUpWithSuperLongPassword() {
+    @Test void signUpWithSuperLongPassword() {
         signUp_WithSuperLongPassword();
     }
 
-    @Test void SignUpWithTooShortPasswordCode() {
+    @Test void signUpWithTooShortPasswordCode() {
         signUp_WithTooShortPassword();
     }
 
-    @Test void SignUpPasswordsAreNotTheSame() { signUp_PasswordsAreNotTheSame(); }
+    @Test void signUpPasswordsAreNotTheSame() { signUp_PasswordsAreNotTheSame(); }
 
-    @Test void OnlyFirstPasswordFilledOut() {
+    @Test void onlyFirstPasswordFilledOut() {
         signUp_WithOnlyFirstPasswordFilledOut();
     }
 
-    @Test void OnlySecondPasswordFilledOut() {
+    @Test void onlySecondPasswordFilledOut() {
         signUp_WithOnlySecondPasswordFilledOut();
     }
 
-    @Test void EmptyPasswordFields() {
+    @Test void emptyPasswordFields() {
         signUp_WithEmptyPasswordFields();
     }
 
-    @Test void SignUpWithoutGender(){
+    @Test void signUpWithoutGender(){
         signUp_WithoutGender();
     }
 
-    @Test void SignUptWithoutFullNameField() {
+    @Test void signUptWithoutFullNameField() {
         signUp_WithoutFullName();
     }
 
-    @Test void SignUpWithoutDateOfBirth() {
+    @Test void signUpWithoutDateOfBirth() {
         signUp_WithoutDateOfBirth();
     }
 
-    @Test void SignUpWithoutCity() {
+    @Test void signUpWithoutCity() {
         signUp_WithoutCity();
     }
 
-    @Test void SignUpWithoutAddress() {
+    @Test void signUpWithoutAddress() {
         signUp_WithoutAddress();
     }
 
-    @Test void SignUpWithoutPolicies() {
+    @Test void signUpWithoutPolicies() {
         signUp_WithoutPolicies();
     }
 
-    @Test void SignUpWithoutMoreAboutYourself() {
+    @Test void signUpWithoutMoreAboutYourself() {
         signUp_WithoutMoreAboutYourself();
     }
 
-    @Test void SignUpWithoutHeightAndWeight(){
+    @Test void signUpWithoutHeightAndWeight(){
         signUp_withoutHeightAndWeight();
     }
 
-    @Test void SignUpWithoutSkillsets(){
+    @Test void signUpWithoutSkillsets(){
         signUp_withoutSkillsets();
     }
 
-    @Test void SignUpLicensesAndCertificates(){
+    @Test void signUpLicensesAndCertificates(){
         signUp_withoutLicensesAndCertificates();
     }
 
-    @Test void SignUpWithoutEducation(){
+    @Test void signUpWithoutEducation(){
         signUp_withoutEducation();
     }
 
-    @Test void SignUpWithoutLanguages(){
+    @Test void signUpWithoutLanguages(){
         signUp_withoutLanguages();
     }
 
-    @Test void SignUpWithoutBiography(){
+    @Test void signUpWithoutBiography(){
         signUp_withoutBiography();
     }
 
-    @Test void SignUpWithoutProfilePicture() {
+    @Test void signUpWithoutProfilePicture() {
         signUp_WithoutProfilePicture();
     }
 
-    @Test void SignUpWithJPGProfilePicture() throws Exception{
+    @Test void signUpWithJPGProfilePicture() throws Exception{
         signUp_WithJpgProfilePicture();
     }
 
-    @Test void SignUpWithPNGProfilePicture() throws Exception {
+    @Test void signUpWithPNGProfilePicture() throws Exception {
         signUp_WithPngProfilePicture();
     }
 
-    @Test void DocumentsUploadOnlyWithIdCard() {
+    @Test void documentsUploadOnlyWithIdCard() {
         signUp_DocumentsUploadedOnlyWithIdCard();
     }
 
-    @Test void DocumentsUploadOnlyWithCertificates() {
+    @Test void documentsUploadOnlyWithCertificates() {
         signUp_DocumentsUploadedOnlyWithCertificates();
     }
 

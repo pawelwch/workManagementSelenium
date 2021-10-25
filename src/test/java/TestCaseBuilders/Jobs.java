@@ -1,7 +1,6 @@
 package TestCaseBuilders;
 
 import JsonData.JsonParser;
-import Pages.CreatedOffersFactory.CreatedOffersPage;
 import Pages.HomePageFactory.HomePage;
 import Pages.JobsFactory.JobsPage;
 import Pages.LoginFactory.LoginPage;
@@ -10,7 +9,6 @@ import RestAPI.REST_Methods;
 import TestMethods.BaseMethods;
 import TestMethods.ConfigureMethods;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeTest;
 
 import static Pages.JobsFactory.JobsWebElements.*;
 import static TestMethods.BaseMethods.generateRandomString;
@@ -122,7 +120,7 @@ public class Jobs {
         jobsPage.labourersDetails(male, "120", "80" , "18", "50");
         jobsPage.labourersDetails_languages(languagePolish);
         jobsPage.confirm_labourersDetails();
-        jobsPage.highligthsSection(highVoltage, heavyMaterials);
+        jobsPage.highlightsSection(highVoltage, heavyMaterials);
         jobsPage.paymentDetails_paymentWage("", "1000");
         jobsPage.paymentDetails_paymentFrequency(perMonth);
         jobsPage.paymentDetails_paymentType(creditCard);
@@ -141,7 +139,7 @@ public class Jobs {
         jobsPage.labourersDetails(male, "120", "80" , "18", "50");
         jobsPage.labourersDetails_languages(languagePolish);
         jobsPage.confirm_labourersDetails();
-        jobsPage.highligthsSection(highVoltage, heavyMaterials);
+        jobsPage.highlightsSection(highVoltage, heavyMaterials);
         jobsPage.paymentDetails_paymentWage("100", "");
         jobsPage.paymentDetails_paymentFrequency(perMonth);
         jobsPage.paymentDetails_paymentType(payPal);
@@ -160,7 +158,7 @@ public class Jobs {
         jobsPage.labourersDetails(male, "120", "80" , "18", "50");
         jobsPage.labourersDetails_languages(languagePolish);
         jobsPage.confirm_labourersDetails();
-        jobsPage.highligthsSection(highVoltage, heavyMaterials);
+        jobsPage.highlightsSection(highVoltage, heavyMaterials);
         jobsPage.paymentDetails_paymentWage("100", "120");
         jobsPage.paymentDetails_paymentType(bankTransfer);
         jobsPage.previewOffer();
@@ -178,7 +176,7 @@ public class Jobs {
         jobsPage.labourersDetails(male, "120", "80" , "18", "50");
         jobsPage.labourersDetails_languages(languagePolish);
         jobsPage.confirm_labourersDetails();
-        jobsPage.highligthsSection(highVoltage, heavyMaterials);
+        jobsPage.highlightsSection(highVoltage, heavyMaterials);
         jobsPage.paymentDetails_paymentWage("200", "120");
         jobsPage.paymentDetails_paymentFrequency(perHour);
         jobsPage.paymentDetails_paymentType(bankTransfer);

@@ -57,62 +57,62 @@ public class JobsTest extends Jobs {
      Adnotacja odnosi się do wykonania konkretnej metody odpowiadjącej konkretnemu TestCase;
      */
     @Test
-    void AddJob_SUCCESS() {
+    void createJob_SUCCESS() {
         addJob_SUCCESS();
     }
 
     @Test
-    void AddJob_withoutTitle(){
+    void createJobWithoutTitle(){
         withoutTitleJob();
     }
 
     @Test
-    void AddJob_withoutDescription(){
+    void createJobWithoutDescription(){
         withoutDescriptionJob();
     }
 
     @Test
-    void WithoutLocationJob(){
+    void createJobWithoutLocationJob(){
         withoutLocationJob();
     }
 
     @Test
-    void WithoutStartDateJob(){
+    void createJobWithoutStartDateJob(){
         withoutStartDateJob();
     }
 
     @Test
-    void WithoutEndDateJob(){
+    void createJobWithoutEndDateJob(){
         withoutEndDateJob();
     }
 
     @Test
-    void WithoutEmploymentType(){
+    void createJobWithoutEmploymentType(){
         withoutEmploymentType();
     }
 
     @Test
-    void WithoutMinNumberOfWorkers(){
+    void createJobWithoutMinNumberOfWorkers(){
         withoutMinNumberOfWorkers();
     }
 
     @Test
-    void WithoutMinWage(){
+    void createJobWithoutMinWage(){
         withoutMinWage();
     }
 
     @Test
-    void WithoutMaxWage(){
+    void createJobWithoutMaxWage(){
         withoutMaxWage();
     }
 
     @Test
-    void WithoutPaymentFrequency(){
+    void createJobWithoutPaymentFrequency(){
         withoutPaymentFrequency();
     }
 
     @Test
-    void MinWageIsBiggerThanMaxWage(){
+    void createJobMinWageIsBiggerThanMaxWage(){
         minWageIsBiggerThanMaxWage();
     }
 

@@ -32,7 +32,7 @@ public class JobsPage extends JobsWebElements {
         waitForIt(firstSelectorElement).click();
     }
 
-    /* EMIL MOGŁBYS ROZKMINIC TA METODE Z DATEPICKEREM ?
+    /* //todo dorobic metode dla datepickera
 
     * public void jobDetails_datePicker(WebElement) {
 
@@ -91,7 +91,7 @@ public class JobsPage extends JobsWebElements {
 
     }
 
-    public void highligthsSection(WebElement... args) {
+    public void highlightsSection(WebElement... args) {
         waitForIt(highlights).click();
         try {
             waitForIt(args[0]).click();

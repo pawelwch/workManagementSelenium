@@ -25,10 +25,4 @@ public class HomePage extends HomeWebElements{
         waitForIt(logInButton).click();
     }
 
-//    public void AddOffer () {
-//        waitForIt(addJobOfferButton).click();
-//    }
-
-
-
 }
